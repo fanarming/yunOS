@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<% var data = { "hello": "world" }; %>
+<!-- relative path -->
+ 
+ <% (function($$data) {%>
+ <% var hello=$$data.hello; %> 
+<header><%= hello %></header> 
+ <% })( data); %> 
+ 
+ 
+ <% (function($$data) {%>
+ <% var hello=$$data.hello; %> 
+<footer><%= hello %></footer> 
+ <% })( data); %> 
+ 
+
+<!-- absolute path -->
+ 
+ <% (function($$data) {%>
+ <% var hello=$$data.hello; %> 
+<header><%= hello %></header> 
+ <% })( data); %> 
+ 
+ 
+ <% (function($$data) {%>
+ <% var hello=$$data.hello; %> 
+<footer><%= hello %></footer> 
+ <% })( data); %> 
+ 
+
+<!-- relative path -->
+<script>
+    <div>This is a native html, we don't want it to be compiled </div>
+<%= hello %>
+</script>
+<!-- absolute path -->
+<script>
+    <div>This is a native html, we don't want it to be compiled </div>
+<%= hello %>
+</script>
+</body>
+</html>

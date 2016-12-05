@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<% var data = { "hello": "world" }; %>
+<!-- relative path -->
+<% include('header.html', data); %>
+<% include('footer.html', data); %>
+
+<!-- absolute path -->
+<% include('/header.html', data); %>
+<% include('/footer.html', data); %>
+
+<!-- relative path -->
+<script>
+    <% includeNative('native.html');%>
+</script>
+<!-- absolute path -->
+<script>
+    <% includeNative('/native.html');%>
+</script>
+</body>
+</html>

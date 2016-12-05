@@ -59,7 +59,7 @@ gulp.task('webserver', function() {
                 method = req.method;
 
 
-            if (!urlObj.pathname.match(/^\/api/)) { //不是api开头的数据，直接next
+            if (!urlObj.pathname.match(/^\/dapi/)) { //不是api开头的数据，直接next
                 next();
                 return;
             }

@@ -1,0 +1,159 @@
+@import "reset.scss";
+
+body {
+    background: #eff2f7;
+}
+
+header { 
+    width: 100%;
+    height: 110px;
+    line-height: 110px;
+    border-bottom: 1px solid #dee5ed;
+    background: #fff;
+
+    .logo {
+        padding-left: 50px;
+
+        a {
+            display: block;
+
+            img {
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .user_info {
+        padding-right: 55px;
+        position: relative;
+        top: 45px;
+
+        p {
+            font-size: 14px;
+            color: #1c84dc;
+            line-height: 1;
+            text-align: right;
+
+            a {
+                color: #1c84dc;
+                text-decoration: underline;
+            }
+
+            &:last-child {
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+.main {
+    margin-top: 20px;
+
+    .menu_nav {
+        margin-left: 50px;
+        width: 228px;
+        height: 646px;
+        background: #fff;
+        border: 1px solid #dce4ec;
+
+        &_list {
+
+            li {
+                height: 63px;
+                line-height: 63px;
+
+                &.menu_nav_list_bottom {
+                    height: 206px;
+                }
+                
+                i {
+                    float: left;
+                    display: inline-block;
+                    width: 67px;
+                    height: 63px;                
+                    border-right: 1px solid #dce4ec; 
+                    border-bottom: 1px solid #dce4ec;
+                    
+                    &.nav_icon_01 {
+                        background: url(../image/nav_icon_01.png) center no-repeat; 
+                        background-color: #f9fafb;
+                    }
+
+                    &.nav_icon_02 {
+                        background: url(../image/nav_icon_02.png) center no-repeat; 
+                        background-color: #f9fafb;
+                    }
+
+                    &.nav_icon_03 {
+                        background: url(../image/nav_icon_03.png) center no-repeat; 
+                        background-color: #f9fafb;
+                    }
+
+                    &.nav_icon_04 {
+                        background: url(../image/nav_icon_04.png) center no-repeat; 
+                        background-color: #f9fafb;
+                    }
+
+                    &.nav_icon_05 {
+                        background: url(../image/nav_icon_05.png) center no-repeat; 
+                        background-color: #f9fafb;
+                    }
+
+                    &.nav_icon_06 {
+                        background: url(../image/nav_icon_06.png) center no-repeat; 
+                        background-color: #f9fafb;
+                    }
+
+                    &.nav_icon_07 {
+                        background: url(../image/nav_icon_07.png) center no-repeat; 
+                        background-color: #f9fafb;
+                    }
+
+                    &.nav_icon_bottom {
+                        display: block;
+                        height: 204px;
+                        background-color: #f9fafb;
+                        border-bottom: 0;
+                    }
+                }
+
+                a {
+                    display: block;
+                    height: 63px;
+                    line-height: 63px;
+                    font-size: 16px;
+                    text-indent: 30px;
+                    color: #7f96a3;
+                    background: #fff;
+                    border-bottom: 1px solid #dce4ec; 
+
+                    &:link{
+                        text-decoration: none;
+                    }
+
+                    &:visited{
+                        text-decoration: none;
+                    }
+
+                    &:hover {
+                        text-decoration: none;
+                        color: #0091ea;
+                    }
+
+                    &:active {
+                        text-decoration: none;
+                    }
+
+                    &.active {
+                        color: #0091ea;
+                    }
+                }
+            }            
+        }
+    }
+
+    .main_wrapper {
+        width: 836px;
+        margin-left: 12px;       
+    }
+}

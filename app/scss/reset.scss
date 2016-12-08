@@ -21,11 +21,17 @@ time, mark, audio, video {
     list-style-type: none;
 }
 html, body {
-    font-family: Arial,"微软雅黑";
+    font-family: "微软雅黑";
 }
 body {
     line-height:1;
-    min-width: 1136px;
+    min-width: 1200px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
 }
 
 :focus {

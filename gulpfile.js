@@ -76,7 +76,7 @@ gulp.task('webserver', function() {
                 }
                 var data = fs.readFileSync(mockDataFile, 'utf-8');
                 res.setHeader('Content-Type', 'application/json');
-                res.end(data);
+                res.end(data);  
             });
             next();
         },

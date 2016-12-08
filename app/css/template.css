@@ -105,7 +105,7 @@ header .user_info p:last-child { margin-top: 15px; }
 
 .main .menu_nav_list li i.nav_icon_07 { background: url(../image/nav_icon_07.png) center no-repeat; background-color: #f9fafb; }
 
-.main .menu_nav_list li i.nav_icon_bottom { display: block; height: 204px; background-color: #f9fafb; border-bottom: 0; }
+.main .menu_nav_list li i.nav_icon_bottom { display: block; height: 203px; background-color: #f9fafb; border-bottom: 0; }
 
 .main .menu_nav_list li a { display: block; height: 63px; line-height: 63px; font-size: 16px; text-indent: 30px; color: #7f96a3; background: #fff; border-bottom: 1px solid #dce4ec; }
 

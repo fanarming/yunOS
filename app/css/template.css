@@ -3,7 +3,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 
 html, body { font-family: "微软雅黑"; }
 
-body { line-height: 1; min-width: 1200px; }
+body { line-height: 1; font-size: 14px; min-width: 1200px; }
 
 .container { width: 1200px; margin: 0 auto; padding: 0; }
 
@@ -20,6 +20,14 @@ blockquote:before, blockquote:after, q:before, q:after { content: ''; content: n
 a { margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
 
 a { text-decoration: none; }
+
+a:link { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+a:hover { text-decoration: none; }
+
+a:active { text-decoration: none; }
 
 ins { background-color: #ff9; color: #000; text-decoration: none; }
 
@@ -62,6 +70,8 @@ img { max-width: 100%; border: none; }
 .box { display: box; }
 
 .no_margin { margin: 0 !important; }
+
+.count_warn { color: #e15f63 !important; }
 
 body { background: #eff2f7; }
 

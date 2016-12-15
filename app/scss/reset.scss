@@ -25,6 +25,7 @@ html, body {
 }
 body {
     line-height:1;
+    font-size: 14px;
     min-width: 1200px;
 }
 
@@ -67,6 +68,22 @@ a {
 }
 a {
     text-decoration: none;
+
+    &:link{
+        text-decoration: none;
+    }
+
+    &:visited{
+        text-decoration: none;
+    }
+
+    &:hover {
+        text-decoration: none;        
+    }
+
+    &:active {
+        text-decoration: none;
+    }
 }
 ins {
     background-color:#ff9;
@@ -158,4 +175,8 @@ img{
 
 .no_margin {
     margin: 0 !important;
+}
+
+.count_warn {
+    color: #e15f63 !important;
 }

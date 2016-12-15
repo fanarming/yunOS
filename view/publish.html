@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发布信息</title>
+    <link rel="stylesheet" href="../app/css/bootstrap/3.3.0/bootstrap.min.css">
+    <link rel="stylesheet" href="../app/css/publish.css"> 
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body> 
+    <header class="clearfix">
+        <div class="container">
+            <div class="logo fl">
+                <a href="#"><img src="../app/image/logo.png" alt=""></a>
+            </div>
+            <div class="user_info fr">
+                <p>HI，<span>Mango</span></p>
+                <p><a href="#">退出登录</a></p>
+            </div>
+        </div>        
+    </header>      
+    <section class="main container clearfix">
+        <aside class="menu_nav fl">
+            <ul class="menu_nav_list">
+                <li><i class="menu_nav_list_icon nav_icon_01"></i><a class="active" href="#">群发消息</a></li>
+                <li><i class="menu_nav_list_icon nav_icon_02"></i><a href="#">留言管理</a></li>
+                <li><i class="menu_nav_list_icon nav_icon_03"></i><a href="#">数据分析</a></li>
+                <!--<li><i class="menu_nav_list_icon nav_icon_04"></i><a href="#">活动管理</a></li>-->
+                <li><i class="menu_nav_list_icon nav_icon_05"></i><a href="#">素材管理</a></li>
+                <!--<li><i class="menu_nav_list_icon nav_icon_06"></i><a href="#">营销插件</a></li>-->
+                <li><i class="menu_nav_list_icon nav_icon_07"></i><a href="#">系统设置</a></li>
+                <li class="menu_nav_list_bottom"><i class="menu_nav_list_icon nav_icon_bottom"></i></li>
+            </ul>
+        </aside>
+        <div class="main_wrapper fl">
+            <div class="image_text_wrapper clearfix">
+                <div class="image_text_leftside">
+                    <div class="leftside_title">图文列表</div>
+                    <div class="leftside_cont">
+                        <div class="leftside_cont_list active leftside_cont_list_first" title="第一篇图文">
+                            <img class="cover" src="" alt="">
+                            <p class="title">标题</p>  
+                            <div class="bac_operation">
+                                <i class="icon_arrow_down" title="下移"></i>                                
+                            </div>  
+                        </div>
+                        <div class="leftside_cont_list" title="第二篇图文">
+                            <img class="cover" src="" alt="">
+                            <p class="title">标题</p>  
+                            <div class="bac_operation">
+                                <i class="icon_arrow_up" title="上移"></i>
+                                <i class="icon_del" title="删除"></i>
+                            </div>   
+                        </div>
+                    </div>
+                    <div class="leftside_bottom">
+                        <a id="addnew_imgtext_btn" href="#"><em>+</em>新增一篇图文消息</a>
+                        <a id="addnew_imgtext_storehouse" href="#"><em>+</em>从图文素材库新增</a>
+                    </div>
+                </div>
+                <div class="image_text_editor">
+                    <!-- 加载编辑器的容器 -->
+                    <script id="editor" name="content" type="text/plain" style="width:544px;height:388px;"></script>
+                    <div class="keyword_wrapper">
+                        <div class="keyword">关键词：<input type="text" placeholder="请输入文章对应关键词"></div>
+                        <div class="origin_link">
+                            <div class="origin_link_box clearfix"><input id="origin_link" type="checkbox"><label for="origin_link"></label>原文链接</div>
+                            <div class="origin_link_input hide"><input type="text"></div>
+                        </div>
+                    </div>
+                    <div class="publish_style_edit">
+                        <p class="publish_style_edit_title">发布样式编辑</p>
+                        <div class="publish_style_cover">
+                            <div class="publish_edit_title">封面<span>大图片建议尺寸：900像素 * 500像素</span></div>
+                            <div class="cover_btns"><a href="javascript:void(0)" class="cover_btn_frmcont">从正文选择</a><a href="javascript:void(0)" class="cover_btn_frmstore">从图片库选择</a></div>
+                            <div class="cover_preview_wrp">
+                                <span class="cover_preview">
+                                    <div class="cover_preview_del">
+                                        <a href="javascript:void(0)" title="删除封面"></a>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="publish_style_summary">
+                            <div class="publish_edit_title">摘要<span>选填，如果不填写会默认抓取正文前54个字</span></div>
+                            <div class="textarea_wrp">
+                                <textarea class="summary_textarea" name=""></textarea>                                
+                            </div>
+                            <div class="summary_count"><span>0/120</span></div>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="image_text_rightside">
+                    <div class="rightside_title">多媒体</div>
+                    <div class="rightside_cont">
+                        <div class="media_pic_btn rightside_cont_list"><i class="icon_pic"></i>图片</div>
+                        <div class="media_video_btn rightside_cont_list"><i class="icon_video"></i>视频</div>
+                        <div class="media_music_btn rightside_cont_list"><i class="icon_music"></i>音乐</div>
+                        <div class="media_audio_btn rightside_cont_list"><i class="icon_audio"></i>音频</div>
+                        <div class="media_vote_btn rightside_cont_list"><i class="icon_vote"></i>投票</div>                 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../app/js/jquery/1.10.2/jquery.js"></script>
+    <script src="../app/js/bootstrap/3.3.0/bootstrap.min.js"></script>
+    <script src="../app/js/ueditor/1.4.3/ueditor.config.js"></script>
+    <script src="../app/js/ueditor/1.4.3/ueditor.all.min.js"></script>
+    <script src="../app/js/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>    
+    <script src="../app/js/yunos.js"></script>    
+    <!-- 实例化编辑器 -->
+    <script type="text/javascript">
+        $(function(){
+            var iFunctions = {};
+
+            iFunctions = {
+                init: function(){
+                    iFunctions.ueditorInit();
+                    iFunctions.globalFuc();
+                    iFunctions.ImgTextList();
+                },
+                globalFuc: function(){
+                                        
+                },
+                ueditorInit: function(){
+                    var ue = UE.getEditor('editor', { 
+                        initialContent: '<span style="color:#bbb;">从这里开始写正文</span>',
+                        autoClearinitialContent: true,
+                        elementPathEnabled: false,
+                        wordCount: false           
+                    });
+
+                    ue.ready(function() {//编辑器初始化完成再赋值
+                        setDisabled(); 
+                        insertTitle();                                             
+                    });
+
+                    ue.addListener('blur',function(){
+                        setDisabled(); 
+                    });
+
+                    ue.addListener('focus',function(){
+                        setEnabled();
+                    });
+
+                    function insertTitle() {
+                        var _insertHtml =  '<div class="title editor_input_box">' +
+                                                '<input class="editor_input" type="text" name="title" placeholder="请在这里输入标题">' +
+                                                '<em class="editor_counter title_string_count">0/64</em>' +
+                                            '</div>' +
+                                            '<div class="author editor_input_box">' +
+                                                '<input class="editor_input" type="text" name="author" placeholder="请输入作者">' +
+                                                '<em class="editor_counter author_string_count">0/8</em>' +
+                                            '</div>';
+
+                        $('#edui1_iframeholder').before(_insertHtml);     
+                        $('.title .editor_input').focus();
+                        /*字数统计*/
+                        $('.title .editor_input').on('keyup',function(){
+                            $('.title .editor_input').countPlugin({
+                                'el':'.title_string_count',
+                                'max': 64,
+                                'strs': $(this).val()
+                            });
+                        });   
+                        /*字数统计*/
+                        $('.author .editor_input').on('keyup',function(){
+                            $('.author .editor_input').countPlugin({
+                                'el':'.author_string_count',
+                                'max': 8,
+                                'strs': $(this).val()
+                            });
+                        });                
+                    }
+
+                    function setDisabled() {
+                        UE.getEditor('editor').setDisabled('fullscreen');
+                    }
+
+                    function setEnabled() {
+                        UE.getEditor('editor').setEnabled();                    
+                    }
+
+
+                    /*原文链接显示与否*/
+                    $('.origin_link_box label').on('click', function(){    
+                        $('#origin_link').is(':checked') ? $('.origin_link_input').addClass('hide') : $('.origin_link_input').removeClass('hide');
+                    });
+
+                    /*摘要*/
+                    //根据CharCode是否在ASCII码范围内来区分数字汉字                   
+                    //var str="88美元23,欧<p>元</p>34.89人<sp民币";
+                    /*var str="div>我需要的文字</div>";                        
+                    
+                    str = str.replace(/<[^>]+>/g,"");
+                    console.log(str);*/
+                },
+                ImgTextList: function(){
+                    /*新增图文*/
+                    $('#addnew_imgtext_btn').on('click', function(){
+                        var len = $('.leftside_cont_list').length;
+                        
+                        var date = {
+                            "1": "一",
+                            "2": "二",
+                            "3": "三",
+                            "4": "四",
+                            "5": "五",
+                            "6": "六",
+                            "7": "七"
+                        };
+
+                        var _html = '<div class="leftside_cont_list" title="第'+date[len+1]+'篇图文">' +
+                                        '<img class="cover" src="" alt="">' +
+                                        '<p class="title">标题</p>' +  
+                                        '<div class="bac_operation">' +
+                                            '<i class="icon_arrow_up" title="上移"></i>' +
+                                            '<i class="icon_del" title="删除"></i>' +
+                                        '</div>' +   
+                                    '</div>';
+
+                        $('.leftside_cont').append(_html);
+                    });
+                    
+                    /*选定图文编辑*/
+                    $(document).on('click', '.leftside_cont_list', function(){
+                        $(this).addClass('active').siblings().removeClass('active');
+                    });
+
+                    /*删除图文,同时删除记录*/
+                    $(document).on('click', '.bac_operation .icon_del', function(){                        
+                        $(this).parents('.leftside_cont_list').remove();
+                    });
+                }
+            }
+
+            var publishFuc = (function(){
+                iFunctions.init();
+            })();
+        });
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模板</title>
+    <link rel="stylesheet" href="../app/css/bootstrap/3.3.0/bootstrap.min.css">
+    <link rel="stylesheet" href="../app/css/bootstrap/3.3.0/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="../app/css/new_info.css"> 
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body> 
+    <header class="clearfix">
+        <div class="container">
+            <div class="logo fl">
+                <a href="#"><img src="../app/image/logo.png" alt=""></a>
+            </div>
+            <div class="user_info fr">
+                <p>HI，<span>Mango</span></p>
+                <p><a href="#">退出登录</a></p>
+            </div>
+        </div>        
+    </header>      
+    <section class="main container clearfix">
+        <aside class="menu_nav fl">
+            <ul class="menu_nav_list">
+                <li><i class="menu_nav_list_icon nav_icon_01"></i><a class="active" href="#">群发消息</a></li>
+                <li><i class="menu_nav_list_icon nav_icon_02"></i><a href="#">留言管理</a></li>
+                <li><i class="menu_nav_list_icon nav_icon_03"></i><a href="#">数据分析</a></li>
+                <li><i class="menu_nav_list_icon nav_icon_04"></i><a href="#">活动管理</a></li>
+                <li><i class="menu_nav_list_icon nav_icon_05"></i><a href="#">素材管理</a></li>
+                <li><i class="menu_nav_list_icon nav_icon_06"></i><a href="#">营销插件</a></li>
+                <li><i class="menu_nav_list_icon nav_icon_07"></i><a href="#">系统设置</a></li>
+                <li class="menu_nav_list_bottom"><i class="menu_nav_list_icon nav_icon_bottom"></i></li>
+            </ul>
+        </aside>
+        <div class="main_wrapper fl">
+            <div class="n_tittle">
+                <a href="#" class="a_btn">新建群发消息</a>
+                <a href="#" class="a_btn has_bor choose">图文素材库</a>
+            </div>
+            <div class="n_type">
+                <ul class="n_type_list">
+                    <li class="n_type_item">
+                        <a href="#" class="n_type_btn cho_icon1">
+                            <!-- <img src="../app/image/cho_icon_01.png" alt="" class="cho_icon"> -->
+                            <span>图文消息</span>
+                        </a>                        
+                    </li>
+                    <li class="n_type_item">
+                        <a href="#" class="n_type_btn cho_icon2" data-show="#part2">
+                            <!-- <img src="../app/image/cho_icon_02.png" alt="" class="cho_icon"> -->
+                            <span>文字</span>
+                        </a> 
+                    </li>
+                    <li class="n_type_item">
+                        <a href="#" class="n_type_btn cho_icon3" data-show="#part3">
+                            <!-- <img src="../app/image/cho_icon_03.png" alt="" class="cho_icon"> -->
+                            <span>图片</span>
+                        </a> 
+                    </li>
+                    <li class="n_type_item">
+                        <a href="#" class="n_type_btn cho_icon4" data-show="#part4">
+                            <!-- <img src="../app/image/cho_icon_04.png" alt="" class="cho_icon"> -->
+                            <span>语音</span>
+                        </a> 
+                    </li>
+                    <li class="n_type_item">
+                        <a href="#" class="n_type_btn cho_icon5 active" data-show="#part5">
+                            <!-- <img src="../app/image/cho_icon_05.png" alt="" class="cho_icon"> -->
+                            <span>视频</span>
+                        </a> 
+                    </li>
+                </ul>
+            </div>
+            <div class="n_main hidden" id="part2">
+                <div class="n_main_box">
+                    <textarea name="n_main_area" id="" class="n_main_area"></textarea><!-- 最东西在全球范围内挑选，自然大都是在国外买的。精明的消费者都知道，若想买到最好又划算的物品，到世界各国跑一趟是必要的。况且——希望这样讲听起来不会太做作——逛街血拼依然是感受其他文化的最佳方式之一；毕竟，在逛商店和市集的同时，也能接触到当地生活的方方面面。最东西在全球范围内挑选，自然大都是在国外买的。精明的消费者都知道，若想买到最好又划算的物品，到世界各国跑一趟是必要的。况且——希望这样讲听起来不会太做作——逛街血拼依然是感受其他文化的最佳方式之一；毕竟，在逛商店和市集的同时，也能接触到当地生活的方方面面。最东西在全球范围内挑选，自然大都是在国外买的。精明的消费者都知道，若想买到最好又划算的物品，到世界各国跑一趟是必要的。最东西在全球范围内挑选，自然大都是在国外买的。精明的消费者都知道，若想买到最好又划算的物品，到世界各国跑一趟是必要的。 -->
+                    <div class="n_main_emo"><a href="#"><img src="../app/image/emo.png" alt=""></a></div>
+                    <div class="n_main_cout"><span>还可以输入<em>600</em>字</span></div> 
+                </div>                             
+            </div>
+
+
+            <div class="n_main hidden" id="part3">
+                <div class="n_main_vidio clearfix">
+                    <div class="n_vidio_left fl">
+                        <ul class="n_vidio_left_list">
+                            <li class="n_vidio_left_item" data-change="#all_p"><a href="#">全部图片(<i>4</i>)</a></li>
+                            <li class="n_vidio_left_item" data-change="#no_group"><a href="#">未分组 (<i>1</i>)</a></li>
+                            <li class="n_vidio_left_item" data-change="#artical_p"><a href="#">文章配图 (<i>0</i>)</a></li>
+                            <li class="n_vidio_left_item" data-change="#add_p"><a href="#"><img src="../app/image/add.png" alt="" class="add_p">新建分组</a></li>
+                        </ul>
+                    </div>
+                    <div class="n_vidio_right fl">
+                        <div class="n_vidio_right_item fl" id="all_p">
+                            <div class="n_vidio_right_list">
+                                <a href="#"><img src="../app/image/video_add.jpg" alt=""></a>
+                            </div>
+                            <div class="n_vidio_right_list video_item">
+                                <a href="#" class="choose_video">
+                                    <img src="../app/image/video_01.jpg" alt="">
+                                    <div class="video_bottom">
+                                        <span class="video_name">图片12887.jpg</span>
+                                    </div>  
+                                    <div class="choosen hidden"><img src="../app/image/choose.png" alt=""></div>                             
+                                </a>
+                            </div>
+                            <div class="n_vidio_right_list video_item">
+                                <a href="#" class="choose_video">
+                                    <img src="../app/image/video_02.jpg" alt="">
+                                    <div class="video_bottom">
+                                        <span class="video_name">图片12887eeerrrrsssss</span>
+                                    </div>
+                                    <div class="choosen hidden"><img src="../app/image/choose.png" alt=""></div>
+                                </a>
+                            </div>
+                            <div class="n_vidio_right_list video_item">
+                                <a href="#" class="choose_video">
+                                    <img src="../app/image/video_03.jpg" alt="">
+                                    <div class="video_bottom">
+                                        <span class="video_name">图片1s847e247r25555</span>
+                                    </div>
+                                    <div class="choosen hidden"><img src="../app/image/choose.png" alt=""></div>
+                                </a>
+                            </div>
+                            <div class="n_vidio_right_list video_item">
+                                <a href="#" class="choose_video">
+                                    <img src="../app/image/video_02.jpg" alt="">
+                                    <div class="video_bottom">
+                                        <span class="video_name">图片12887.jpg</span>
+                                    </div>
+                                    <div class="choosen hidden"><img src="../app/image/choose.png" alt=""></div>
+                                </a>
+                            </div>
+                            <div class="n_vidio_right_list video_item">
+                                <a href="#" class="choose_video">
+                                    <img src="../app/image/video_01.jpg" alt="">
+                                    <div class="video_bottom">
+                                        <span class="video_name">图片12887.jpg</span>
+                                    </div>
+                                    <div class="choosen hidden"><img src="../app/image/choose.png" alt=""></div>
+                                </a>
+                            </div>
+                            <div class="n_vidio_right_list video_item">
+                                <a href="#" class="choose_video">
+                                    <img src="../app/image/video_02.jpg" alt="">
+                                    <div class="video_bottom">
+                                        <span class="video_name">图片12887eeerrrrsssss</span>
+                                    </div>
+                                    <div class="choosen hidden"><img src="../app/image/choose.png" alt=""></div>
+                                </a>
+                            </div>
+                            <div class="n_vidio_right_list video_item">
+                                <a href="#" class="choose_video">
+                                    <img src="../app/image/video_03.jpg" alt="">
+                                    <div class="video_bottom">
+                                        <span class="video_name">图片1s847e247r25555</span>
+                                    </div>
+                                    <div class="choosen hidden"><img src="../app/image/choose.png" alt=""></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="n_vidio_right_item fl hidden" id="no_group">
+                            <div class="n_vidio_right_list">
+                                <a href="#"><img src="../app/image/video_add.jpg" alt=""></a>
+                            </div>
+                            <div class="n_vidio_right_list video_item">
+                                <a href="#" class="choose_video">
+                                    <img src="../app/image/video_01.jpg" alt="">
+                                    <div class="video_bottom">
+                                        <span class="video_name">图片12887.jpg</span>
+                                    </div>  
+                                    <div class="choosen hidden"><img src="../app/image/choose.png" alt=""></div>                             
+                                </a>
+                            </div>
+                        </div>
+                        <div class="n_vidio_right_item fl hidden" id="artical_p">
+                            <div class="n_vidio_right_list">
+                                <a href="#"><img src="../app/image/video_add.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="n_vidio_right_item fl hidden" id="add_p">
+                            <div class="n_vidio_right_list">
+                                <a href="#"><img src="../app/image/video_add.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="n_vidio_right_page fr">
+                            <p class="fl"><i>1</i>/<i>3</i></p>
+                            <a href="#" class="next_page fl"><img src="../app/image/next.png" alt=""></a>
+                            <input type="text" class="video_pages fl">
+                            <a href="#" class="change_page fl">跳转</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="n_main hidden" id="part4">
+                <div class="n_main_addvoice clearfix">
+                    <a href="#" class="addvoice_btn fr"><img src="../app/image/add_w.png" alt="">新建语音</a>
+                </div>
+                <div class="n_main_voice">
+                    <ul class="n_main_voice_list">
+                        <li class="n_main_voice_item clearfix">
+                            <div class="voice_name fl">
+                                <input id="voice_01" type="checkbox" class="voice_check">
+                                <label class="check_label" for="voice_01"></label>
+                                <span>cos1</span>
+                            </div>
+                            <div class="voice_time fl"><span>2016-11-18</span></div>
+                            <div class="voice_length fl"><span>02:21</span></div>
+                            <div class="voice_play fl"><img src="../app/image/voice.png" alt=""></div>
+                        </li>
+                        <li class="n_main_voice_item clearfix">
+                            <div class="voice_name fl">
+                                <input id="voice_01" type="checkbox" class="voice_check">
+                                <label class="check_label" for="voice_01"></label>
+                                <span>cos1</span>
+                            </div>
+                            <div class="voice_time fl"><span>2016-11-18</span></div>
+                            <div class="voice_length fl"><span>02:21</span></div>
+                            <div class="voice_play fl"><img src="../app/image/voice.png" alt=""></div>
+                        </li>
+                        <li class="n_main_voice_item clearfix">
+                            <div class="voice_name fl">
+                                <input id="voice_01" type="checkbox" class="voice_check">
+                                <label class="check_label" for="voice_01"></label>
+                                <span>cos1</span>
+                            </div>
+                            <div class="voice_time fl"><span>2016-11-18</span></div>
+                            <div class="voice_length fl"><span>02:21</span></div>
+                            <div class="voice_play fl"><img src="../app/image/voice.png" alt=""></div>
+                        </li>
+                        <li class="n_main_voice_item clearfix">
+                            <div class="voice_name fl">
+                                <input id="voice_01" type="checkbox" class="voice_check">
+                                <label class="check_label" for="voice_01"></label>
+                                <span>cos1</span>
+                            </div>
+                            <div class="voice_time fl"><span>2016-11-18</span></div>
+                            <div class="voice_length fl"><span>02:21</span></div>
+                            <div class="voice_play fl"><img src="../app/image/voice.png" alt=""></div>
+                        </li>
+                        <li class="n_main_voice_item clearfix">
+                            <div class="voice_name fl">
+                                <input id="voice_01" type="checkbox" class="voice_check">
+                                <label class="check_label" for="voice_01"></label>
+                                <span>cos1</span>
+                            </div>
+                            <div class="voice_time fl"><span>2016-11-18</span></div>
+                            <div class="voice_length fl"><span>02:21</span></div>
+                            <div class="voice_play fl"><img src="../app/image/voice.png" alt=""></div>
+                        </li>
+                        <li class="n_main_voice_item clearfix">
+                            <div class="voice_name fl">
+                                <input id="voice_01" type="checkbox" class="voice_check">
+                                <label class="check_label" for="voice_01"></label>
+                                <span>cos1</span>
+                            </div>
+                            <div class="voice_time fl"><span>2016-11-18</span></div>
+                            <div class="voice_length fl"><span>02:21</span></div>
+                            <div class="voice_play fl"><img src="../app/image/voice.png" alt=""></div>
+                        </li>
+                        <li class="n_main_voice_item clearfix">
+                            <div class="voice_name fl">
+                                <input id="voice_01" type="checkbox" class="voice_check">
+                                <label class="check_label" for="voice_01"></label>
+                                <span>cos1</span>
+                            </div>
+                            <div class="voice_time fl"><span>2016-11-18</span></div>
+                            <div class="voice_length fl"><span>02:21</span></div>
+                            <div class="voice_play fl"><img src="../app/image/voice.png" alt=""></div>
+                        </li>
+                        <li class="n_main_voice_item clearfix">
+                            <div class="voice_name fl">
+                                <input id="voice_01" type="checkbox" class="voice_check">
+                                <label class="check_label" for="voice_01"></label>
+                                <span>cos1</span>
+                            </div>
+                            <div class="voice_time fl"><span>2016-11-18</span></div>
+                            <div class="voice_length fl"><span>02:21</span></div>
+                            <div class="voice_play fl"><img src="../app/image/voice.png" alt=""></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="n_vidio_right_page fr">
+                    <p class="fl"><i>1</i>/<i>3</i></p>
+                    <a href="#" class="next_page fl"><img src="../app/image/next.png" alt=""></a>
+                    <input type="text" class="video_pages fl">
+                    <a href="#" class="change_page fl">跳转</a>
+                </div>
+            </div>
+            <div class="n_main" id="part5">
+                <div class="n_main_video_tittle">
+                    <a href="#" class="tittle_btn active" data-brand="#normal">视频</a>
+                    <a href="#" class="tittle_btn brand_btn" data-brand="#bran_normal">品牌视频素材</a>
+                </div>
+                <div class="n_main_video" id="normal">
+                    <!-- <a href="#" class="n_main_video_item no_bor"><img src="../app/image/add_v.png" alt=""></a> -->
+                    <button type="button" class="btn btn-primary btn-lg n_main_video_item no_bor" data-toggle="modal" data-target="#myModal"></button>
+                    <a href="#" class="n_main_video_item">
+                        <img src="../app/image/video_icon_01.jpg" alt="">
+                        <img src="../app/image/play.png" alt="" class="play">
+                    </a>
+                    <a href="#" class="n_main_video_item">
+                        <img src="../app/image/video_icon_02.jpg" alt="">
+                        <img src="../app/image/play.png" alt="" class="play">
+                    </a>
+                    <a href="#" class="n_main_video_item">
+                        <img src="../app/image/video_icon_03.jpg" alt="">
+                        <img src="../app/image/play.png" alt="" class="play">
+                    </a>
+                    <a href="#" class="n_main_video_item">
+                        <img src="../app/image/video_icon_04.jpg" alt="">
+                        <img src="../app/image/play.png" alt="" class="play">
+                    </a>
+                    <a href="#" class="n_main_video_item">
+                        <img src="../app/image/video_icon_05.jpg" alt="">
+                        <img src="../app/image/play.png" alt="" class="play">
+                    </a>
+                </div>
+                <div class="n_main_video hidden" id="bran_normal">
+                    <!-- <a href="#" class="n_main_video_item no_bor"><img src="../app/image/add_v.png" alt=""></a> -->
+                    <button type="button" class="btn btn-primary btn-lg n_main_video_item no_bor" data-toggle="modal" data-target="#myModal"></button>
+                    <a href="#" class="n_main_video_item">
+                        <img src="../app/image/video_icon_03.jpg" alt="">
+                        <img src="../app/image/play.png" alt="" class="play">
+                    </a>
+                    <a href="#" class="n_main_video_item">
+                        <img src="../app/image/video_icon_05.jpg" alt="">
+                        <img src="../app/image/play.png" alt="" class="play">
+                    </a>
+                    <a href="#" class="n_main_video_item">
+                        <img src="../app/image/video_icon_01.jpg" alt="">
+                        <img src="../app/image/play.png" alt="" class="play">
+                    </a>
+                    <a href="#" class="n_main_video_item">
+                        <img src="../app/image/video_icon_02.jpg" alt="">
+                        <img src="../app/image/play.png" alt="" class="play">
+                    </a>
+                    <a href="#" class="n_main_video_item">
+                        <img src="../app/image/video_icon_04.jpg" alt="">
+                        <img src="../app/image/play.png" alt="" class="play">
+                    </a>
+                </div>
+                <div class="n_vidio_right_page fr part5_page">
+                    <p class="fl"><i>1</i>/<i>3</i></p>
+                    <a href="#" class="next_page fl"><img src="../app/image/next.png" alt=""></a>
+                    <input type="text" class="video_pages fl">
+                    <a href="#" class="change_page fl">跳转</a>
+                </div>
+                <div class="n_main_video_btn fl">
+                    <a href="#" class="video_btn">确定</a>
+                    <a href="#" class="video_btn del_btn">取消</a>
+                </div>
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content add_video">
+                            <div class="modal-header add_video_header">
+                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                <h4 class="modal-title" id="myModalLabel">上传视频</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form action="" class="add_video_form clearfix">
+                                    <div class="add_video_box clearfix">
+                                        <label for="up_file" class="add_video_label video_label fl">上传视频</label>
+                                        <span class="video_span fl">
+                                            视频不能超过20M，超过20M的也可通过添加视频详情页链接以及公众号文章链接插入视频，视频时长不少于1秒，不多于10小时，支持大部分主流<a href="#" class="format">视频格式</a>
+                                            <div class="format_box hidden">
+                                                <ul class="format_list">
+                                                    <li class="format_item">常见在线流媒体格式：mp4、flv、f4v、webm</li>
+                                                    <li class="format_item">移动设备格式：m4v、mov、3gp、3g2</li>
+                                                    <li class="format_item">RealPlayer ：rm、rmvb</li>
+                                                    <li class="format_item">微软格式 ：wmv、avi、asf</li>
+                                                    <li class="format_item">MPEG 视频 ：mpg、mpeg、mpe、ts</li>
+                                                    <li class="format_item">DV格式 ：div、dv、divx</li>
+                                                    <li class="format_item">其他格式 ：vob、dat、mkv、swf、lavf、cpk、dirac、ram、qt、fli、flc、mod</li>
+                                                    <li class="format_item">主流音频格式：mp3、aac、ac3、wav、m4a、ogg</li>
+                                                </ul>
+                                            </div>
+                                        </span>
+                                        <div class="add_video_up fl">
+                                            <span class="file_up_span">上传文件</span>
+                                            <input type="file" class="up_file" id="up_file">
+                                        </div>
+                                    </div>
+                                    <div class="add_video_box clearfix cout">
+                                        <label for="" class="add_video_label fl">标题</label>
+                                        <input type="text" class="video_text video_tittle fl">
+                                        <span class="cout_words"><em>0</em>/<i>21</i></span>
+                                    </div>
+                                    <div class="add_video_box no_bott clearfix">
+                                        <label for="" class="add_video_label video_label fl">封面</label>                                        
+                                        <span class="video_span fl">
+                                            视频转码完成后可以设置封面图
+                                            <img src="../app/image/remind.png" alt="" class="remind_imgs">
+                                        </span>
+                                        <div class="cover_box hidden">
+                                            <span>视频转码完成后，进入编辑页面可以选择视频内的画面作为视频封面。如果不作选择，默认封面为视频的第一帧。
+                                            </span>
+                                        </div>
+                                    </div>
+                                     <div class="add_video_box clearfix">
+                                        <label for="" class="add_video_label fl">分类</label>
+                                        <div class="select fl">
+                                            <div class="select_text">请选择</div>
+                                            <div class="select_list">
+                                                <ul>
+                                                    <li class="select_list_item">选择1</li>
+                                                    <li class="select_list_item">选择2</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="add_video_box video_box_tag clearfix">
+                                        <label for="" class="add_video_label tag_label fl">标签
+                                            <img src="../app/image/remind.png" alt="" class="remind_img">
+                                        </label>
+                                        <input type="text" class="video_text tag_text fl">
+                                        <div class="tag_box hidden">
+                                            <span>标签用回车分开，填写与视频内容相关的标签，你的视频会被合理的分类整理</span>
+                                        </div>
+                                    </div>
+                                    <div class="add_video_box clearfix">
+                                        <label for="" class="add_video_label fl">简介</label>
+                                        <!-- <input type="text" class="video_text tag_text fl"> -->
+                                        <textarea name="video_area" id="video_area"></textarea>
+                                        <span class="area_count"><em>0</em>/<i>200</i></span>
+                                    </div>
+                                    <div class="add_video_box remind process_remind">
+                                        <p>不得上传未经授权的他人作品，以及色情、反动等违法视频。查看<em class="process">视频处理流程</em></p>
+                                        <div class="process_box hidden">
+                                            <ul>
+                                                <li>流程：</li>
+                                                <li>1.上传：将视频上传至服务器，需视频和文案资料完成才能完成上传。</li>
+                                                <li>2.转码：上传成功后服务器将视频转码成播放器可识别的格式。</li>
+                                                <li>3.审核：转码完成后视频进入内容审核阶段。</li>
+                                                <li>4.可用：只有审核通过的视频素材才可以被使用。</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="add_video_box remind check_rem">
+                                        <input type="checkbox" class="agree_check" id="agree_check">
+                                        <label for="agree_check" class="agree_label"></label>
+                                        <span>我已阅读并同意<a href="#">《腾讯视频上传服务规则》</a></span>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer add_video_footer">
+                                <button type="button" class="btn btn-primary add_sure_btn">确定</button>
+                                <button type="button" class="btn btn-default add_del_btn" data-dismiss="modal">取消</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        <div class="sent_info fr">
+            <div class="sent_info_cho clearfix">
+                <span class="sent_span fl">定时发送</span>
+                <div class="select fl">
+                    <div class="select_text">否</div>
+                    <div class="select_list hidden">
+                        <ul>
+                            <li class="select_list_item">是</li>
+                            <li class="select_list_item">否</li>
+                        </ul>
+                    </div>                    
+                </div>                               
+                <div class="input-group date form_date fl">
+                    <input class="form-control date_text" size="16" type="text" value="">
+                </div> 
+                <div class="select sel_hours fl">
+                    <div class="select_text timer">0时</div>
+                    <div class="select_list hidden">
+                        <ul class="hours min"></ul>
+                    </div>                    
+                </div>
+                <div class="select sel_minutes fl">
+                    <div class="select_text timer">0分</div>
+                    <div class="select_list hidden">
+                        <ul class="hours mini"></ul>
+                    </div>                    
+                </div>                          
+            </div>
+            <div class="sent_info_cho  clearfix">
+                <span class="sent_span fl">群发对象</span>
+                <a href="#" class="edit_btn">编辑</a>
+            </div>
+            <div class="sent_info_cho no_pad">
+                <a href="#" class="sent_btn">立即群发</a>
+                <a href="#" class="sent_btn safe_btn">保存到材料库</a>
+            </div>
+            <div class="sent_info_cho"><p class="remind">你今天还能群发 <em>1</em> 次消息</p></div>
+        </div>
+    </section>   
+    <script src="../app/js/jquery/1.10.2/jquery.js"></script>
+    <script src="../app/js/bootstrap/3.3.0/bootstrap.min.js"></script>
+    <script src="../app/js/bootstrap/3.3.0/bootstrap-datetimepicker.min.js"></script>
+    <script src="../app/js/bootstrap/3.3.0/bootstrap-datetimepicker.zh-CN.js"></script>
+    
+    <script>
+        $(function(){
+            var ifunction= {};
+
+            ifunction = {
+                show_it: function () {
+                    $('.select').on('click','.select_text',function(e){                        
+                        $(this).next().toggleClass('hidden');
+                        e.stopPropagation();
+                    })
+                    $('.select').on('click','.select_list_item',function(e){
+                        e.stopPropagation();
+                        var select_list_item=$(this).text();
+                        $(this).parents('.select_list').prev().text(select_list_item);
+                        $(this).parents('.select_list').addClass('hidden');
+                    })
+                    $(document).on('mouseleave','.select_list',function(){
+                        $(this).addClass('hidden');
+                    })
+                    $('body').click(function(){
+                        $('.select_list').addClass('hidden');
+                    })
+                    $('document').on('click','.choose_video',function(){
+                        $(this).children('.choosen').toggleClass('hidden');
+                    })
+                    $(document).on('click','.agree_check',function(){
+                        if($('.agree_check').is(':checked')){
+                            $('.add_sure_btn').addClass('sure_active');
+                        } else{
+                            $('.add_sure_btn').removeClass('sure_active');
+                        } 
+                    })
+                    //添加视频弹窗的提示
+                    $(document).on('mouseover','.format',function(){
+                        $('.format_box').removeClass('hidden');
+                    })
+                    $(document).on('mouseout','.format',function(){
+                        $('.format_box').addClass('hidden');
+                    })
+                    /*$(document).on('mouseleave','.format_box',function(){
+                        $(this).addClass('hidden');
+                    })*/
+
+                    
+                    $(document).on('mouseover','.remind_img',function(){
+                        $('.tag_box').removeClass('hidden');
+                    })
+                    $(document).on('mouseout','.remind_img',function(){
+                        $('.tag_box').addClass('hidden');
+                    })
+                    /*$(document).on('mouseleave','.tag_box',function(){
+                        $(this).addClass('hidden');
+                    })*/
+
+                    $(document).on('mouseover','.remind_imgs',function(){
+                        $('.cover_box').removeClass('hidden');
+                    })
+                    $(document).on('mouseout','.remind_imgs',function(){
+                        $('.cover_box').addClass('hidden');
+                    })
+                    /*$(document).on('mouseleave','.cover_box',function(){
+                        $(this).addClass('hidden');
+                    })*/
+
+                    $(document).on('mouseover','.process',function(){
+                        $('.process_box').removeClass('hidden');
+                    })
+                    $(document).on('mouseout','.process',function(){
+                        $('.process_box').addClass('hidden');
+                    })
+                    /*$(document).on('mouseleave','.process_box',function(){
+                        $(this).addClass('hidden');
+                    })*/
+
+                },
+
+                sel_date_html: function () {
+                    for(var i=0;i<=59;i++){
+                        $('.mini').append('<li class="select_list_item select_list_min_item" min="'+i+'">'+i+'分'+'</li>'); 
+                    }
+                    for(var j=0;j<=23;j++){
+                        $('.min').append('<li class="select_list_item select_list_hour_item" hour="'+j+'">'+j+'时'+'</li>'); 
+                    }  
+
+                    $(document).on('click', '.select_list_min_item', function(){
+                        $('.sel_minutes').attr('data-minute',$(this).attr('min'));
+                    });   
+
+                    $(document).on('click', '.select_list_hour_item', function(){
+                        $('.sel_hours').attr('data-hour',$(this).attr('hour'));
+                    });                                      
+                },
+
+                cunt_words: function () {
+                    $(document).on('keyup','.n_main_area',function(){
+                        var word_length=$(this).val().length;
+                        console.log(word_length);
+                        var left_word=600-word_length;
+                        if(left_word>0){
+                            $('.n_main_cout span em').text(left_word);
+                        } else {
+                            $('.n_main_cout span em').text(0);
+                            $('.n_main_area').val($('.n_main_area').val().substring(0,600));
+                        }
+                    })
+                    $(document).on('keyup','.video_tittle',function(){
+                        var title_length=$(this).val().length;
+                        if(title_length<21){
+                            $('.cout_words em').text(title_length);
+                        } else{
+                            $('.cout_words em').text(21);
+                            $('.video_tittle').val($('.video_tittle').val().substring(0,21));
+                        }
+                    })
+                    $(document).on('keyup','#video_area',function(){
+                        var video_area_length=$(this).val().length;
+                        if(video_area_length<200){
+                            $('.area_count em').text(video_area_length);
+                        } else{
+                            $('.area_count em').text(200);
+                            $('#video_area').val($('#video_area').val().substring(0,200));
+                        }
+                    })
+                },
+
+                change_n_type: function () {
+                    $(document).on('click','.n_type_btn',function(){
+                        $('.n_type_btn').removeClass('active');
+                        $(this).addClass('active');
+                        var bID = $(this).attr('data-show')
+                        $('.n_main').addClass('hidden');
+                        $(bID).removeClass('hidden');
+                    })
+                    $(document).on('click','.n_vidio_left_item',function(){
+                        var bID = $(this).attr('data-change')
+                        $('.n_vidio_right_item').addClass('hidden');
+                        $(bID).removeClass('hidden');
+                    })
+                    $(document).on('click','.tittle_btn',function(){
+                        $('.tittle_btn').removeClass('active');
+                        $(this).addClass('active');
+                        var bID = $(this).attr('data-brand')
+                        $('.n_main_video').addClass('hidden');
+                        $(bID).removeClass('hidden');
+                    })
+                },
+
+                add_calendar: function () {
+                    $(".form-control").datetimepicker({
+                        format: "yyyy-mm-dd",
+                        autoclose: true,                
+                        language:'zh-CN',
+                        pickerPosition:"bottom-left",
+                        minView: 2
+                    });
+                }               
+            }
+            ifunction.show_it();
+            ifunction.sel_date_html();
+            ifunction.cunt_words();
+            ifunction.change_n_type();
+            ifunction.add_calendar();
+        })
+    </script>
+</body>
+</html>

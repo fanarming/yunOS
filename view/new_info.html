@@ -206,7 +206,7 @@
                     <ul class="n_main_voice_list">
                         <li class="n_main_voice_item clearfix">
                             <div class="voice_name fl">
-                                <input id="voice_01" type="checkbox" class="voice_check">
+                                <input id="voice_01" type="radio" class="voice_check" name="voice_item">
                                 <label class="check_label" for="voice_01"></label>
                                 <span>cos1</span>
                             </div>
@@ -216,8 +216,8 @@
                         </li>
                         <li class="n_main_voice_item clearfix">
                             <div class="voice_name fl">
-                                <input id="voice_01" type="checkbox" class="voice_check">
-                                <label class="check_label" for="voice_01"></label>
+                                <input id="voice_02" type="radio" class="voice_check" name="voice_item">
+                                <label class="check_label" for="voice_02"></label>
                                 <span>cos1</span>
                             </div>
                             <div class="voice_time fl"><span>2016-11-18</span></div>
@@ -226,8 +226,8 @@
                         </li>
                         <li class="n_main_voice_item clearfix">
                             <div class="voice_name fl">
-                                <input id="voice_01" type="checkbox" class="voice_check">
-                                <label class="check_label" for="voice_01"></label>
+                                <input id="voice_03" type="radio" class="voice_check" name="voice_item">
+                                <label class="check_label" for="voice_03"></label>
                                 <span>cos1</span>
                             </div>
                             <div class="voice_time fl"><span>2016-11-18</span></div>
@@ -236,8 +236,8 @@
                         </li>
                         <li class="n_main_voice_item clearfix">
                             <div class="voice_name fl">
-                                <input id="voice_01" type="checkbox" class="voice_check">
-                                <label class="check_label" for="voice_01"></label>
+                                <input id="voice_04" type="radio" class="voice_check" name="voice_item">
+                                <label class="check_label" for="voice_04"></label>
                                 <span>cos1</span>
                             </div>
                             <div class="voice_time fl"><span>2016-11-18</span></div>
@@ -246,8 +246,8 @@
                         </li>
                         <li class="n_main_voice_item clearfix">
                             <div class="voice_name fl">
-                                <input id="voice_01" type="checkbox" class="voice_check">
-                                <label class="check_label" for="voice_01"></label>
+                                <input id="voice_05" type="radio" class="voice_check" name="voice_item">
+                                <label class="check_label" for="voice_05"></label>
                                 <span>cos1</span>
                             </div>
                             <div class="voice_time fl"><span>2016-11-18</span></div>
@@ -256,8 +256,8 @@
                         </li>
                         <li class="n_main_voice_item clearfix">
                             <div class="voice_name fl">
-                                <input id="voice_01" type="checkbox" class="voice_check">
-                                <label class="check_label" for="voice_01"></label>
+                                <input id="voice_06" type="radio" class="voice_check" name="voice_item">
+                                <label class="check_label" for="voice_06"></label>
                                 <span>cos1</span>
                             </div>
                             <div class="voice_time fl"><span>2016-11-18</span></div>
@@ -266,8 +266,8 @@
                         </li>
                         <li class="n_main_voice_item clearfix">
                             <div class="voice_name fl">
-                                <input id="voice_01" type="checkbox" class="voice_check">
-                                <label class="check_label" for="voice_01"></label>
+                                <input id="voice_07" type="radio" class="voice_check" name="voice_item">
+                                <label class="check_label" for="voice_07"></label>
                                 <span>cos1</span>
                             </div>
                             <div class="voice_time fl"><span>2016-11-18</span></div>
@@ -276,8 +276,8 @@
                         </li>
                         <li class="n_main_voice_item clearfix">
                             <div class="voice_name fl">
-                                <input id="voice_01" type="checkbox" class="voice_check">
-                                <label class="check_label" for="voice_01"></label>
+                                <input id="voice_08" type="radio" class="voice_check" name="voice_item">
+                                <label class="check_label" for="voice_08"></label>
                                 <span>cos1</span>
                             </div>
                             <div class="voice_time fl"><span>2016-11-18</span></div>
@@ -524,7 +524,7 @@
                     $('body').click(function(){
                         $('.select_list').addClass('hidden');
                     })
-                    $('document').on('click','.choose_video',function(){
+                    $(document).on('click','.choose_video',function(){
                         $(this).children('.choosen').toggleClass('hidden');
                     })
                     $(document).on('click','.agree_check',function(){

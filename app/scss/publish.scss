@@ -20,7 +20,7 @@
 
     &_leftside {
         float: left;
-        width: 172px;
+        width: 172px; 
         padding: 0 10px;
 
         .leftside {
@@ -377,7 +377,31 @@
                     }
 
                     &:hover {
-                        border: 1px solid #43b548;
+                        color: #0091ea;
+                        border: 1px solid #0091ea;
+
+                        i {                           
+
+                            &.icon_pic {
+                                background: url(../image/icon_pic_hover.png) center no-repeat;
+                            }
+
+                            &.icon_video {
+                                background: url(../image/icon_video_hover.png) center no-repeat;
+                            }
+
+                            &.icon_music {
+                                background: url(../image/icon_music_hover.png) center no-repeat;
+                            }
+
+                            &.icon_audio {
+                                background: url(../image/icon_audio_hover.png) center no-repeat;
+                            }
+
+                            &.icon_vote {
+                                background: url(../image/icon_vote_hover.png) center no-repeat;
+                            }
+                        }
                     }
 
                     i {

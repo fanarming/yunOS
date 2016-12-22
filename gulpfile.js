@@ -100,5 +100,5 @@ gulp.task('watch', ['webserver'], function(){
 });
 
 gulp.task('default',function() {  
-  gulp.start( 'watch');
+  gulp.start( 'css','watch');
 });

@@ -43,7 +43,7 @@
                 <div class="image_text_leftside">
                     <div class="leftside_title">图文列表</div>
                     <div class="leftside_cont">
-                        <div class="leftside_cont_list active leftside_cont_list_first" title="第一篇图文">
+                        <!--<div class="leftside_cont_list active leftside_cont_list_first" title="第一篇图文">
                             <img class="cover" src="" alt="">
                             <p class="title">标题</p>  
                             <div class="bac_operation">
@@ -57,7 +57,7 @@
                                 <i class="icon_arrow_up" title="上移"></i>
                                 <i class="icon_del" title="删除"></i>
                             </div>   
-                        </div>
+                        </div>-->
                     </div>
                     <div class="leftside_bottom">
                         <a id="addnew_imgtext_btn" href="#"><em>+</em>新增一篇图文消息</a>
@@ -1009,6 +1009,7 @@
                 init: function(){
                     iFunctions.ueditorInit();
                     iFunctions.globalFuc();
+<<<<<<< HEAD
                     iFunctions.ImgTextList();
                     iFunctions.cunt_words();
                     iFunctions.add_video();
@@ -1020,9 +1021,17 @@
                     iFunctions.sel_daedline_html();
                     iFunctions.add_video();
                     iFunctions.choose_picture();
+=======
+                    iFunctions.renderImgTextList();
+>>>>>>> 9b4a1a2b25838ee3426bcf1db7d4d5afbb2b7cf9
                 },
                 globalFuc: function(){
-                                        
+                    /*刷新或离开此页函数*/
+                   /* window.addEventListener("beforeunload", function(e) {
+                      var confirmationMessage = "";
+                      (e || window.event).returnValue = confirmationMessage; // Gecko and Trident
+                      return confirmationMessage; // Gecko and WebKit
+                    }); */                
                 },
                 ueditorInit: function(){
                     var ue = UE.getEditor('editor', { 
@@ -1034,11 +1043,11 @@
 
                     ue.ready(function() {//编辑器初始化完成再赋值
                         setDisabled(); 
-                        insertTitle();                                             
+                        insertTitle();                                                                                            
                     });
 
                     ue.addListener('blur',function(){
-                        setDisabled(); 
+                        //setDisabled(); 
                     });
 
                     ue.addListener('focus',function(){
@@ -1055,15 +1064,31 @@
                                                 '<em class="editor_counter author_string_count">0/8</em>' +
                                             '</div>';
 
+                        sessionStorage.lastIndex = 1;//初始化定位
+                        sessionStorage.Index = 1;//初始化定位
+
+                        var imgTextIndex = sessionStorage.Index-1;//定位当前图文序号
+console.log(imgTextIndex);
                         $('#edui1_iframeholder').before(_insertHtml);     
                         $('.title .editor_input').focus();
                         /*字数统计*/
-                        $('.title .editor_input').on('keyup',function(){
+                        $('.title .editor_input').on('keyup',function(){                            
                             $('.title .editor_input').countPlugin({
                                 'el':'.title_string_count',
                                 'max': 64,
                                 'strs': $(this).val()
                             });
+
+                            $('.leftside_cont_list').eq(imgTextIndex).find('.title').text($(this).val());
+
+                            //setTimeout(function(){
+                                iFunctions.cacheMasonry({
+                                    "title": $(this).val(),
+                                    "index": imgTextIndex+1,                                    
+                                    "author": $('.author .editor_input').val(),                                    
+                                    "content": UE.getEditor('editor').getContent()
+                                });
+                           //},500);
                         });   
                         /*字数统计*/
                         $('.author .editor_input').on('keyup',function(){
@@ -1084,7 +1109,6 @@
                         UE.getEditor('editor').setEnabled();                    
                     }
 
-
                     /*原文链接显示与否*/
                     $('.origin_link_box label').on('click', function(){    
                         $('#origin_link').is(':checked') ? $('.origin_link_input').addClass('hide') : $('.origin_link_input').removeClass('hide');
@@ -1097,11 +1121,97 @@
                     
                     str = str.replace(/<[^>]+>/g,"");
                     console.log(str);*/
+                },                
+                renderEditorText: function(index){//加载图文数据
+console.log(index);
+                    var dataArr = {};
+
+                    if(localStorage._oData){
+                        //localStorage._oData="";
+                        //console.log("有session");          
+
+                        dataArr = JSON.parse(localStorage._oData);                        
+                                        
+                        dataArr.recordList.map(function(product,i){
+                            if(product.index == index){   
+console.log("恩恩");                        
+console.log(product);                        
+                                $('.title .editor_input').val(product.title);
+                                $('.author .editor_input').val(product.author);
+                                UE.getEditor('editor').setContent(product.content);
+                            } else {
+                                /*$('.title .editor_input').val('');
+                                $('.author .editor_input').val('');
+                                UE.getEditor('editor').setContent('');*/
+                            } 
+                        });                     
+                                                            
+                                   
+                    } 
                 },
-                ImgTextList: function(){
-                    /*新增图文*/
+                renderImgTextList: function(){
+                    var dataArr = {},
+                        _html = '';
+ //localStorage._oData="";
+                    if(localStorage._oData){
+                        //localStorage._oData="";
+                        //console.log("有session");          
+
+                        dataArr = JSON.parse(localStorage._oData);                        
+                                     
+                        dataArr.recordList.map(function(product,i){
+                            //if(product.index == index){                           
+                                /*product.title = items.title || product.title;
+                                product.content = items.content || product.content;
+                                product.author = items.author || product.author;
+                                product.originLink = items.originLink || product.originLink;
+                                product.keyword = items.keyword || product.keyword;
+                                product.cover = items.cover || product.cover;
+                                product.summary = items.summary || product.summary;
+                                product.index = items.index || product.index; */  
+                                var date = {
+                                    "1": "一",
+                                    "2": "二",
+                                    "3": "三",
+                                    "4": "四",
+                                    "5": "五",
+                                    "6": "六",
+                                    "7": "七"
+                                };
+
+                                _html += '<div class="leftside_cont_list '+(product.order == 1 ? "leftside_cont_list_first active" : "")+'" index="'+product.index+'" title="第'+date[product.order]+'篇图文">' +
+                                                '<img class="cover" src="'+product.cover+'" alt="">' +
+                                                '<p class="title">'+product.title+'</p>' +  
+                                                '<div class="bac_operation">' +
+                                                    '<i class="'+(product.order == 1 ? "icon_arrow_down" : "icon_arrow_up")+'" title="'+(product.order == 1 ? "下移" : "上移")+'"></i>' +
+                                                    '<i class="icon_del '+(product.order == 1 ? "hide" : "")+'" title="删除"></i>' +
+                                                '</div>' +   
+                                            '</div>';
+                           // } 
+                        });  
+
+                        $('.leftside_cont').append(_html);       
+                    } else {
+                        _html = '<div class="leftside_cont_list" index="1" title="第一篇图文">' +
+                                        '<img class="cover" src="" alt="">' +
+                                        '<p class="title">标题</p>' +  
+                                        '<div class="bac_operation">' +
+                                            '<i class="icon_arrow_up hide" title="上移"></i>' +
+                                            '<i class="icon_del hide" title="删除"></i>' +
+                                        '</div>' +   
+                                    '</div>';
+
+                        $('.leftside_cont').append(_html);
+                    }                    
+
+                    /*新增图文,最多七篇*/
                     $('#addnew_imgtext_btn').on('click', function(){
                         var len = $('.leftside_cont_list').length;
+
+                        if(len>=7){
+                            alert("最多添加七篇图文信息");
+                            return false;
+                        }
                         
                         var date = {
                             "1": "一",
@@ -1113,7 +1223,7 @@
                             "7": "七"
                         };
 
-                        var _html = '<div class="leftside_cont_list" title="第'+date[len+1]+'篇图文">' +
+                        var _html = '<div class="leftside_cont_list" index="'+(len+1)+'" title="第'+date[len+1]+'篇图文">' +
                                         '<img class="cover" src="" alt="">' +
                                         '<p class="title">标题</p>' +  
                                         '<div class="bac_operation">' +
@@ -1125,15 +1235,22 @@
                         $('.leftside_cont').append(_html);
                     });
                     
-                    /*选定图文编辑*/
+                    /*选定图文编辑,同时保存上一个图文的数据*/
                     $(document).on('click', '.leftside_cont_list', function(){
+                        sessionStorage.lastIndex = sessionStorage.Index;//定位上一个编辑的图文
+                        sessionStorage.Index = $(this).attr('index');//定位当前正在编辑的图文
+
                         $(this).addClass('active').siblings().removeClass('active');
+
+                        /*加载当前选定的图文数据*/
+                        iFunctions.cacheImgText(sessionStorage.lastIndex);                        
                     });
 
                     /*删除图文,同时删除记录*/
                     $(document).on('click', '.bac_operation .icon_del', function(){                        
                         $(this).parents('.leftside_cont_list').remove();
                     });
+<<<<<<< HEAD
                 },
 
                 cunt_words: function () {
@@ -1368,6 +1485,71 @@
                         $(this).children('.choosen').toggleClass('hide');
                     })
                 }    
+=======
+
+                    /**/
+                },
+                cacheImgText: function(index){//保存图文的数据
+                    iFunctions.cacheMasonry({
+                        "title": $('.title .editor_input').val(),
+                        "author": $('.author .editor_input').val(),
+                        "index": index,
+                        "content": UE.getEditor('editor').getContent()
+                    });
+
+                    iFunctions.renderEditorText(sessionStorage.Index);
+                },
+                cacheList: function(){//localStorage存储图文数据列表（按顺序）
+                    
+                },                
+                cacheMasonry: function(opt){//localStorage存储每一篇图文数据
+                    var dataArr = {
+                            "recordList": []
+                        },                        
+                        items = {},
+                        _flag = false;
+console.log(opt);
+                    items.title = opt.title;
+                    items.content = opt.content;
+                    items.author = opt.author;
+                    items.originLink = opt.originLink;
+                    items.keyword = opt.keyword;
+                    items.cover = opt.cover;
+                    items.summary = opt.summary;
+                    items.index = opt.index;                      
+
+                    if(localStorage._oData){
+                        //localStorage._oData="";
+                        //console.log("有session");          
+
+                        dataArr = JSON.parse(localStorage._oData);                        
+                                        
+                        dataArr.recordList.map(function(product,i){
+                            if(product.index == items.index){                           
+                                product.title = items.title || product.title;
+                                product.content = items.content || product.content;
+                                product.author = items.author || product.author;
+                                product.originLink = items.originLink || product.originLink;
+                                product.keyword = items.keyword || product.keyword;
+                                product.cover = items.cover || product.cover;
+                                product.summary = items.summary || product.summary;
+                                product.index = items.index || product.index;   
+                                _flag = true;                        
+                            }
+                        });
+
+                        if(!_flag) dataArr.recordList.push(items);  
+                        localStorage._oData = JSON.stringify(dataArr);
+            
+                    } else {                    
+
+                        dataArr.recordList.push(items);        
+                        localStorage._oData = JSON.stringify(dataArr);
+                    }  
+
+console.log(localStorage._oData);     
+                }
+>>>>>>> 9b4a1a2b25838ee3426bcf1db7d4d5afbb2b7cf9
             }
 
             var publishFuc = (function(){

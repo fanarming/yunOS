@@ -218,7 +218,7 @@
                     </div>                    
                 </div>                          
             </div>
-            <div class="sent_info_cho  clearfix">
+            <div class="sent_info_cho clearfix">
                 <span class="sent_span fl">群发对象</span>
                 <a href="#" class="edit_btn">编辑</a>
             </div>
@@ -240,6 +240,11 @@
             var ifunction= {};
 
             ifunction = {
+                init: function(){
+                    ifunction.show_it();
+                    ifunction.sel_date_html();
+                    ifunction.add_calendar();
+                },
                 show_it: function () {
                     $('.select').on('click','.select_text',function(e){                        
                         $(this).next().toggleClass('hidden');
@@ -307,10 +312,12 @@
                         minView: 2
                     });
                 }               
-            }
-            ifunction.show_it();
-            ifunction.sel_date_html();
-            ifunction.add_calendar();
+            };
+
+            var materialFuc = (function(){
+                ifunction.init();
+            }());
+            
         })
     </script>
 </body>

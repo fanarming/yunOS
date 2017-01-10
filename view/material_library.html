@@ -220,7 +220,50 @@
             </div>
             <div class="sent_info_cho clearfix">
                 <span class="sent_span fl">群发对象</span>
-                <a href="#" class="edit_btn">编辑</a>
+                <a href="javascript:;" class="edit_btn">编辑</a>
+            </div>
+            <div class="sent_info_cho clearfix hide">
+                <div class="edit_detail clearfix">
+                    <span class="sent_span fl">群发对象</span>
+                    <div class="select select_detail fl">
+                        <div class="select_text use_text">全部用户</div>
+                        <div class="select_list use_list hidden">
+                            <ul>
+                                <li class="select_list_item">全部用户</li>
+                                <li class="select_list_item">无星标用户</li>
+                                <li class="select_list_item">星标用户</li>
+                                <li class="select_list_item">自定义标签1用户</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="select_box sex_box fl">
+                        <span class="sent_span fl">性别</span>
+                        <div class="select select_sex fl">
+                            <div class="select_text use_text">男</div>
+                            <div class="select_list use_list hidden">
+                                <ul>
+                                    <li class="select_list_item">男</li>
+                                    <li class="select_list_item">女</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="select_box region_box fl">
+                        <span class="sent_span fl">群发地区</span>
+                        <select name="" id="" class="select_region select_country">
+                            <option value="">全部</option>
+                            <option value="">中国</option>
+                        </select>
+                        <select name="" id="" class="select_region select_provice">
+                            <option value="">省份</option>
+                            <option value="">广东</option>
+                        </select>
+                        <select name="" id="" class="select_region select_city">
+                            <option value="">城市</option>
+                            <option value="">广州</option>
+                        </select>
+                    </div>
+                </div>
             </div>
             <div class="sent_info_cho no_pad">
                 <a href="#" class="sent_btn">立即群发</a>
@@ -244,6 +287,7 @@
                     ifunction.show_it();
                     ifunction.sel_date_html();
                     ifunction.add_calendar();
+                    ifunction.edit_person();
                 },
                 show_it: function () {
                     $('.select').on('click','.select_text',function(e){                        
@@ -311,7 +355,14 @@
                         pickerPosition:"bottom-left",
                         minView: 2
                     });
-                }               
+                },
+
+                edit_person: function () {
+                    $(document).on('click','.edit_btn',function(){
+                        $(this).parent().addClass('hide');
+                        $(this).parent().next().removeClass('hide');
+                    })
+                }                
             };
 
             var materialFuc = (function(){

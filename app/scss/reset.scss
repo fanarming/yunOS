@@ -125,9 +125,9 @@ input, select {
     vertical-align:middle;
 }
 input, select, textarea {
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    /* -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-appearance: none;
-    appearance: none;
+    appearance: none; */
     border: 0;
     border-radius: 0;
     outline: none;

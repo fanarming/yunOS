@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>模板库</title>    
+    <link rel="stylesheet" href="../../app/css/modal.css">
+    <script src="../../app/js/jquery.js"></script>  
+</head>
+<body>    
+    <div class="header">
+    <div class="logo">
+        <a href="../../index.html"><img src="../../app/image/logo_blue.png" alt=""></a>
+    </div>
+    <div class="nav">
+        <div class="fr clearfix">
+            <div class="nav_list fl">
+                <a href="../../index.html">首页</a>
+                <a href="modal.html" class="active">模板库</a>
+                <div class="management">
+                	<span >管理</span>
+					<div class="management_panel">
+						<p><a href="advers.html">广告管理</a></p>
+						<p><a href="addtem.html">新增模板</a></p>
+						<p><a href="comments.html">评论管理</a></p>
+                        <p><a href="feedback.html">意见反馈</a></p>
+					</div>
+                </div>             
+            </div>
+            <div class="search_panel fl">
+                <input id="search_input" class="" type="text">
+                <em class="search_icon"></em>
+            </div>
+            <div class="personal_center logout_statu fl">
+                <div class="avatar_bac new_mes">
+                    <img src="../../app/image/icon_avatar.png" alt="">                                               
+                </div>                  
+                <i class="icon_arrow"></i>
+                <div class="personal_center_wrapper login_personal_panel">
+                    <div class="personal_mes clearfix">
+                        <div class="avatar_big fl">
+                            <img src="../../app/image/icon_avatar_big.png" alt="">
+                        </div>                          
+                        <div class="personal_mes_text fl">
+                            <p><span class="name">李国明</span><span class="job">运营人员</span></p>
+                            <p><span class="department">佛山-互联网部</span></p>
+                        </div>
+                    </div>
+                    <div class="personal_operation">
+                        <p><a href="#">我的消息<em>（2）</em></a></p>
+                        <p><a href="#">我的设置</a></p>
+                        <p><a href="#">注销</a></p>
+                    </div>
+                </div> 
+                <div class="personal_center_wrapper logout_personal_panel">
+                    <div class="personal_mes clearfix">
+                        <a class="login_link" href="#">立即登录</a>
+                        <p>没有账号？<a href="#">立即注册</a></p>
+                    </div>
+                    <div class="personal_operation">
+                        <p><a href="#">我的消息</a></p>
+                        <p><a href="#">我的设置</a></p>
+                        <p><a href="#">注销</a></p>
+                    </div>
+                </div>                                     
+            </div>  
+        </div>  
+    </div>
+    <script>
+    	$(function(){
+    		$('.avatar_bac').hover(function(){
+                if($('.personal_center').hasClass('login_statu')){
+                    $('.login_personal_panel').show();                    
+                }else if($('.personal_center').hasClass('logout_statu')) {
+                    $('.logout_personal_panel').show();
+                    $('.avatar_bac img').attr('src','../../app/image/icon_avatar_null.png');
+                }				
+			},function(){
+				$('.personal_center_wrapper').hide();
+			});
+
+			$('.personal_center_wrapper').hover(function(){
+				$(this).show();
+			},function(){
+				$(this).hide();
+			});
+
+            // 搜索效果
+            $('.search_icon').hover(function(){                
+                $('.header .nav_list').animate({"marginRight": "20px"},function(){
+                    $('#search_input').addClass('active');
+                });
+            });
+    	});
+    </script>
+</div>
+    <div class="types_block">
+        <div class="container">
+            <div class="chudian_types">
+                <div class="types_title">
+                    <span class="name">触点分类：</span><span class="name_types active">全部</span><span class="name_types">主动</span><span class="name_types">被动</span>
+                </div>
+                <ul class="clearfix">
+                    <li>宽带推送-PC弹窗</li>
+                    <li>宽带推送-WIFI</li>
+                    <li>移动网推送</li>
+                    <li>短信推送/小区短信</li>
+                    <li>邮件推送</li>
+                    <li>微信矩阵</li>                                                                   
+                    <li>网厅</li>
+                    <li>触屏版网厅</li>
+                    <li>广东天翼客户端</li>
+                    <li>集团欢go客户端</li>
+                    <li>smartips广告窗</li>
+                    <li class="active">服务窗广告位</li>
+                    <li>114纠错页</li>
+                    <li>自助终端</li> 
+                </ul>
+            </div>
+            <div class="activity_types">
+                <div class="types_title">
+                    <span class="name">活动分类：</span><span class="name_types active">全部</span>
+                </div>
+                <ul class="clearfix">
+                    <li>活动1</li>
+                    <li>活动2</li>
+                    <li class="active">活动3</li>
+                    <li>活动4</li>
+                    <li>活动5</li>
+                    <li>活动6</li>                                                                   
+                    <li>活动7</li>
+                    <li>活动8</li>
+                    <li>活动9</li>
+                    <li>活动10</li>
+                    <li>活动11</li>
+                    <li>活动12</li>
+                    <li>活动13</li>
+                    <li>活动14</li> 
+                    <li>活动15</li> 
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="modal_cont_wrapper">
+        <div class="container">
+            <div class="modal_tabs clearfix">
+                <div class="modal_tabs_cont">
+                    <span class="button active" data-show="#modal_1">发布时间</span><em>|</em><span class="button" data-show="#modal_2">申请热度</span><em>|</em><span class="button" data-show="#modal_3">最高评分</span>
+                </div>
+            </div>
+            <div id="modal_1" class="modal_blocks active">
+                <ul class="clearfix">
+                    <li>
+                        <a href="template.html"><img src="../../app/image/modal/img1.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img2.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img3.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img4.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img5.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img6.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img7.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img8.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img9.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img10.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img11.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img12.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img13.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img14.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img15.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img16.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="modal_2" class="modal_blocks">
+                <ul class="clearfix">
+                    <li>
+                        <a href="template.html"><img src="../../app/image/modal/img1.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img5.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img6.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img7.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img2.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img3.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img4.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img8.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img9.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img10.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img11.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img12.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img13.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img14.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img15.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img16.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="modal_3" class="modal_blocks">
+                <ul class="clearfix">
+                    <li>
+                        <a href="template.html"><img src="../../app/image/modal/img1.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img2.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img3.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img4.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img5.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img6.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img7.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img8.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img9.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img10.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img11.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img12.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img13.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img14.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img15.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="template.html">
+                            <img src="../../app/image/modal/img16.png" alt="">
+                            <p>查看</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="paginator">
+    <a href="#" class="prev">上一页</a>
+    <a href="#">1</a>
+    <a href="#">&middot;&middot;&middot;</a>
+    <a href="#">13</a>
+    <a href="#">14</a>
+    <a href="#">15</a>
+    <a class="active" href="#">16</a>
+    <a href="#">17</a>
+    <a href="#">18</a>
+    <a href="#">19</a>
+    <a href="#">&middot;&middot;&middot;</a>
+    <a href="#">333</a>
+    <a href="#" class="next">下一页</a>
+</div>
+        </div>
+    </div>    
+    <div class="footer">        
+    <p class="footer_links"><a href="#">常见问题</a><i>|</i><a href="#">联系我们</a><i>|</i><a href="#">关于我们</a><i>|</i><a href="#">友情链接</a><i>|</i><a href="#">意见反馈</a></p>
+    <p>版权所有©2012 中国电信集团公司</p>
+    <p>[ 增值电信业务经营许可证 A2.B1.B2-20090001 ] ICP 证号:京 ICP 备 09031924号</p>       
+</div>
+    <div class="goto_top">
+    <span>返回顶部</span><em>TOP</em>
+</div>
+<script>
+    $(function(){
+        var $ele = $('.goto_top');
+
+        $ele.on('click', function(){
+            $('html,body').animate({scrollTop:0}, 500);
+            return false;
+        });
+        
+        $(window).scroll(function(){
+            if($(this).scrollTop() >= 768){
+                $ele.fadeIn();
+            }else {
+                $ele.fadeOut();
+            }
+        });
+    });
+</script>
+
+    
+    <script>
+        $(function(){
+            $('.button').click(function () {
+                $('.button').removeClass('active');
+                $(this).addClass('active');
+                var bID = $(this).attr('data-show')
+                $('.modal_blocks').removeClass('active');
+                $(bID).addClass('active');
+            });
+        });
+    </script>
+</body>
+</html>

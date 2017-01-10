@@ -403,6 +403,83 @@ a{
                 }
             }
         }
+        .edit_detail{
+            /* position: absolute;
+            left: 0;
+            top: 0; */
+            height: 80px;
+            .select_detail{
+                margin-top: 40px;
+                margin-left: -65px;
+                .use_text{
+                    width: 153px;
+                    height: 44px;
+                    line-height: 44px;
+                    font-size: 14px;
+                    background: url(../image/select.png) no-repeat 132px 15px;
+                }
+                .blue_text{
+                    border: 1px solid #0091ea;
+                }
+                .use_list{
+                    width: 153px;
+                    ul{
+                        width: 153px;
+                        height: 92px;
+                        overflow-y: scroll;
+                        .select_list_item{
+                            font-size: 12px;
+                            color: #bbbbbb;
+                        }
+                    }
+                }
+            }
+            .sex_box{
+                width: 96px;
+                margin-left: 20px;
+                .select_sex{
+                    width: 96px;
+                    height: 44px;
+                    line-height: 44px;
+                    margin-left: 0;
+                    margin-top: 10px;
+                }
+                .use_text{
+                    width: 96px;
+                    height: 44px;
+                    line-height: 44px;
+                    font-size: 14px;
+                    background: url(../image/select.png) no-repeat 74px 15px;
+                }
+                .use_list{
+                    width: 96px;
+                    ul{
+                        width: 96px;
+                        .select_list_item{
+                            font-size: 12px;
+                            color: #bbbbbb;
+                        }
+                    }
+                }
+            }
+            .region_box{
+                margin-left: 20px;
+                .select_region{
+                    background: #fff;
+                    width: 150px;
+                    height: 44px;
+                    border-radius: 3px;
+                    line-height: 44px;
+                    margin-top: 40px;
+                    border: 1px solid #dce4ec;
+                    padding-left: 12px;
+                    margin-right: 16px;
+                }
+                .select_country{
+                    margin-left: -64px;
+                }
+            }
+        }
     }
     .no_pad{
         padding-left: 0;

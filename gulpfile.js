@@ -86,7 +86,7 @@ gulp.task('webserver', function() {
 
 
 gulp.task("tpl", function(){
-  return gulp.src(['./hello.html'])
+  return gulp.src('view/**/*.html')
     .pipe(includeTpl({
       prefix: '@@',
       basepath: '@file'
@@ -96,9 +96,10 @@ gulp.task("tpl", function(){
 
 gulp.task('watch', ['webserver'], function(){
   gulp.watch('app/scss/**/*.scss', ['css']);
-  gulp.watch(['*.html','**/*.html','app/js/**/*.js']);
+  gulp.watch(['*.html','**/*.html'], ['tpl']);
+  gulp.watch(['app/js/**/*.js']);
 });
 
 gulp.task('default',function() {  
-  gulp.start( 'css','watch');
+  gulp.start('watch');
 });

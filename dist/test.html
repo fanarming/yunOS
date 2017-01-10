@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
+<html xmlns="http://www.w3.org/1999/xhtml">  
+  <head>  
+    <style type="text/css">  
+        .wraper {  
+            position: relative;  
+            border: 1px solid orange;  
+        }  
+    </style>  
+      
+  </head>   
+    
+  <body onload="">  
+      
+    <canvas id="test" width="1000px" height="1000px" class="wraper"></canvas>  
+    
+    <script type="text/javascript">  
+        function draw(){  
+            var can = document.getElementById('test');  
+            if(can.getContext){  
+                var cxt = can.getContext('2d');  
+  
+                //绘制起始点、控制点、终点  
+                /*cxt.beginPath();  
+                cxt.moveTo(30,70);  
+                cxt.lineTo(70,30);  
+                cxt.lineTo(330,100);  
+                cxt.lineTo(530,50);
+                cxt.lineTo(730,40);  
+                cxt.lineTo(930,50); 
+                cxt.stroke();  */
+
+                 
+  
+                cxt.strokeStyle = "rgba(200,0,0,1)";  
+      
+                //绘制3次贝塞尔曲线  
+                cxt.beginPath();  
+                cxt.moveTo(30,70);  
+                cxt.bezierCurveTo(130,20,330,150,530,50); 
+                cxt.bezierCurveTo(530,50,630,10,930,50);   
+                cxt.stroke();  
+            }  
+  
+        }  
+
+        var canvas=document.getElementById('test');
+        
+        var ctx=canvas.getContext('2d');  
+            canvas.width=window.innerWidth;
+            canvas.height=394;
+        var canvasWidth=canvas.width;
+        var canvasHight=canvas.height;
+        
+
+        loop();
+
+        var step=0;
+        var steps=0;
+        function loop(){
+            ctx.clearRect(0,0,canvasWidth,canvasHight);
+
+            var lines=["rgba(0,222,255, 0.2)",
+                           "rgba(157,192,249, 0.2)",
+                           "rgba(0,168,255, 0.2)"];
+
+            
+                ctx.fillStyle="rgba(255,255,255, 0.35)";
+
+                step++;
+                var angle=step*Math.PI/180;
+                var deltaHeight=Math.sin(angle)*50;
+                var deltaRightHeight=Math.cos(angle)*50;
+
+                /*ctx.beginPath();
+                ctx.moveTo(0, 378);                
+                //画曲线
+                ctx.quadraticCurveTo(157, 304, 670, 382);                
+                ctx.lineTo(1065, 382);
+                ctx.quadraticCurveTo(1165, 229,canvasWidth,321);
+                ctx.lineTo(canvasWidth, canvasHight);
+                ctx.lineTo(0, canvasHight);
+                ctx.lineTo(0, 378);
+                ctx.closePath();
+                ctx.fill();*/
+
+                //绘制3次贝塞尔曲线  
+                ctx.beginPath();  
+                ctx.moveTo(30,70);  
+                ctx.bezierCurveTo(130,20+deltaRightHeight,330,150+deltaHeight,530,50+deltaRightHeight); 
+                ctx.bezierCurveTo(530,50+deltaHeight,630,10+deltaRightHeight,930,50+deltaHeight);   
+                ctx.stroke();
+
+                /*ctx.clearRect(0,0,canvasWidth,canvasHight);*/
+                ctx.fillStyle="rgba(157,192,249, 0.2)";
+                /*steps++;
+                var angle=steps*Math.PI/180;
+                var deltaHeight=Math.sin(angle)*50;
+                var deltaRightHeight=Math.cos(angle)*50;*/
+
+                /*ctx.beginPath();
+                ctx.moveTo(0, canvas.height/2);             
+                ctx.bezierCurveTo(canvasWidth /2, 150, canvasWidth / 2, 250+deltaRightHeight, canvasWidth, deltaRightHeight+300);
+                ctx.lineTo(canvasWidth, canvasHight);
+                ctx.lineTo(0, canvasHight);
+                ctx.lineTo(0, canvasHight/2+deltaHeight);
+                ctx.closePath();
+                ctx.fill();
+                /*requestAnimFrame(loop);*/
+                setTimeout(loop,1000/60);
+        }
+
+    </script>
+  </body>  
+</html>  

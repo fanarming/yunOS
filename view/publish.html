@@ -1061,10 +1061,7 @@
 
                     iFunctions.ueditorInit();
                     iFunctions.globalFuc();
-<<<<<<< HEAD
-=======
 
->>>>>>> 6955e76c567d279974437490fb91b732ef3d374e
                     //iFunctions.ImgTextList();
                     iFunctions.cunt_words();
                     iFunctions.add_voice();
@@ -1075,14 +1072,13 @@
                     iFunctions.sel_date_html();
                     iFunctions.sel_daedline_html();
                     iFunctions.add_video();
-<<<<<<< HEAD
+
                     iFunctions.choose_picture();
                     iFunctions.renderImgTextList();
                     iFunctions.edit_person();
                     iFunctions.add_vote();
-=======
+
                     iFunctions.choose_picture();                 
->>>>>>> 6955e76c567d279974437490fb91b732ef3d374e
 
                 },
                 globalFuc: function(){
@@ -1774,7 +1770,7 @@ console.log($img);
                         $(this).children('.choosen').toggleClass('hide');
                         $(this).toggleClass('sel');
                     })
-<<<<<<< HEAD
+
                 }, 
 
                 
@@ -1788,7 +1784,7 @@ console.log($img);
                         "index": index,
                         "content": UE.getEditor('editor').getContent()
                     });
-=======
+
                 },   
 
 
@@ -1803,7 +1799,7 @@ console.log($img);
     console.log("内容");
     console.log(UE.getEditor('editor').getContent());*/
 
-                    if(sessionStorage.lastIndex != sessionStorage.Index) {                        
+                    if(sessionStorage.lastIndex != sessionStorage.Index) {                         
                         iFunctions.cacheMasonry({
                             "title": $('.title .editor_input').val(),
                             "author": $('.author .editor_input').val(),
@@ -1812,7 +1808,7 @@ console.log($img);
                             "order": $('.leftside_cont_list[index="'+index+'"]').index()+1
                         });
                     }                    
->>>>>>> 6955e76c567d279974437490fb91b732ef3d374e
+
 
                     iFunctions.renderEditorText(sessionStorage.Index);
                 },

@@ -1,0 +1,62 @@
+@charset "UTF-8";
+* { padding: 0; margin: 0; }
+
+body { background: #fff; font-family: '微软雅黑'; }
+
+.contanier { position: relative; }
+
+header { /* position: absolute; left: 0; top: 0; */ width: 100%; height: 320px; background: url(../image/login_bg.png) no-repeat; background-size: cover; }
+
+header .logo { position: absolute; left: 70px; top: 110px; }
+
+.login_box { position: absolute; left: 35%; top: 200px; background: #fff; width: 450px; border-radius: 5px; box-shadow: -2px 2px 5px #eaeaeb; }
+
+.login_box .box_name { width: 300px; font-size: 18px; line-height: 45px; margin-top: 30px; margin-left: 70px; float: left; }
+
+.login_box .box_name ul { width: 100%; list-style: none; }
+
+.login_box .box_name li { float: left; width: calc( 100% / 2); text-align: center; border-bottom: 1px solid #ebebeb; margin-bottom: 20px; }
+
+.login_box .box_name li a { text-decoration: none; color: #2c3e50; }
+
+.login_box .box_name .active { position: relative; border: 0; }
+
+.login_box .box_name .active a { color: #42a3f1; }
+
+.login_box .box_name .active a:after { content: ''; position: absolute; left: 0px; top: 39px; width: 150px; height: 7px; background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAAAHCAYAAADqO7QEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAKtJREFUeNpitFn4hWEUkAyaoHTdaFBgByyjQUAycALiFCBmBOIDQLxvNEhGExalQAWIlwNxGBD/B+I1QGwFxHdGg2Y0YZEL+IF4GxBXAfFBqFgFEG8HYhMg/jgaRAjANBoERAFmIF4LxJuAeC6S+Dwg3gjE66BqRsFowiIJTALi70BcjkUOJPYNiCePBhNqVfh/NBgIgstAbAvEf7HIgcRigPjwaFgiAECAAQCVSxtoPWaSeAAAAABJRU5ErkJggg==) no-repeat; }
+
+.login_box .log_form { width: 347px; float: left; padding: 9px 50px; }
+
+.login_box .log_form .login_form { font-size: 15px; }
+
+.login_box .log_form .login_form .text_box { width: 280px; height: 39px; border-radius: 5px; -webkit-border-radius: 5px; border: 1px solid #cdcdcd; background: #f8f8f8; margin-left: 12px; margin-top: 17px; }
+
+.login_box .log_form .login_form .text_box::-webkit-input-placeholder { padding-left: 12px; }
+
+.login_box .log_form .login_form .text_box::-moz-placeholder { padding-left: 12px; }
+
+.login_box .log_form .login_form .la { display: inline-block; text-align: right; width: 48px; color: #2c3e50; }
+
+.login_box .log_form .login_form .form_log { float: left; width: 100%; margin-top: 25px; color: #a0a0a0; }
+
+.login_box .log_form .login_form .form_log .auto { float: left; }
+
+.login_box .log_form .login_form .form_log .auto p { margin-top: -18px; margin-left: 22px; }
+
+.login_box .log_form .login_form .form_log .find { float: right; }
+
+.login_box .log_form .login_form .form_log .find a { color: #a0a0a0; }
+
+.login_box .log_form .login_form .form_log .uncheck { display: block; width: 14px; height: 14px; border: 1px solid #dcdcdc; margin-top: 1px; }
+
+.login_box .log_form .login_form .form_btn { width: 282px; height: 48px; background: #3497db; margin: 82px 56px 48px 56px; text-align: center; line-height: 46px; font-size: 20px; border-radius: 5px; }
+
+.login_box .log_form .login_form .form_btn a { text-decoration: none; color: #fff; }
+
+.login_box .yej { width: 17px; height: 16px; margin-top: 20px; }
+
+.login_box .yej img { position: absolute; bottom: -4px; right: 1px; }
+
+footer { text-align: center; color: #c1c1c1; font-size: 15px; padding-right: 95px; padding-left: 95px; padding: 338px 95px 100px 95px; }
+
+footer .line { border-top: 1px solid #f8f8f8; margin-bottom: 40px; }

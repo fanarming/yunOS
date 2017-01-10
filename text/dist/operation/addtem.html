@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>新增模板</title>
+        <link rel="stylesheet" href="../../app/css/addtem.css"/>
+        <script src="../../app/js/jquery.js"></script>
+    </head>
+    <body>
+        <div class="header">
+    <div class="logo">
+        <a href="../../index.html"><img src="../../app/image/logo_blue.png" alt=""></a>
+    </div>
+    <div class="nav">
+        <div class="fr clearfix">
+            <div class="nav_list fl">
+                <a href="../../index.html">首页</a>
+                <a href="modal.html">模板库</a>
+                <div class="management">
+                    <span  class="active">管理</span>
+                    <div class="management_panel">
+                        <p><a href="advers.html">广告管理</a></p>
+                        <p><a href="addtem.html">新增模板</a></p>
+                        <p><a href="comments.html">评论管理</a></p>
+                        <p><a href="feedback.html">意见反馈</a></p>
+                    </div>
+                </div>             
+            </div>
+            <div class="search_panel fl">
+                <input id="search_input" class="" type="text">
+                <em class="search_icon"></em>
+            </div>
+            <div class="personal_center logout_statu fl">
+                <div class="avatar_bac new_mes">
+                    <img src="../../app/image/icon_avatar.png" alt="">                                               
+                </div>                  
+                <i class="icon_arrow"></i>
+                <div class="personal_center_wrapper login_personal_panel">
+                    <div class="personal_mes clearfix">
+                        <div class="avatar_big fl">
+                            <img src="../../app/image/icon_avatar_big.png" alt="">
+                        </div>                          
+                        <div class="personal_mes_text fl">
+                            <p><span class="name">李国明</span><span class="job">运营人员</span></p>
+                            <p><span class="department">佛山-互联网部</span></p>
+                        </div>
+                    </div>
+                    <div class="personal_operation">
+                        <p><a href="#">我的消息<em>（2）</em></a></p>
+                        <p><a href="#">我的设置</a></p>
+                        <p><a href="#">注销</a></p>
+                    </div>
+                </div> 
+                <div class="personal_center_wrapper logout_personal_panel">
+                    <div class="personal_mes clearfix">
+                        <a class="login_link" href="#">立即登录</a>
+                        <p>没有账号？<a href="#">立即注册</a></p>
+                    </div>
+                    <div class="personal_operation">
+                        <p><a href="#">我的消息</a></p>
+                        <p><a href="#">我的设置</a></p>
+                        <p><a href="#">注销</a></p>
+                    </div>
+                </div>                                     
+            </div>  
+        </div>  
+    </div>
+    <script>
+    	$(function(){
+    		$('.avatar_bac').hover(function(){
+                if($('.personal_center').hasClass('login_statu')){
+                    $('.login_personal_panel').show();                    
+                }else if($('.personal_center').hasClass('logout_statu')) {
+                    $('.logout_personal_panel').show();
+                    $('.avatar_bac img').attr('src','../../app/image/icon_avatar_null.png');
+                }				
+			},function(){
+				$('.personal_center_wrapper').hide();
+			});
+
+			$('.personal_center_wrapper').hover(function(){
+				$(this).show();
+			},function(){
+				$(this).hide();
+			});
+
+            // 搜索效果
+            $('.search_icon').hover(function(){                
+                $('.header .nav_list').animate({"marginRight": "20px"},function(){
+                    $('#search_input').addClass('active');
+                });
+            });
+    	});
+    </script>
+</div>
+        <div class="container">
+            <form action="" class="addForm">
+                <p>编辑者信息</p>
+                <div class="editor">
+                    <label for="edName">编辑者姓名：</label><input type="text" name="ed_name" id="edName" placeholder="陈奕迅">
+                </div>
+                <p>模板信息</p>
+                <div class="tem">
+
+                    <div class="tem_item">
+                        <label for="temName">模板名称：</label><input type="text" name="tem_name" id="temName">
+                    </div>
+
+                    <div class="tem_item clearfix">
+                         <label for="activity" class="fll">活动主题：</label>
+                         <div class="select">
+                             <select name="activity" id="activity">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                            </select>
+                         </div>
+                        
+                    </div>
+                    
+                   <div class="tem_item">
+                       <label for="temDetail" class="det">模板描述：</label><textarea name="detail" id="temDetail" placeholder="我也来说..."></textarea>
+                   </div>
+                    
+                    <div class="tem_item clearfix">
+                        <div class="upF1">
+                            <label for="" class="up">上传图片：</label>
+                            <input type="text" name="text_img" id="textImg1">
+                            <input type="button" name="img_btn" id="imgBtn1" value="上传图片">
+                            <input type="file" name="up_file" id="upFile" onchange="document.getElementById('textImg1').value=this.value" />
+                        </div>
+                    </div>
+                    
+                    <!-- <div class="tem_item clearfix">
+                        <div class="upF2">
+                            <label for="" class="up">上传全部素材：</label>
+                            <input type="text" name="text_img" id ="textImg2">
+                            <input type="button" name="img_btn" id="imgBtn2" value="上传图片">
+                            <input type="file" name="up_all" id="upAll" onchange="document.getElementById('textImg2').value=this.value" />
+                        </div>
+                    </div> -->
+                    
+                    
+                    
+                    <div class="line"></div>
+                </div>
+                <div class="addtem_btn">
+                    <input type="reset" value="取消" name="resetIt" class="temBtn">
+                    <a class="next temBtn" href="modal_edit_update.html">下一步</a>
+                </div>  
+            </form>
+                     
+        </div>
+        <div class="goto_top">
+    <span>返回顶部</span><em>TOP</em>
+</div>
+<script>
+    $(function(){
+        var $ele = $('.goto_top');
+
+        $ele.on('click', function(){
+            $('html,body').animate({scrollTop:0}, 500);
+            return false;
+        });
+        
+        $(window).scroll(function(){
+            if($(this).scrollTop() >= 768){
+                $ele.fadeIn();
+            }else {
+                $ele.fadeOut();
+            }
+        });
+    });
+</script>
+        <div class="footer">        
+    <p class="footer_links"><a href="#">常见问题</a><i>|</i><a href="#">联系我们</a><i>|</i><a href="#">关于我们</a><i>|</i><a href="#">友情链接</a><i>|</i><a href="#">意见反馈</a></p>
+    <p>版权所有©2012 中国电信集团公司</p>
+    <p>[ 增值电信业务经营许可证 A2.B1.B2-20090001 ] ICP 证号:京 ICP 备 09031924号</p>       
+</div>
+        
+        <script>
+        </script>
+    </body>
+</html>

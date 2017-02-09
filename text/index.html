@@ -1,189 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>电信触点管理平台</title>
-	<link rel="stylesheet" href="app/css/nivo-slider.css">
-	<link rel="stylesheet" href="app/css/index.css">
-	<script src="app/js/jquery.js"></script>
-	<script src="app/js/distpicker_zh.min.js"></script>
+<meta charset="utf-8">
+<title>upload</title>
+<script src="app/js/jquery.js"></script>
+<style type="text/css">
+	.upload-span{
+display:inline-block;
+width:120px;
+height:40px;
+color:#FFFFFF;
+text-align: center;
+line-height:40px;
+background-color: blue;
+border:2px solid blue;
+border-radius:5px;
+cursor: pointer;
+letter-spacing:2px;
+}
+.upload-mask{
+position: absolute;
+top:0;
+left:0;
+z-index:9;
+width:100%;
+height:100%;
+background-color: rgba(84,84,84,0.3);
+display: none;
+}
+.upload-component{
+position: absolute;
+z-index:99;
+top:50%;
+left:50%;
+margin-left:-120px;
+margin-top:-60px;
+width:240px;
+height:120px;
+background-color:#FFFFFF;
+display:none;
+}
+.upload-close{
+position: relative;
+height:30px;
+background-color: rgb(234,234,234);
+}
+.upload-close span{
+position: absolute;
+right:15px;
+line-height:30px;
+cursor: pointer;
+}
+.upload-content,.confirm-cancel{
+margin-top:15px;
+}
+.progress{
+position:relative;
+width:90%;
+height:22px;
+margin-left:4.88888%;
+text-align: center;
+line-height:22px;
+border:1px solid #ccc;
+}
+.upload-text{
+position:absolute;
+z-index:99999;
+color:red;
+}
+.uploaded{
+position:absolute;
+left:0;
+z-index:9999;
+width:0%;
+height:100%;
+background-color: blue;
+color:#FFFFFF;
+}
+.confirm-cancel span{
+display:inline-block;
+width:60px;
+height:30px;
+line-height:30px;
+text-align: center;
+background-color:#ccc;
+cursor:wait;
+}
+.confirm{
+margin-left:40%;
+}
+.cancel{
+margin-left:10px;
+}
+</style>
 </head>
-<body>	     
-	<div class="header index_header">
-		<div class="logo">
-			<a href="javascript:;"><img src="app/image/logo.png" alt=""></a>
-		</div>
-		<div class="nav">
-			<div class="fr clearfix">
-				<div class="nav_list fl">
-					<a href="../../index.html">首页</a>
-	                <a href="./dist/operation/modal.html">模板库</a>
-	                <div class="management">
-	                	<span>管理</span>
-						<div class="management_panel">
-							<p><a href="./dist/operation/advers.html">广告管理</a></p>
-							<p><a href="./dist/operation/addtem.html">新增模板</a></p>
-							<p><a href="./dist/operation/comments.html">评论管理</a></p>
-							<p><a href="./dist/operation/feedback.html">意见反馈</a></p>
-						</div>
-	                </div> 			
-				</div>
-				<div class="search_panel fl">
-					<input id="search_input" class="" type="text">
-					<em class="search_icon"></em>
-				</div>
-				<div class="personal_center login_statu fl">
-	                <div class="avatar_bac new_mes">
-	                    <img src="app/image/icon_avatar.png" alt="">                                               
-	                </div>                  
-	                <i class="icon_arrow"></i>
-	                <div class="personal_center_wrapper login_personal_panel">
-	                    <div class="personal_mes clearfix">
-	                        <div class="avatar_big fl">
-	                            <img src="app/image/icon_avatar_big.png" alt="">
-	                        </div>                          
-	                        <div class="personal_mes_text fl">
-	                            <p><span class="name">李国明</span><span class="job">运营人员</span></p>
-	                            <p><span class="department">佛山-互联网部</span></p>
-	                        </div>
-	                    </div>
-	                    <div class="personal_operation">
-	                        <p><a href="#">我的消息<em>（2）</em></a></p>
-	                        <p><a href="#">我的设置</a></p>
-	                        <p><a href="#">注销</a></p>
-	                    </div>
-	                </div> 
-	                <div class="personal_center_wrapper logout_personal_panel">
-	                    <div class="personal_mes clearfix">
-	                        <a class="login_link" href="#">立即登录</a>
-	                        <p>没有账号？<a href="#">立即注册</a></p>
-	                    </div>
-	                    <div class="personal_operation">
-	                        <p><a href="#">我的消息</a></p>
-	                        <p><a href="#">我的设置</a></p>
-	                        <p><a href="#">注销</a></p>
-	                    </div>
-	                </div>                                     
-	            </div>  
-			</div>	
-		</div>
-	</div>	
-    <div class="slider-wrapper mtw">
-        <div id="slider" class="nivoSlider">
-            <a href="#" class="adv_img" target="_blank" title="">
-            	<img src="app/image/index/bg.png" alt="">
-            </a>
-            <a href="#" class="adv_img" target="_blank" title="">
-            	<img src="app/image/index/test.png" alt="">
-            </a>
-            <a href="#" class="adv_img" target="_blank" title="">
-            	<img src="app/image/index/bg.png" alt="">
-            </a>
-            <a href="#" class="adv_img" target="_blank" title="">
-            	<img src="app/image/index/test.png" alt="">
-            </a> 
-            <a href="#" class="adv_img" target="_blank" title="">
-            	<img src="app/image/index/bg.png" alt="">  
-            </a>     
-        </div>
-    </div>	
-	<div class="container main">
-		<div data-toggle="distpicker" id="target">
-		  <select></select>
-		  <select></select>
-		  <select></select>
-		</div>
-	</div>
-	<div class="footer">		
-		<p class="footer_links"><a href="#">常见问题</a><i>|</i><a href="#">联系我们</a><i>|</i><a href="#">关于我们</a><i>|</i><a href="#">友情链接</a><i>|</i><a href="#">意见反馈</a></p>
-		<p>版权所有©2012 中国电信集团公司</p>
-		<p>[ 增值电信业务经营许可证 A2.B1.B2-20090001 ] ICP 证号:京 ICP 备 09031924号</p>		
-	</div>
-	<div class="goto_top">
-		<span>返回顶部</span><em>TOP</em>
-	</div>
-	<div class="bottom_modal">
-		<div class="bottom_modal_title">
-			消息盒子 <span>2</span><i class="icon_close fr"></i>
-		</div>
-		<div class="bottom_modal_cont">
-			<div class="bottom_modal_cont_list">
-				<p class="cont_p">1. 您的申请有新得反馈，点击<a href="#">查看详情。</a></p>
-				<p><a href="#">取消</a></p>
-			</div>
-			<div class="bottom_modal_cont_list">
-				<p class="cont_p">2. 您的申请有新得反馈，点击<a href="#">查看详情。</a></p>
-				<p><a href="#">取消</a></p>
-			</div>
-		</div>
-		<div class="bottom_modal_footer">
-			<a href="#">全部忽略</a>
-		</div>
-	</div>
-	<script>
-		$(function(){
-
-			$('#target').distpicker();
-
-			var $ele = $('.goto_top');
-
-			$ele.on('click', function(){
-				$('html,body').animate({scrollTop:0}, 500);
-				return false;
-			});
-			
-			$(window).scroll(function(){
-				if($(this).scrollTop() >= 768){
-					$ele.fadeIn();
-				}else {
-					$ele.fadeOut();
-				}
-			});
-		});
-	</script>
-
-	<script src="app/js/jquery.nivo.slider.js"></script>
-	<script>
-		$(function(){
-			$('.avatar_bac').hover(function(){
-                if($('.personal_center').hasClass('login_statu')){
-                    $('.login_personal_panel').show();
-                }else if($('.personal_center').hasClass('logout_statu')) {
-                    $('.logout_personal_panel').show();
-                    $('.avatar_bac img').attr('src','app/image/icon_avatar_null.png');
-                }				
-			},function(){
-				$('.personal_center_wrapper').hide();
-			});
-
-			$('.personal_center_wrapper').hover(function(){
-				$(this).show();
-			},function(){
-				$(this).hide();
-			});		
-
-			$('#slider').nivoSlider({
-		        effect: 'boxRandom',   // 效果
-		        animSpeed: 500,        // 动画速度
-		        pauseTime: 3000,       // 暂停时间
-		        slices: 10,            // 分为10列
-		    });
-		    // 设置小圆点偏移值，使居中
-		    var  sliderOffset = $(".nivo-controlNav").width()*(-0.5)-16;
-		    $(".nivo-controlNav").css("marginLeft",sliderOffset);
-
-		    // 底部弹窗信息
-		    $('.bottom_modal .icon_close').on('click', function(){
-		    	$('.bottom_modal').slideUp();
-		    });
-
-		     // 搜索效果
-            $('.search_icon').hover(function(){                
-                $('.header .nav_list').animate({"marginRight": "20px"},function(){
-                	$('#search_input').addClass('active');
-                });
-            });
-		});		
-	</script>	
+<body>
+<span class="upload-span">开始上传文件</span>
+<div class="upload-mask"></div>
+<div class="upload-component">
+<div class="upload-close">
+<span class="upload-close-span">关闭</span>
+</div>
+<div class="upload-content">
+<div class="progress">
+<span class="upload-text"></span>
+<span class="uploaded"></span>
+</div>
+<div class="confirm-cancel">
+<span class="confirm">确认</span>
+<span class="cancel">取消</span>
+</div>
+</div>
+</div>
+<script>
+	$(function (){
+var $uploadSpan = $('.upload-span');
+var $uploadMask = $('.upload-mask');
+var $uploadContent = $('.upload-component');
+var $closeConfirmCancel = $('.upload-close-span,.confirm,.cancel');
+var $uploadTextSpan = $('.upload-text');
+function showMask(){
+$(".upload-mask,.upload-component").css({display:'block'});
+progressBar();
+$uploadSpan.off('click',showMask);
+}
+function hiddenMask(){
+$uploadMask.css({display:'none'});
+$uploadSpan.on('click',showMask);
+}
+function closeConfirmCancel(){
+$uploadContent.css({display:'none'});
+$uploadTextSpan.text('').next().css({width:0});
+hiddenMask();
+}
+// 模拟进度
+function progressBar(){
+var max =100;
+var init =0;
+var uploaded;
+var test = setInterval(function(){
+init +=20;
+uploaded = parseInt(init / max *100)+'%';
+$uploadTextSpan.text(uploaded).next().css({width:uploaded});
+if(init ===100){
+clearInterval(test);
+$uploadTextSpan.text('上传完成');
+$('.confirm-cancel span').css({cursor:'pointer'});
+$('.confirm').css({backgroundColor:'rgb(111,197,293)'});
+$('.cancel').css({backgroundColor:'rgb(175,194,211)'})
+$closeConfirmCancel.on('click',closeConfirmCancel);
+}
+else{
+$closeConfirmCancel.off('click',closeConfirmCancel);
+$('.upload-close-span').on('click',function(){
+clearInterval(test);
+closeConfirmCancel();
+});
+}
+},1000);
+}
+$uploadSpan.on('click',showMask);
+})
+</script>
 </body>
 </html>

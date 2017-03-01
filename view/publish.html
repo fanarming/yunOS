@@ -129,7 +129,8 @@
                                         <div class="n_vidio_right fl">
                                             <div class="n_vidio_right_item fl" id="all_p">
                                                 <div class="n_vidio_right_list">
-                                                    <a href="#"><img src="../app/image/video_add.jpg" alt=""></a>
+                                                    <a href="#"  class="img_up"><img src="../app/image/video_add.jpg" alt=""></a>
+                                                    <input type="file" class="up_img_file" id="up_img_file">
                                                 </div>
                                                 <div class="n_vidio_right_list video_item">
                                                     <a href="javascript:;" class="choose_picture">
@@ -219,11 +220,16 @@
                                                     <a href="#"><img src="../app/image/video_add.jpg" alt=""></a>
                                                 </div>
                                             </div>
-                                            <div class="n_change_right_page fr">
-                                                <a href="#" class="change_page fr">跳转</a>
-                                                <input type="text" class="video_pages fr">
-                                                <a href="#" class="next_page fr"><img src="../app/image/next.png" alt=""></a>
-                                                <p class="fr"><i>1</i>/<i>3</i></p>
+                                            <div class="n_change_right_page n_change_right_page2 fr clearfix">
+                                                <div class="n_change_box clearfix fr">
+                                                    <span class="fl"><i>1</i>/<i>3</i></span>
+                                                    <div class="page_btn fl">
+                                                        <a href="#" class="next_page"><img src="../../app/image/prev.png" alt=""></a>
+                                                        <a href="#" class="next_page"><img src="../../app/image/next.png" alt=""></a>
+                                                    </div>
+                                                    <input type="text" class="video_pages fl">
+                                                    <a href="#" class="change_page fl">跳转</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -271,19 +277,23 @@
                                             <img src="../app/image/play.png" alt="" class="play">
                                         </a>
                                     </div>
-                                    <div class="n_change_right_page video_change fr">
-                                        <a href="#" class="change_page fr">跳转</a>
-                                        <input type="text" class="video_pages fr">
-                                        <a href="#" class="next_page fr"><img src="../app/image/next.png" alt=""></a>
-                                        <p class="fr"><i>1</i>/<i>3</i></p>
+                                    <div class="n_change_right_page n_change_right_page2 fr clearfix">
+                                        <div class="n_change_box clearfix fr">
+                                            <span class="fl"><i>1</i>/<i>3</i></span>
+                                            <div class="page_btn fl">
+                                                <a href="#" class="next_page"><img src="../../app/image/prev.png" alt=""></a>
+                                                <a href="#" class="next_page"><img src="../../app/image/next.png" alt=""></a>
+                                            </div>
+                                            <input type="text" class="video_pages fl">
+                                            <a href="#" class="change_page fl">跳转</a>
+                                        </div>
                                     </div> 
                                 </div>
                                 <div class="modal-body video_address_body hide" id="video_address_body">
                                     <div class="video_address_box clearfix">
                                         <label class="video_address_label fl">视频连接</label>
                                         <input type="text" class="video_address_text fl" id="video_address_text" placeholder="支持插入微信公众号文章链接、视频详情页链接和腾讯视频链接">
-                                        <input type="file" class="fl video_file" onchange="document.getElementById('video_address_text').value=this.value" />
-                                        <span class="video_address_remind hide">只支持已发布的微信公众号链接、视频详情页链接和腾讯视频链接</span>
+                                        <span class="video_address_remind">只支持已发布的微信公众号链接、视频详情页链接和腾讯视频链接</span>
                                         <div class="video_item fl">
                                             <div class="video_item_tittle">《brotherly love》可口可乐这支广告好暖！</div>
                                             <div class="video_item_img"><img src="../app/image/video_item_img.jpg" alt=""></div>
@@ -362,7 +372,11 @@
                                             <label for="" class="add_video_label tag_label fl">标签
                                                 <img src="../app/image/remind.png" alt="" class="remind_img">
                                             </label>
-                                            <input type="text" class="add_video_text tag_text fl">
+
+                                            <div class="tag_text_box clearfix fl">
+                                                <input type="text" class="video_text tag_text fl" maxlength="10">
+                                            </div>
+
                                             <div class="tag_box hidden">
                                                 <span>标签用回车分开，填写与视频内容相关的标签，你的视频会被合理的分类整理</span>
                                             </div>
@@ -486,11 +500,16 @@
                                                 </li>
                                             </ul>
                                         </div> 
-                                        <div class="n_change_right_page fr">
-                                            <a href="#" class="change_page fr">跳转</a>
-                                            <input type="text" class="video_pages fr">
-                                            <a href="#" class="next_page fr"><img src="../app/image/next.png" alt=""></a>
-                                            <p class="fr"><i>1</i>/<i>3</i></p>
+                                        <div class="n_change_right_page n_change_right_page2 fr clearfix">
+                                            <div class="n_change_box clearfix fr">
+                                                <span class="fl"><i>1</i>/<i>3</i></span>
+                                                <div class="page_btn fl">
+                                                    <a href="#" class="next_page"><img src="../../app/image/prev.png" alt=""></a>
+                                                    <a href="#" class="next_page"><img src="../../app/image/next.png" alt=""></a>
+                                                </div>
+                                                <input type="text" class="video_pages fl">
+                                                <a href="#" class="change_page fl">跳转</a>
+                                            </div>
                                         </div> 
                                     </div>
                                 </div>
@@ -600,11 +619,16 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="n_change_right_page fr">
-                                        <a href="#" class="change_page fr">跳转</a>
-                                        <input type="text" class="video_pages fr">
-                                        <a href="#" class="next_page fr"><img src="../app/image/next.png" alt=""></a>
-                                        <p class="fr"><i>1</i>/<i>3</i></p>
+                                    <div class="n_change_right_page n_change_right_page2 fr clearfix">
+                                        <div class="n_change_box clearfix fr">
+                                            <span class="fl"><i>1</i>/<i>3</i></span>
+                                            <div class="page_btn fl">
+                                                <a href="#" class="next_page"><img src="../../app/image/prev.png" alt=""></a>
+                                                <a href="#" class="next_page"><img src="../../app/image/next.png" alt=""></a>
+                                            </div>
+                                            <input type="text" class="video_pages fl">
+                                            <a href="#" class="change_page fl">跳转</a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="modal-body addnew_voice clearfix hide">
@@ -734,7 +758,7 @@
                                                 <span class="file_up_span">上传</span>
                                                 <input type="file" class="up_file" id="up_file">
                                             </div>
-                                            <span class="remind_span fl">请上传语音文件</span>
+                                            <span class="remind_span hide fl">请上传语音文件</span>
                                         </div>
                                     </form>
                                 </div>
@@ -823,11 +847,16 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="n_change_right_page fr">
-                                        <a href="#" class="change_page fr">跳转</a>
-                                        <input type="text" class="video_pages fr">
-                                        <a href="#" class="next_page fr"><img src="../app/image/next.png" alt=""></a>
-                                        <p class="fr"><i>1</i>/<i>3</i></p>
+                                    <div class="n_change_right_page n_change_right_page2 fr clearfix">
+                                        <div class="n_change_box clearfix fr">
+                                            <span class="fl"><i>1</i>/<i>3</i></span>
+                                            <div class="page_btn fl">
+                                                <a href="#" class="next_page"><img src="../../app/image/prev.png" alt=""></a>
+                                                <a href="#" class="next_page"><img src="../../app/image/next.png" alt=""></a>
+                                            </div>
+                                            <input type="text" class="video_pages fl">
+                                            <a href="#" class="change_page fl">跳转</a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="modal-footer voice_footer fl">
@@ -840,114 +869,8 @@
                     <!-- 多媒体音频 --> 
 
                     <!-- 多媒体投票 --> 
-                    <div class="modal fade voice" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content voice_content clearfix">
-                                <div class="modal-header voice_header">
-                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"><img src="../app/image/close.png" alt=""></span><span class="sr-only">Close</span></button>
-                                    <div class="vote_tittle fl active">新投票</div>
-                                    <div class="vote_tittle fl">已有投票</div>
-                                </div>
-                                <div class="modal-body new_vote_body" id="new_vote_body">
-                                    <form action="" class="new_vote_form clearfix">
-                                        <div class="new_vote_box fl">
-                                            <label for="vote_name" class="vote_label">投票名称</label>
-                                            <input type="text" class="vote_text" id="vote_name">
-                                            <span class="cout_vote_name"><em>0</em>/35</span>
-                                            <span class="name_remind hide">请填写投票名称</span>
-                                            <span class="name_rule">投票名称只用于管理，不显示在下发的投票内容中</span>
-                                        </div>
-                                        <div class="new_vote_box daedline clearfix fl">
-                                            <label for="" class="vote_label daedline_label fl">截止时间</label>
-                                            <div class="deadline_box clearfix">
-                                                <div class="input-group date form_date fl">
-                                                    <input class="form-control deadline_text" size="16" type="text" value="">
-                                                </div>
-                                                <div class="select d_sel_hours fl">
-                                                <div class="d_select_text d_timer">0时</div>
-                                                    <div class="d_select_list hidden">
-                                                        <ul class="d_hours d_min"></ul>
-                                                    </div>                    
-                                                </div>
-                                                <div class="select d_sel_minutes fl">
-                                                    <div class="d_select_text d_timer">0分</div>
-                                                    <div class="d_select_list hidden">
-                                                        <ul class="d_hours d_mini"></ul>
-                                                    </div>                    
-                                                </div> 
-                                            </div>
-                                        </div>
-                                        <div class="new_vote_box fl">
-                                            <label for="" class="vote_label">投票权限</label>
-                                            <span>所有人都可以参加</span>
-                                        </div>
-                                        <div class="new_vote_box fl">
-                                            <span class="question_rule">上传图片的最佳尺寸：300像素*300像素，其他尺寸会影响页面效果，格式png，jpeg，jpg，gif。大小不超过1M</span>
-                                            <div class="big_question_box">
-                                                <div class="question_box">
-                                                    问题<em>1</em>
-                                                    <i class="fr question_edit">编辑</i>
-                                                    <span class="fr hide remind_red">问题填写完整才能添加下一个问题</span>
-                                                </div>
-                                                <div class="question_box_item hide">
-                                                    <div class="question_form"> 
-                                                        <div class="question_item clearfix">
-                                                            <label for="question_tag" class="question_label fl">标题</label>
-                                                            <input type="text" class="question_text question_tag fl" id="question_tag">
-                                                            <span class="remind_kong_span tittle_span hide">请填写问题的标题</span>
-                                                            <span class="cout_question_tittle"><em>0</em>/35</span>
-                                                        </div>
-                                                        <div class="question_item clearfix select_type">
-                                                            <div class="choose_box fl">
-                                                                <input type="radio" class="select_btn" id="one_select" name="select_item">
-                                                                <label for="one_select" class="select_btn_label"></label>
-                                                                <span>单选</span>
-                                                            </div>
-                                                            <div class="choose_box fl">
-                                                                <input type="radio" class="select_btn" id="multi_select" name="select_item">
-                                                                <label for="multi_select" class="select_btn_label"></label>
-                                                                <span>多选</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="question_item clearfix">
-                                                            <label for="question_choose_01" class="question_label fl">选项1</label>
-                                                            <input type="text" class="question_text option_text fl" id="question_choose_01">
-                                                            <span class="remind_kong_span option_span hide">请填写问题的选项</span>
-                                                            <span class="cout_question_tittle"><em>0</em>/35</span>
-                                                        </div>
-                                                        <div class="question_item clearfix">
-                                                            <label for="question_choose_02" class="question_label fl">选项2</label>
-                                                            <input type="text" class="question_text option_text fl" id="question_choose_02">
-                                                             <span class="remind_kong_span option_span hide">请填写问题的选项</span>
-                                                            <span class="cout_question_tittle"><em>0</em>/35</span>
-                                                        </div>
-                                                        <div class="question_item clearfix">
-                                                            <label for="question_choose_03" class="question_label fl">选项3</label>
-                                                            <input type="text" class="question_text option_text fl" id="question_choose_03">
-                                                            <span class="cout_question_tittle"><em>0</em>/35</span>
-                                                            <span class="remind_span del_span">删除选项</span>
-                                                            <span class="remind_kong_span option_span hide">请填写问题的选项</span>
-                                                        </div>
-                                                        <div class="remind_span add_span">添加选项</div>
-                                                        <div class="line"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="new_vote_box fl">
-                                            <div class="add_question">
-                                                <span class="add_question_box"><img src="../app/image/add.png" alt="">添加问题</span>
-                                            </div>
-                                            <div class="add_question_remind hide">问题填写完整才能添加下一个问题</div>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="modal-footer voice_footer fl">
-                                    <button type="button" class="btn btn-primary btn_sure">确定</button>
-                                    <button type="button" class="btn btn-default btn_close" data-dismiss="modal">取消</button>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="modal fade voice" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+                        
                     </div>
                     <!-- 多媒体投票 -->  
                 </div>
@@ -1064,25 +987,19 @@
 
                     //iFunctions.ImgTextList();
                     iFunctions.cunt_words();
-                    iFunctions.add_voice();
                     iFunctions.change_type();
-                    iFunctions.judge_emty();
-                    iFunctions.show_question_detail();
                     iFunctions.add_calendar();
                     iFunctions.sel_date_html();
                     iFunctions.sel_daedline_html();
-                    iFunctions.add_video();
 
-                    iFunctions.choose_picture();
                     iFunctions.renderImgTextList();
                     iFunctions.edit_person();
-                    iFunctions.add_vote();
-<<<<<<< HEAD
 
-                    iFunctions.choose_picture();                 
+                    iFunctions.image_box(); 
+                    iFunctions.video_box(); 
+                    iFunctions.voice_box();
+                    iFunctions.vote_box();            
 
-=======
->>>>>>> babc68e75eecaa958efded39e6d17c0c87c5da5e
                 },
                 globalFuc: function(){
                     /*刷新或离开此页函数*/
@@ -1422,57 +1339,222 @@ console.log(preNode);
                     });
                 },
 
-                cunt_words: function () {
-                    $(document).on('keyup','.video_text',function(){
-                        var title_length=$(this).val().length;
-                        if(title_length<21){
-                            $('.cout_words em').text(title_length);
-                        } else{
-                            $('.cout_words em').text(21);
-                            $('.video_text').val($('.video_text').val().substring(0,21));
-                        }
-                    })
-                },
-                add_editorImg: function(){
-                    $('.pic_comfirm').on('click', function(){
-                        var $img = $('.choose_picture img:first');
-console.log($img);
-                        UE.getEditor('editor').execCommand('insertHtml', value);
-                    }); 
+
+                image_box: function () {
+
+                    $(document).on('click','.choose_picture',function(){
+                        $('.choose_picture').find('.choosen').addClass('hide');
+                        $(this).find('.choosen').toggleClass('hide');
+                        $(this).toggleClass('sel');
+                        
+                    });
+
                 },
 
-                add_voice: function () {
+                video_box: function () {
+
+                    //添加视频弹窗的提示
+                    $(document).on('mouseover','.format',function(){
+                        $('.format_box').removeClass('hidden');
+                    })
+                    $(document).on('mouseout','.format',function(){
+                        $('.format_box').addClass('hidden');
+                    })
+                    
+                    $(document).on('mouseover','.remind_img',function(){
+                        $('.tag_box').removeClass('hidden');
+                    })
+                    $(document).on('mouseout','.remind_img',function(){
+                        $('.tag_box').addClass('hidden');
+                    })
+
+                    $(document).on('mouseover','.remind_imgs',function(){
+                        $('.cover_box').removeClass('hidden');
+                    })
+                    $(document).on('mouseout','.remind_imgs',function(){
+                        $('.cover_box').addClass('hidden');
+                    })
+
+                    $(document).on('mouseover','.process',function(){
+                        $('.process_box').removeClass('hidden');
+                    })
+                    $(document).on('mouseout','.process',function(){
+                        $('.process_box').addClass('hidden');
+                    })
+
+                    $(document).on('keyup','.add_video_tittle',function(){
+                        var title_length=$(this).val().length;
+                        if(title_length<21){
+                            $('.tittle_count').text(title_length);
+                        } else{
+                            $('.tittle_count').text(21);
+                            $('.add_video_tittle').val($('.add_video_tittle').val().substring(0,21));
+                        }
+                    })
+                    $(document).on('keyup','#video_area',function(){
+                        var video_area_length=$(this).val().length;
+                        if(video_area_length<200){
+                            $('.area_count em').text(video_area_length);
+                        } else{
+                            $('.area_count em').text(200);
+                            $('#video_area').val($('#video_area').val().substring(0,200));
+                        }
+                    })
+                    $(document).on('keyup','.tag_text',function(e){
+                        if(e.keyCode==13){
+                            var tag=$('.tag_text').val();
+                            console.log(tag);
+                            $('.tag_text').before('<a href="javascript:;" class="tag_a fl clearfix"><span class="fl">'+ tag +'</span><img src="../app/image/del.png" alt="" class="del_img fl">'+ '</a>');
+                            $('.tag_text').val('');
+                        }
+                    })
+                    $(document).on('mouseover','.tag_a',function(){
+                        $(this).children('.del_img').attr('src','../app/image/delete.png');
+                        $(this).children('.del_img').addClass('delete_img');
+                    })
+                    $(document).on('mouseout','.tag_a',function(){
+                        $(this).children('.del_img').attr('src','../app/image/del.png');
+                        $(this).children('.del_img').removeClass('delete_img');
+                    })
+                    $(document).on('click','.del_img',function(){
+                        $(this).parents('.tag_a').remove();
+                    })
+
+                    $(document).on('click','.agree_check',function(){
+                        if($('.agree_check').is(':checked')){
+                            $('.add_sure_btn').addClass('sure_active');
+                        } else{
+                            $('.add_sure_btn').removeClass('sure_active');
+                        } 
+                    })
+
+                },
+
+                voice_box: function () {
                     $(document).on('click','.addvoice_btn',function(){
                         $('.voice_body').addClass('hide');
                         $('.addnew_voice').removeClass('hide');
                     })
                 },
 
-                change_type: function () {
-                    $(document).on('click','.voice_tittle',function(){
-                        $('.voice_tittle').removeClass('active');
-                        $(this).addClass('active');
-                        var bID = $(this).attr('data-showaudio');
-                        //$('.modal-body').addClass('hidden');
-                        $(bID).removeClass('hide').siblings('.modal-body').addClass('hide');
+                vote_box: function () {
+
+                   
+                    //动态添加
+                    $(document).on('click','.media_vote_btn',function(){
+                        
+                        var vote_html= '<div class="modal-dialog">'
+                                            +'<div class="modal-content voice_content clearfix">'
+                                                +'<div class="modal-header voice_header">'
+                                                    +'<button type="button" class="close close_vote" data-dismiss="modal"><span aria-hidden="true"><img src="../app/image/close.png" alt=""></span><span class="sr-only">Close</span></button>'
+                                                    +'<div class="vote_tittle fl active">新投票</div>'
+                                                    +'<div class="vote_tittle fl">已有投票</div>'
+                                                +'</div>'
+                                                +'<div class="modal-body new_vote_body" id="new_vote_body">'
+                                                    +'<form action="" class="new_vote_form clearfix">'
+                                                        +'<div class="new_vote_box fl">'
+                                                            +'<label for="vote_name" class="vote_label">投票名称</label>'
+                                                            +'<input type="text" class="vote_text" id="vote_name">'
+                                                            +'<span class="cout_vote_name"><em>0</em>/35</span>'
+                                                            +'<span class="name_remind hide">请填写投票名称</span>'
+                                                            +'<span class="name_rule">投票名称只用于管理，不显示在下发的投票内容中</span>'
+                                                        +'</div>'
+                                                        +'<div class="new_vote_box daedline clearfix fl">'
+                                                            +'<label for="" class="vote_label daedline_label fl">截止时间</label>'
+                                                            +'<div class="deadline_box clearfix">'
+                                                                +'<div class="input-group date form_date fl">'
+                                                                    +'<input class="form-control deadline_text" size="16" type="text" value="">'
+                                                                +'</div>'
+                                                                +'<div class="select d_sel_hours fl">'
+                                                                +'<div class="d_select_text d_timer">0时</div>'
+                                                                    +'<div class="d_select_list hidden">'
+                                                                        +'<ul class="d_hours d_min"></ul>'
+                                                                    +'</div>'                    
+                                                                +'</div>'
+                                                                +'<div class="select d_sel_minutes fl">'
+                                                                    +'<div class="d_select_text d_timer">0分</div>'
+                                                                    +'<div class="d_select_list hidden">'
+                                                                        +'<ul class="d_hours d_mini"></ul>'
+                                                                    +'</div>'                   
+                                                                +'</div>' 
+                                                            +'</div>'
+                                                        +'</div>'
+                                                        +'<div class="new_vote_box fl">'
+                                                            +'<label for="" class="vote_label">投票权限</label>'
+                                                            +'<span>所有人都可以参加</span>'
+                                                        +'</div>'
+                                                        +'<div class="new_vote_box fl">'
+                                                            +'<span class="question_rule">上传图片的最佳尺寸：300像素*300像素，其他尺寸会影响页面效果，格式png，jpeg，jpg，gif。大小不超过1M</span>'
+                                                            +'<div class="big_question_box">'
+                                                                +'<div class="question_box">'
+                                                                    +'问题<em class="question_num">1</em>'
+                                                                    +'<i class="fr question_edit">编辑</i>'
+                                                                    +'<span class="fr hide remind_red">问题填写完整才能添加下一个问题</span>'
+                                                                +'</div>'
+                                                                +'<div class="question_box_item hide">'
+                                                                    +'<div class="question_form">' 
+                                                                        +'<div class="question_item clearfix">'
+                                                                            +'<label for="question_tag" class="question_label fl">标题</label>'
+                                                                            +'<input type="text" class="question_text question_tag fl" id="question_tag">'
+                                                                            +'<span class="remind_kong_span tittle_span hide">请填写问题的标题</span>'
+                                                                            +'<span class="cout_question_tittle"><em>0</em>/35</span>'
+                                                                        +'</div>'
+                                                                        +'<div class="question_item clearfix select_type">'
+                                                                            +'<div class="choose_box clearfix fl">'
+                                                                                +'<div class="question_check fl"></div>'
+                                                                                +'<span class="fl">单选</span>'
+                                                                            +'</div>'
+                                                                            +'<div class="choose_box fl">'
+                                                                                +'<div class="question_check fl"></div>'
+                                                                                +'<span class="fl">多选</span>'
+                                                                            +'</div>'
+                                                                        +'</div>'
+                                                                        +'<div class="question_item clearfix">'
+                                                                            +'<label for="question_choose_01" class="question_label fl">选项1</label>'
+                                                                            +'<input type="text" class="question_text option_text fl" id="question_choose_01">'
+                                                                            +'<span class="remind_kong_span option_span hide">请填写问题的选项</span>'
+                                                                            +'<span class="cout_question_tittle"><em>0</em>/35</span>'
+                                                                        +'</div>'
+                                                                        +'<div class="question_item clearfix">'
+                                                                            +'<label for="question_choose_02" class="question_label fl">选项2</label>'
+                                                                            +'<input type="text" class="question_text option_text fl" id="question_choose_02">'
+                                                                             +'<span class="remind_kong_span option_span hide">请填写问题的选项</span>'
+                                                                            +'<span class="cout_question_tittle"><em>0</em>/35</span>'
+                                                                        +'</div>'
+                                                                        +'<div class="question_item clearfix">'
+                                                                            +'<label for="question_choose_03" class="question_label fl">选项3</label>'
+                                                                            +'<input type="text" class="question_text option_text fl" id="question_choose_03">'
+                                                                            +'<span class="cout_question_tittle"><em>0</em>/35</span>'
+                                                                            +'<span class="remind_span del_span">删除选项</span>'
+                                                                            +'<span class="remind_kong_span option_span hide">请填写问题的选项</span>'
+                                                                        +'</div>'
+                                                                        +'<div class="remind_span add_span">添加选项</div>'
+                                                                        +'<div class="line"></div>'
+                                                                    +'</div>'
+                                                                +'</div>'
+                                                            +'</div>'
+                                                        +'</div>'
+                                                        +'<div class="new_vote_box fl">'
+                                                            +'<div class="add_question">'
+                                                                +'<span class="add_question_box"><img src="../app/image/add.png" alt="">添加问题</span>'
+                                                            +'</div>'
+                                                            +'<div class="add_question_remind hide">问题填写完整才能添加下一个问题</div>'
+                                                        +'</div>'
+                                                    +'</form>'
+                                                +'</div>'
+                                                +'<div class="modal-footer voice_footer fl">'
+                                                    +'<button type="button" class="btn btn-primary btn_sure">确定</button>'
+                                                    +'<button type="button" class="btn btn-default btn_close cansele_vote" data-dismiss="modal">取消</button>'
+                                                +'</div>'
+                                            +'</div>'
+                                        +'</div>';
+                        $('#myModal5').append(vote_html);
                     })
 
-                    $(document).on('click','.video_tittle',function(){
-                        $('.video_tittle').removeClass('active');
-                        $(this).addClass('active');
-                        var vID = $(this).attr('data-showvideo');
-                        //$('.modal-body').addClass('hidden');
-                        $(vID).removeClass('hide').siblings('.modal-body').addClass('hide');
+                    $(document).on('click','.question_check',function(){
+                        $(this).addClass('question_checked');
+                        $(this).parent().siblings().find('.question_check').removeClass('question_checked');
                     })
-
-                    $(document).on('click','.n_vidio_left_item',function(){
-                        var bID = $(this).attr('data-change')
-                        $('.n_vidio_right_item').addClass('hidden');
-                        $(bID).removeClass('hidden');
-                    })
-                },
-
-                judge_emty: function () {
 
                     //投票名称
                     $(document).on('blur','#vote_name',function(){
@@ -1509,23 +1591,185 @@ console.log($img);
                         $(this).parent().find('.option_span').addClass('hide');
                     })
                     //问题选项
-                },
 
-                show_question_detail: function () {
+                    $(document).on('click','.cansele_vote',function(){
+                        $('#myModal5').empty();
+                    })
+                    $(document).on('click','.close_vote',function(){
+                        $('#myModal5').empty();
+                    })
+
                     $(document).on('click','.question_edit',function(){
                         if($(this).parent().next().hasClass('hide')){
                             $(this).text('收起');
                             $(this).parent().next().removeClass('hide');
+                            $(this).parent().find('.remind_red').addClass('hide');
                         }else {
                             $(this).text('编辑');
                             $(this).parent().next().addClass('hide');
                         }
                     })
+
+                    $(document).on('click','.del_span',function(){
+                        $(this).parents('.question_item').remove();
+                    });
+
+                    //添加问题
+                    $(document).on('click','.add_span',function(){
+                        var i =$(this).prev().find('.question_label').text();
+                        var j = parseInt(i.substring(2))+1;
+                        console.log(j);
+
+                        var question_html='<div class="question_item clearfix">'
+                                                +'<label for="question_choose_01" class="question_label fl">选项'+ j +'</label>'
+                                                +'<input type="text" class="question_text option_text fl" id="question_choose_01">'
+                                                +'<span class="cout_question_tittle"><em>0</em>/35</span>'
+                                                +'<span class="remind_span del_span">删除选项</span>'
+                                                +'<span class="remind_kong_span option_span hide">请填写问题的选项</span>'
+                                            +'</div>';
+                        $(this).prev().after(question_html);
+                    });
+
+                    $(document).on('click','.add_question_box',function(){
+
+                        var question_text=$(this).parents('.new_vote_box').prev().find('.question_text').val();
+                        var question_select=$('.question_checked').length;
+
+                        var i=$(this).parents('.new_vote_box').prev().find('.question_num').text();
+                        
+                        var j=parseInt(i.substring(0))+1;
+                        
+
+                        var q_html='<div class="new_vote_box fl">'
+                                        +'<div class="big_question_box">'
+                                            +'<div class="question_box">'
+                                                    +'问题<em class="question_num">'+ j +'</em>'
+                                                +'<i class="fr question_edit">编辑</i>'
+                                                +'<span class="fr hide remind_red">问题填写完整才能添加下一个问题</span>'
+                                            +'</div>'
+                                            +'<div class="question_box_item hide">'
+                                                +'<div class="question_form">'
+                                                    +'<div class="question_item clearfix">'
+                                                        +'<label for="question_tag" class="question_label fl">标题</label>'
+                                                        +'<input type="text" class="question_text question_tag fl" id="question_tag">'
+                                                        +'<span class="remind_kong_span tittle_span hide">请填写问题的标题</span>'
+                                                        +'<span class="cout_question_tittle"><em>0</em>/35</span>'
+                                                    +'</div>'
+                                                    +'<div class="question_item clearfix select_type">'
+                                                            +'<div class="choose_box clearfix fl">'
+                                                                +'<div class="question_check fl"></div>'
+                                                                +'<span class="fl">单选</span>'
+                                                            +'</div>'
+                                                            +'<div class="choose_box fl">'
+                                                                +'<div class="question_check fl"></div>'
+                                                                +'<span class="fl">多选</span>'
+                                                            +'</div>'
+                                                    +'</div>'
+                                                    +'<div class="question_item clearfix">'
+                                                        +'<label for="question_choose_01" class="question_label fl">选项1</label>'
+                                                        +'<input type="text" class="question_text option_text fl" id="question_choose_01">'
+                                                        +'<span class="remind_kong_span option_span hide">请填写问题的选项</span>'
+                                                        +'<span class="cout_question_tittle"><em>0</em>/35</span>'
+                                                    +'</div>'
+                                                    +'<div class="question_item clearfix">'
+                                                        +'<label for="question_choose_02" class="question_label fl">选项2</label>'
+                                                        +'<input type="text" class="question_text option_text fl" id="question_choose_02">'
+                                                        +'<span class="remind_kong_span option_span hide">请填写问题的选项</span>'
+                                                        +'<span class="cout_question_tittle"><em>0</em>/35</span>'
+                                                    +'</div>'
+                                                    +'<div class="question_item clearfix">'
+                                                        +'<label for="question_choose_03" class="question_label fl">选项3</label>'
+                                                        +'<input type="text" class="question_text option_text fl" id="question_choose_03">'
+                                                        +'<span class="cout_question_tittle"><em>0</em>/35</span>'
+                                                        +'<span class="remind_span del_span">删除选项</span>'
+                                                        +'<span class="remind_kong_span option_span hide">请填写问题的选项</span>'
+                                                    +'</div>'
+                                                    +'<div class="remind_span add_span">添加选项</div>'
+                                                    +'<div class="line"></div>'
+                                                +'</div>'
+                                            +'</div>'
+                                        +'</div>'
+                                    +'</div>';
+                        if(question_text==''||question_text==null||question_select<1){
+                            $(this).parents('.new_vote_box').prev().find('.remind_red').removeClass('hide');
+                            $(this).parent().next().removeClass('hide');
+                        } else{
+
+                            if(j<=30){
+                                $(this).parents('.new_vote_box').prev().prev().find('.remind_red').addClass('hide');
+                                $(this).parent().next().addClass('hide');
+                                $(this).parents('.new_vote_box').before(q_html);
+                            } else{
+                                alert('已达到问题上限');
+                            }
+
+                            
+                        }
+                    })
+
+
+                    $(document).on('keyup','.vote_text',function(){
+                        var vote_length=$(this).val().length;
+                        if(vote_length<35){
+                            $('.cout_vote_name em').text(vote_length);
+                        } else{
+                            $('.cout_vote_name em').text(35);
+                            $('.vote_text').val($('.vote_text').val().substring(0,35));
+                        }
+                    })
+
+                    $(document).on('keyup','.question_text',function(){
+                        var text_length=$(this).val().length;
+                        if(text_length<35){
+                            $(this).parent().find('.cout_question_tittle em').text(text_length);
+                        } else{
+                            $(this).parent().find('.cout_question_tittle em').text(35);
+                            $(this).val($(this).val().substring(0,35));
+                        }
+                    })
                 },
 
-                add_question: function () {
-                    $(document).on('click','.add_question span',function(){
 
+                cunt_words: function () {
+                    $(document).on('keyup','.video_text',function(){
+                        var title_length=$(this).val().length;
+                        if(title_length<21){
+                            $('.cout_words em').text(title_length);
+                        } else{
+                            $('.cout_words em').text(21);
+                            $('.video_text').val($('.video_text').val().substring(0,21));
+                        }
+                    })
+                },
+                add_editorImg: function(){
+                    $('.pic_comfirm').on('click', function(){
+                        var $img = $('.choose_picture img:first');
+console.log($img);
+                        UE.getEditor('editor').execCommand('insertHtml', value);
+                    }); 
+                },
+                
+                change_type: function () {
+                    $(document).on('click','.voice_tittle',function(){
+                        $('.voice_tittle').removeClass('active');
+                        $(this).addClass('active');
+                        var bID = $(this).attr('data-showaudio');
+                        //$('.modal-body').addClass('hidden');
+                        $(bID).removeClass('hide').siblings('.modal-body').addClass('hide');
+                    })
+
+                    $(document).on('click','.video_tittle',function(){
+                        $('.video_tittle').removeClass('active');
+                        $(this).addClass('active');
+                        var vID = $(this).attr('data-showvideo');
+                        //$('.modal-body').addClass('hidden');
+                        $(vID).removeClass('hide').siblings('.modal-body').addClass('hide');
+                    })
+
+                    $(document).on('click','.n_vidio_left_item',function(){
+                        var bID = $(this).attr('data-change')
+                        $('.n_vidio_right_item').addClass('hidden');
+                        $(bID).removeClass('hidden');
                     })
                 },
 
@@ -1616,170 +1860,13 @@ console.log($img);
                         $('.d_sel_hours').attr('data-hour',$(this).attr('hour'));
                     }); 
                 },
-
-                add_video: function () {
-                    /*字数统计*/
-                    $(document).on('keyup','.add_video_tittle',function(){
-                        var title_length=$(this).val().length;
-                        if(title_length<21){
-                            $('.tittle_count').text(title_length);
-                        } else{
-                            $('.tittle_count').text(21);
-                            $('.add_video_tittle').val($('.add_video_tittle').val().substring(0,21));
-                        }
-                    })
-                    $(document).on('keyup','#video_area',function(){
-                        var video_area_length=$(this).val().length;
-                        if(video_area_length<200){
-                            $('.area_count em').text(video_area_length);
-                        } else{
-                            $('.area_count em').text(200);
-                            $('#video_area').val($('#video_area').val().substring(0,200));
-                        }
-                    })
-                    $(document).on('click','.agree_check',function(){
-                        if($('.agree_check').is(':checked')){
-                            $('.add_sure_btn').addClass('sure_active');
-                        } else{
-                            $('.add_sure_btn').removeClass('sure_active');
-                        } 
-                    })
-                    //添加视频弹窗的提示
-                    $(document).on('mouseover','.format',function(){
-                        $('.format_box').removeClass('hidden');
-                    })
-                    $(document).on('mouseout','.format',function(){
-                        $('.format_box').addClass('hidden');
-                    })
-                    
-                    $(document).on('mouseover','.remind_img',function(){
-                        $('.tag_box').removeClass('hidden');
-                    })
-                    $(document).on('mouseout','.remind_img',function(){
-                        $('.tag_box').addClass('hidden');
-                    })
-
-                    $(document).on('mouseover','.remind_imgs',function(){
-                        $('.cover_box').removeClass('hidden');
-                    })
-                    $(document).on('mouseout','.remind_imgs',function(){
-                        $('.cover_box').addClass('hidden');
-                    })
-
-                    $(document).on('mouseover','.process',function(){
-                        $('.process_box').removeClass('hidden');
-                    })
-                    $(document).on('mouseout','.process',function(){
-                        $('.process_box').addClass('hidden');
-                    })
-                },
-
-                add_vote: function () {
-                    $(document).on('click','.del_span',function(){
-                        $(this).parents('.question_item').remove();
-                    });
-
-                    $(document).on('click','.add_span',function(){
-                        var i =$(this).prev().find('.question_label').text();
-                        var j = parseInt(i.substring(2))+1;
-                        console.log(j);
-
-                        var question_html='<div class="question_item clearfix">'
-                                                +'<label for="question_choose_01" class="question_label fl">选项'+ j +'</label>'
-                                                +'<input type="text" class="question_text option_text fl" id="question_choose_01">'
-                                                +'<span class="cout_question_tittle"><em>0</em>/35</span>'
-                                                +'<span class="remind_span del_span">删除选项</span>'
-                                                +'<span class="remind_kong_span option_span hide">请填写问题的选项</span>'
-                                            +'</div>';
-                        $(this).prev().after(question_html);
-                    });
-
-                    $(document).on('click','.add_question_box',function(){
-                        var question_text=$('.question_text').val();
-                        var question_select=$('input:radio[name="select_item"]:checked').val();
-                        var q_html='<div class="new_vote_box fl">'
-                                        +'<span class="question_rule">上传图片的最佳尺寸：300像素*300像素，其他尺寸会影响页面效果，格式png，jpeg，jpg，gif。大小不超过1M</span>'
-                                        +'<div class="big_question_box">'
-                                            +'<div class="question_box">'
-                                                    +'问题<em>1</em>'
-                                                +'<i class="fr question_edit">编辑</i>'
-                                                +'<span class="fr hide">问题填写完整才能添加下一个问题</span>'
-                                            +'</div>'
-                                            +'<div class="question_box_item hide">'
-                                                +'<div class="question_form">'
-                                                    +'<div class="question_item clearfix">'
-                                                        +'<label for="question_tag" class="question_label fl">标题</label>'
-                                                        +'<input type="text" class="question_text question_tag fl" id="question_tag">'
-                                                        +'<span class="remind_kong_span tittle_span hide">请填写问题的标题</span>'
-                                                        +'<span class="cout_question_tittle"><em>0</em>/35</span>'
-                                                    +'</div>'
-                                                    +'<div class="question_item clearfix select_type">'
-                                                        +'<div class="choose_box fl">'
-                                                            +'<input type="radio" class="select_btn" id="one_select" name="select_item">'
-                                                            +'<label for="one_select" class="select_btn_label"></label>'
-                                                            +'<span>单选</span>'
-                                                        +'</div>'
-                                                        +'<div class="choose_box fl">'
-                                                            +'<input type="radio" class="select_btn" id="multi_select" name="select_item">'
-                                                            +'<label for="multi_select" class="select_btn_label"></label>'
-                                                            +'<span>多选</span>'
-                                                        +'</div>'
-                                                    +'</div>'
-                                                    +'<div class="question_item clearfix">'
-                                                        +'<label for="question_choose_01" class="question_label fl">选项1</label>'
-                                                        +'<input type="text" class="question_text option_text fl" id="question_choose_01">'
-                                                        +'<span class="remind_kong_span option_span hide">请填写问题的选项</span>'
-                                                        +'<span class="cout_question_tittle"><em>0</em>/35</span>'
-                                                    +'</div>'
-                                                    +'<div class="question_item clearfix">'
-                                                        +'<label for="question_choose_02" class="question_label fl">选项2</label>'
-                                                        +'<input type="text" class="question_text option_text fl" id="question_choose_02">'
-                                                        +'<span class="remind_kong_span option_span hide">请填写问题的选项</span>'
-                                                        +'<span class="cout_question_tittle"><em>0</em>/35</span>'
-                                                    +'</div>'
-                                                    +'<div class="question_item clearfix">'
-                                                        +'<label for="question_choose_03" class="question_label fl">选项3</label>'
-                                                        +'<input type="text" class="question_text option_text fl" id="question_choose_03">'
-                                                        +'<span class="cout_question_tittle"><em>0</em>/35</span>'
-                                                        +'<span class="remind_span del_span">删除选项</span>'
-                                                        +'<span class="remind_kong_span option_span hide">请填写问题的选项</span>'
-                                                    +'</div>'
-                                                    +'<div class="remind_span add_span">添加选项</div>'
-                                                    +'<div class="line"></div>'
-                                                +'</div>'
-                                            +'</div>'
-                                        +'</div>'
-                                    +'</div>';
-                        if(question_text==''||question_text==null||question_select==''||question_select==null){
-                            $(this).parents('.new_vote_box').prev().find('.remind_red').removeClass('hide');
-                            $(this).parent().next().removeClass('hide');
-                        } else{
-                            $(this).parents('.new_vote_box').prev().prev().find('.remind_red').addClass('hide');
-                            $(this).parent().next().addClass('hide');
-                            $(this).parents('.new_vote_box').before(q_html);
-                        }
-                    })
-                },
-
+                
                 edit_person: function () {
                     $(document).on('click','.edit_btn',function(){
                         $(this).parent().addClass('hide');
                         $(this).parent().next().removeClass('hide');
                     })
                 },
-
-                choose_picture: function () {
-                    $(document).on('click','.choose_picture',function(){
-                        $(this).children('.choosen').toggleClass('hide');
-                        $(this).toggleClass('sel');
-                    })
-<<<<<<< HEAD
-
-=======
->>>>>>> babc68e75eecaa958efded39e6d17c0c87c5da5e
-                }, 
-
-                
 
                     /**/
                 

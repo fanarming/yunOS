@@ -153,7 +153,23 @@ a:visited { text-decoration: none; }
 
 .main_wrapper .n_main .graphic_list { width: 172px; background: #f9fafb; }
 
-.main_wrapper .n_main .graphic_list .graphic_num { margin-top: 13px; margin-left: 7px; font-size: 14px; color: #7f96a3; }
+.main_wrapper .n_main .graphic_list .graphic_num { height: 50px; line-height: 50px; margin-left: 7px; font-size: 14px; color: #7f96a3; }
+
+.main_wrapper .n_main .graphic_list .graphic_item { padding: 0 9px; }
+
+.main_wrapper .n_main .graphic_list .graphic_item .graphic_list_item { width: 154px; height: 80px; position: relative; padding: 10px 5px 5px; border: 1px solid #dce4ec; background: #fff; cursor: pointer; }
+
+.main_wrapper .n_main .graphic_list .graphic_item .graphic_list_item .cover { width: 60px; height: 60px; }
+
+.main_wrapper .n_main .graphic_list .graphic_item .graphic_list_item .title { position: static; max-height: 48px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-height: 24px; word-break: break-all; word-wrap: break-word; color: #222; font-size: 14px; text-align: left; }
+
+.main_wrapper .n_main .graphic_list .graphic_item .graphic_list_first { padding: 5px; height: 130px; }
+
+.main_wrapper .n_main .graphic_list .graphic_item .graphic_list_first .cover { width: 100%; height: 100%; }
+
+.main_wrapper .n_main .graphic_list .graphic_item .graphic_list_first .title { position: absolute; bottom: 5px; left: 5px; right: 5px; height: 28px; overflow: hidden; text-overflow: ellipsis; line-height: 28px; color: #fff; background: rgba(0, 0, 0, 0.57); padding-left: 20px; padding-right: 10px; }
+
+.main_wrapper .n_main .graphic_list .graphic_item .active { border: 2px solid #0091ea; }
 
 .main_wrapper .n_main .library_box { width: 661px; border-left: 1px solid #dce4ec; }
 
@@ -187,7 +203,7 @@ a:visited { text-decoration: none; }
 
 .main_wrapper .n_main .graphic_library .brand_library_type { width: 318px; height: 37px; border: 1px solid #dce4ec; border-radius: 5px; margin: 16px 26px 21px; }
 
-.main_wrapper .n_main .graphic_library .brand_library_type .type_btn { display: inline-block; width: 88px; height: 37px; line-height: 37px; text-align: center; color: #7f96a3; margin: 0; padding: 0; border-top-left-radius: 5px; border-bottom-left-radius: 5px; }
+.main_wrapper .n_main .graphic_library .brand_library_type .type_btn { display: inline-block; width: 88px; height: 37px; line-height: 37px; text-align: center; color: #7f96a3; margin: 0; padding: 0; border-top-left-radius: 5px; border-bottom-left-radius: 5px; cursor: pointer; }
 
 .main_wrapper .n_main .graphic_library .brand_library_type .type_btn.active { height: 36px; background: #7f96a3; color: #fff; }
 
@@ -213,7 +229,9 @@ a:visited { text-decoration: none; }
 
 .main_wrapper .n_main .graphic_library .brand_library_box .brand_library_edit { width: 314px; height: 48px; border-top: 1px solid #dce4ec; }
 
-.main_wrapper .n_main .graphic_library .brand_library_box .brand_library_edit .edit_box { width: 104px; height: 46px; text-align: center; line-height: 46px; }
+.main_wrapper .n_main .graphic_library .brand_library_box .brand_library_edit .edit_box { width: 104px; height: 46px; text-align: center; }
+
+.main_wrapper .n_main .graphic_library .brand_library_box .brand_library_edit .edit_box a { display: inline-block; margin-top: 14px; }
 
 .main_wrapper .n_main .graphic_library .brand_library_box .brand_library_edit .has_bor { border-left: 1px solid #dce4ec; border-right: 1px solid #dce4ec; }
 

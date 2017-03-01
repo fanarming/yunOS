@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="../../app/css/bootstrap/3.3.0/bootstrap.min.css">
+    <link rel="stylesheet" href="../../app/css/bootstrap/3.3.0/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="../../app/css/permission_setting.css"> 
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body> 
+    <header class="clearfix">
+        <div class="container">
+            <div class="logo fl">
+                <a href="#"><img src="../../app/image/logo.png" alt=""></a>
+            </div>
+            <div class="user_info fr"> 
+                <p>HI，<span>Mango</span></p>
+                <p><a href="#">退出登录</a></p>      
+            </div>
+        </div>        
+    </header>      
+    <section class="main container clearfix">
+        <aside class="menu_nav fl">
+            <ul class="menu_nav_list">
+                <li><i class="menu_nav_list_icon nav_icon_01"></i><a class="active" href="#">群发消息</a></li>
+                <li><i class="menu_nav_list_icon nav_icon_02"></i><a href="#">留言管理</a></li>
+                <li><i class="menu_nav_list_icon nav_icon_03"></i><a href="#">数据分析</a></li>
+                <li><i class="menu_nav_list_icon nav_icon_04"></i><a href="#">活动管理</a></li>
+                <li><i class="menu_nav_list_icon nav_icon_05"></i><a href="#">素材管理</a></li>
+                <li><i class="menu_nav_list_icon nav_icon_06"></i><a href="#">营销插件</a></li>
+                <li><i class="menu_nav_list_icon nav_icon_07"></i><a href="#">系统设置</a></li>
+                <li class="menu_nav_list_bottom"><i class="menu_nav_list_icon nav_icon_bottom"></i></li>
+            </ul>
+        </aside>
+        <div class="main_wrapper fl">
+            <div class="main_top">
+                <div class="add_user" data-toggle="modal" data-target="#myModal1"><i></i>新建账号</div>
+            </div>
+            <div class="main_mid">
+                <div class="user_list list_title">
+                    <div class="user_item user_name fl">姓名</div>
+                    <div class="user_item user_email fl">邮箱</div>
+                    <div class="user_item user_role fl">管理员</div>
+                    <div class="user_item user_permission fl">是否接入</div>
+                    <div class="user_item user_operation fl">操作</div>
+                </div>
+                <div class="user_list">
+                    <div class="user_item user_name fl">天翼积分</div>
+                    <div class="user_item user_email fl">admin@163.com</div>
+                    <div class="user_item user_role fl">管理员1</div>
+                    <div class="user_item user_permission fl">是</div>
+                    <div class="user_item user_operation fl">----</div>
+                </div>
+                <div class="user_list">
+                    <div class="user_item user_name fl">天翼广州</div>
+                    <div class="user_item user_email fl">Lishihao@163.com</div>
+                    <div class="user_item user_role fl">管理员2</div>
+                    <div class="user_item user_permission fl">否</div>
+                    <div class="user_item user_operation fl">
+                        <a href="javascript:;" class="user_detail">详情</a>
+                        <a href="javascript:;" class="user_delete">删除</a>
+                    </div>
+                </div>
+                <div class="user_list">
+                    <div class="user_item user_name fl">天翼爱音乐</div>
+                    <div class="user_item user_email fl">Zhangbin@163.com</div>
+                    <div class="user_item user_role fl">管理员2</div>
+                    <div class="user_item user_permission fl">是</div>
+                    <div class="user_item user_operation fl">
+                        <a href="javascript:;" class="user_detail">详情</a>
+                        <a href="javascript:;" class="user_delete">删除</a>
+                    </div>
+                </div>
+                <div class="user_list">
+                    <div class="user_item user_name fl">天翼分享家</div>
+                    <div class="user_item user_email fl">Wulei@163.com</div>
+                    <div class="user_item user_role fl">管理员1</div>
+                    <div class="user_item user_permission fl">是</div>
+                    <div class="user_item user_operation fl">
+                        <a href="javascript:;" class="user_detail">详情</a>
+                        <a href="javascript:;" class="user_delete">删除</a>
+                    </div>
+                </div>
+                <div class="user_list">
+                    <div class="user_item user_name fl">天翼手机服务</div>
+                    <div class="user_item user_email fl">Yinzhen@163.com</div>
+                    <div class="user_item user_role fl">管理员1</div>
+                    <div class="user_item user_permission fl">是</div>
+                    <div class="user_item user_operation fl">
+                        <a href="javascript:;" class="user_detail">详情</a>
+                        <a href="javascript:;" class="user_delete">删除</a>
+                    </div>
+                </div>
+                <div class="user_list">
+                    <div class="user_item user_name fl">广东天翼</div>
+                    <div class="user_item user_email fl">Lihao@163.com</div>
+                    <div class="user_item user_role fl">运营人员</div>
+                    <div class="user_item user_permission fl">是</div>
+                    <div class="user_item user_operation fl">
+                        <a href="javascript:;" class="user_detail">详情</a>
+                        <a href="javascript:;" class="user_delete">删除</a>
+                    </div>
+                </div>
+                <div class="user_list">
+                    <div class="user_item user_name fl">天翼快递</div>
+                    <div class="user_item user_email fl">Huanghui@163.com</div>
+                    <div class="user_item user_role fl">运营人员</div>
+                    <div class="user_item user_permission fl">是</div>
+                    <div class="user_item user_operation fl">
+                        <a href="javascript:;" class="user_detail">详情</a>
+                        <a href="javascript:;" class="user_delete">删除</a>
+                    </div>
+                </div>
+            </div>
+            <div class="main_footer fr">
+                <div class="footer_count fl">共有 122 条记录，当前第 <em>1</em>/9 页</div>
+                <div class="page_turning fl">
+                    <a href="javascript" class="page_turning_a pages_turning_a">首页</a>
+                    <a href="javascript" class="page_turning_a page_turning_as">上一页</a>
+                    <a href="javascript" class="page_turning_a page_turning_num active">1</a>
+                    <a href="javascript" class="page_turning_a page_turning_num">2</a>
+                    <a href="javascript" class="page_turning_a page_turning_num">3</a>
+                    ...
+                    <a href="javascript" class="page_turning_a page_turning_as">下一页</a>
+                    <a href="javascript" class="page_turning_a pages_turning_a">尾页</a>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog add_user_modal" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="../../app/image/close.png" alt=""></span></button>
+                    <h4 class="modal-title" id="myModalLabel">添加用户</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="body_list">
+                        <div class="user_info">
+                            <span class="name_span">用户名：</span>
+                            <input type="text" class="user_input">
+                            <span class="remind_span">请输入用户的姓名</span>
+                        </div>
+                        <div class="user_info">
+                            <span class="name_span">电子邮箱：</span>
+                            <input type="email" class="user_input">
+                            <span class="remind_span">请正确填写常用的邮箱地址</span>
+                        </div>
+                        <div class="user_info">
+                            <span class="name_span">密码设置：</span>
+                            <input type="password" class="user_input">
+                            <span class="remind_span">请使用字母加数字的组合，6-18个字符</span>
+                        </div>
+                        <div class="user_info clearfix">
+                            <span class="name_span fl">用户角色：</span>
+                            <div class="selete_box fl">
+                                <span class="selete_span">请选择<i></i></span>
+                            </div>
+                            <span class="remind_span remind_red fl"><i class="red"></i>请先选择用户角色</span>
+                        </div>
+                        <div class="user_info">
+                            <span class="name_span">权限选择：</span>      
+                            <a href=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary sure_user">确定</button>
+                    <button type="button" class="btn btn-default cansele_user" data-dismiss="modal">取消</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>   
+    <script src="../../app/js/jquery/1.10.2/jquery.js"></script>
+    <script src="../../app/js/bootstrap/3.3.0/bootstrap.min.js"></script>
+    <script src="../../app/js/bootstrap/3.3.0/bootstrap-datetimepicker.min.js"></script>
+    <script src="../../app/js/bootstrap/3.3.0/bootstrap-datetimepicker.zh-CN.js"></script>
+    <script>
+        $(function(){
+            var ifunction= {};
+
+            ifunction = {
+                init: function(){
+                    
+                }
+
+                
+                
+
+            }
+            var materialFuc = (function(){
+                ifunction.init();
+            }());
+        })
+    </script>
+</body>
+</html>

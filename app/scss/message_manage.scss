@@ -36,6 +36,9 @@ body{
             text-decoration: none;
             margin-right: -3px;
             cursor: pointer;
+            a{
+                color: #7f96a3;
+            }
         }
         .has_bor{
             border-right: 1px solid #dce4ec;
@@ -531,6 +534,7 @@ body{
                     float: left;
                     margin-left: 15px;  
                     margin-bottom: 12px;
+                    position: relative;
                     .choose_video{
                         display: inline-block;
                         position: relative;
@@ -542,6 +546,21 @@ body{
                             left: 0;
                             top: 0;
                         }
+                    }
+                    .img_up{
+                        display: inline-block;
+                        width: 151px;
+                        height: 160px;
+                    }
+                    .up_img_file{
+                        position: absolute;
+                        width: 151px;
+                        height: 160px;
+                        opacity: 0;
+                        filter: alpha(opacity=0);
+                        cursor: pointer;
+                        left: 0;
+                        top: 0;
                     }       
                 }
                 .video_item{
@@ -572,7 +591,6 @@ body{
                 height: 298px;
                 border: 1px solid #dce4ec;
                 margin: 30px auto;
-                margin-bottom: 65px;
                 resize:none;
                 padding: 20px;
                 overflow-y: auto; 
@@ -592,7 +610,6 @@ body{
                 height: 298px;
                 border: 1px solid #dce4ec;
                 margin: 30px auto;
-                margin-bottom: 65px;
                 resize:none;
                 padding: 20px;
                 overflow-y: auto; 
@@ -633,7 +650,6 @@ body{
                 height: 336px;
                 border: 1px solid #dce4ec;
                 margin: 30px auto;
-                margin-bottom: 65px;
                 resize:none;
                 padding: 20px;
                 overflow-y: auto; 
@@ -691,11 +707,13 @@ body{
                 background: #0091ea;
                 color: #fff;
                 margin: 12px 40px;
-                img{
-                    padding-top: 1px;
-                    width: 14px;
-                    height: 14px;
-                    margin-right: 4px;
+                .add_w{
+                    display: inline-block;
+                    width: 16px;
+                    height: 18px;
+                    background: url(../image/add_w.png) no-repeat;
+                    vertical-align: middle;
+                    margin-right: 5px;
                 }
             }
         }
@@ -1089,8 +1107,11 @@ body{
                     height: 71px;
                     margin-top: 7px;
                     vertical-align: top;
+                    overflow-y: auto;
                     img{
                         margin-right: 8px;
+                        width: 70px;
+                        height: 70px;
                     }
                     .video_img{
                         position: relative;
@@ -1170,6 +1191,10 @@ body{
                         background: #fff8ea;
                     }
                     .callback_btn{
+                        color: #0091ea;
+                        border: 1px solid #0091ea;
+                    }
+                    .callback_btn2{
                         color: #0091ea;
                         border: 1px solid #0091ea;
                     }
@@ -1539,8 +1564,14 @@ body{
     .active{
         color: #0091ea;
         background: #f9fafb;
-        border-right: 1px solid #dddddd;
         height: 50px;
+    }
+    .mid_top_item{
+        border-left: 1px solid #dddddd;
+        border-right: 1px solid #dddddd;
+    }
+    .last_top_item{
+        border-right: 1px solid #dddddd;
     }
     .message_top_search{
         margin-right: 30px;
@@ -1612,6 +1643,13 @@ body{
             color: #fff;
             background: #7f96a3;
             height: 37px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        .active3{
+            color: #fff;
+            background: #7f96a3;
+            height: 37px;
             border-top-right-radius: 5px;
             border-bottom-right-radius: 5px;
             margin-left: 5px;
@@ -1628,7 +1666,14 @@ body{
         font-size: 14px;
         cursor: pointer;
     }
+    .collection_info{
+        margin-top: 40px;
+        margin-left: 23px;
+        margin-bottom: 18px;
+        color: #999999;
+    }
     .message_list_box{
+        margin-bottom: 20px;
         padding: 0 23px;
         .message_item{
             width: 790px;
@@ -1682,6 +1727,7 @@ body{
                     color: #0091ea;
                     border: 1px solid #0091ea;
                 }
+
             }
         }
     }
@@ -1769,6 +1815,14 @@ body{
                 line-height: 38px;
                 color: #fff;
                 border-radius: 3px;
+                .add_words_i{
+                    display: inline-block;
+                    width: 16px;
+                    height: 18px;
+                    background: url(../image/add_fff.png) no-repeat;
+                    vertical-align: middle;
+                    margin-right: 5px;
+                }
             }
         }
         .sensitive_word_box{
@@ -1822,12 +1876,7 @@ body{
     }
 }
 .collection_box{
-    .collection_info{
-        margin-top: 40px;
-        margin-left: 23px;
-        margin-bottom: 18px;
-        color: #999999;
-    }
+    
 }
 .search_result_box{
     .search_p{

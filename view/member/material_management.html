@@ -1,0 +1,2678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>素材管理</title>
+    <link rel="stylesheet" href="../../app/css/bootstrap/3.3.0/bootstrap.min.css">
+    <link rel="stylesheet" href="../../app/css/bootstrap/3.3.0/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="../../app/css/material_management.css"> 
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+<body> 
+    <header class="clearfix">
+        <div class="container">
+            <div class="logo fl">
+                <a href="#"><img src="../../app/image/logo.png" alt=""></a>
+            </div>
+            <div class="user_info fr">
+                <p>HI，<span>Mango</span></p>
+                <p><a href="#">退出登录</a></p>      
+            </div>
+        </div>        
+    </header>      
+    <section class="main container clearfix">
+        <aside class="menu_nav fl">
+            <ul class="menu_nav_list">
+                <li><i class="menu_nav_list_icon nav_icon_01"></i><a class="active" href="#">群发消息</a></li>
+                <li><i class="menu_nav_list_icon nav_icon_02"></i><a href="#">留言管理</a></li>
+                <li><i class="menu_nav_list_icon nav_icon_03"></i><a href="#">数据分析</a></li>
+                <li><i class="menu_nav_list_icon nav_icon_04"></i><a href="#">活动管理</a></li>
+                <li><i class="menu_nav_list_icon nav_icon_05"></i><a href="#">素材管理</a></li>
+                <li><i class="menu_nav_list_icon nav_icon_06"></i><a href="#">营销插件</a></li>
+                <li><i class="menu_nav_list_icon nav_icon_07"></i><a href="#">系统设置</a></li>
+                <li class="menu_nav_list_bottom"><i class="menu_nav_list_icon nav_icon_bottom"></i></li>
+            </ul>
+        </aside>
+        <div class="main_wrapper fl">
+            <div class="top_tittle clearfix">
+                <div class="top_tittle_item active bor concern_item fl" data-change="#my_box">我的素材库</div>
+                <div class="top_tittle_item blacklist_item fl" data-change="#brand_box">品牌素材库</div>
+            </div>
+            <div class="main_wrapper_box my_box" id="my_box">
+                <div class="top_type">
+                    <div class="top_type_choose clearfix">
+                        <div class="type_item type_item_active bor_left fl" data-type="#image-text_box">图文消息</div>
+                        <div class="type_item  fl" data-type="#image_box">图片</div>
+                        <div class="type_item fl" data-type="#sound_box">语音</div>
+                        <div class="type_item no_border bor_right fl" data-type="#video_box">视频</div>
+                    </div>
+                </div>
+                <div class="graphic_box main_box clearfix" id="image-text_box">
+                    <div class="top_type_add">
+                        <a href="javascript:;" class="add_new add_new_graphic"><i></i>新建图文消息</a>
+                    </div>
+                    <div class="graphic_item fl">
+                        <div class="graphic_item_time">星期五  15:18</div>
+                        <a href="javascript:;" class="graphic_preview">
+                            <div class="graphic_item_img"><img src="../../app/image/gra_icon_01.png" alt=""></div>
+                            <div class="graphic_item_tittle">教你如何把一杯啤酒玩出花样</div>
+                            <div class="black_preview hide"><span>预览文章</span></div>
+                        </a>
+                        <div class="graphic_item_btn clearfix">
+                            <div class="graphic_item_btn_a fl">
+                                <a href="javascript:;" class="preview hover_a"></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                            </div>
+                            <div class="graphic_item_btn_a mid fl">
+                                <a href="javascript:;" class="edit hover_a"></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                            </div>
+                            <div class="graphic_item_btn_a fl">
+                                <a href="javascript:;" class="delete hover_a"></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_delete.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="graphic_item fl">
+                        <div class="graphic_item_time">星期五  15:18</div>
+                        <a href="javascript:;" class="graphic_preview">
+                            <div class="graphic_item_img"><img src="../../app/image/gra_icon_02.png" alt=""></div>
+                            <div class="graphic_item_tittle">姐妹们的聚会好 happy，少不了这些果味啤酒</div>
+                            <div class="black_preview hide"><span>预览文章</span></div>
+                        </a>
+                        <div class="graphic_item_btn clearfix">
+                            <div class="graphic_item_btn_a fl">
+                                <a href="javascript:;" class="preview hover_a"></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                            </div>
+                            <div class="graphic_item_btn_a mid fl">
+                                <a href="javascript:;" class="edit hover_a"></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                            </div>
+                            <div class="graphic_item_btn_a fl">
+                                <a href="javascript:;" class="delete hover_a"></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_delete.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="graphic_item fl">
+                        <div class="graphic_item_time">星期五  15:18</div>
+                        <a href="javascript:;" class="graphic_preview">
+                            <div class="graphic_item_img"><img src="../../app/image/gra_icon_03.png" alt=""></div>
+                            <div class="graphic_item_tittle">控温精准长得美，摩飞电热水壶让你爱上喝水</div>
+                            <div class="black_preview hide"><span>预览文章</span></div>
+                        </a>
+                        <div class="graphic_item_btn clearfix">
+                            <div class="graphic_item_btn_a fl">
+                                <a href="javascript:;" class="preview hover_a"></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                            </div>
+                            <div class="graphic_item_btn_a mid fl">
+                                <a href="javascript:;" class="edit hover_a"></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                            </div>
+                            <div class="graphic_item_btn_a fl">
+                                <a href="javascript:;" class="delete hover_a"></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_delete.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="graphic_item fl">
+                        <div class="graphic_item_time">星期五  15:18</div>
+                        <a href="javascript:;" class="graphic_preview">
+                            <div class="graphic_item_img"><img src="../../app/image/gra_icon_04.png" alt=""></div>
+                            <div class="graphic_item_tittle">狗狗专用牵引绳，让你出行更轻便</div>
+                            <div class="black_preview hide"><span>预览文章</span></div>
+                        </a>
+                        <div class="graphic_item_btn clearfix">
+                            <div class="graphic_item_btn_a fl">
+                                <a href="javascript:;" class="preview hover_a"></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                            </div>
+                            <div class="graphic_item_btn_a mid fl">
+                                <a href="javascript:;" class="edit hover_a"></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                            </div>
+                            <div class="graphic_item_btn_a fl">
+                                <a href="javascript:;" class="delete hover_a"></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_delete.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="graphic_item fl">
+                        <div class="graphic_item_time">星期五  15:18</div>
+                        <a href="javascript:;" class="graphic_preview">
+                            <div class="graphic_item_img"><img src="../../app/image/gra_icon_05.png" alt=""></div>
+                            <div class="graphic_item_tittle">天后王菲同款，简单舒适时尚百搭</div>
+                            <div class="black_preview hide"><span>预览文章</span></div>
+                        </a>
+                        <div class="graphic_item_btn clearfix">
+                            <div class="graphic_item_btn_a fl">
+                                <a href="javascript:;" class="preview hover_a"></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                            </div>
+                            <div class="graphic_item_btn_a mid fl">
+                                <a href="javascript:;" class="edit hover_a"></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                            </div>
+                            <div class="graphic_item_btn_a fl">
+                                <a href="javascript:;" class="delete hover_a"></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_delete.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="graphic_item fl">
+                        <div class="graphic_item_time">星期五  15:18</div>
+                        <a href="javascript:;" class="graphic_preview">
+                            <div class="graphic_item_img"><img src="../../app/image/gra_icon_06.png" alt=""></div>
+                            <div class="graphic_item_tittle">厨房纸保鲜膜全能切割完整，还更节省空间</div>
+                            <div class="black_preview hide"><span>预览文章</span></div>
+                        </a>
+                        <div class="graphic_item_btn clearfix">
+                            <div class="graphic_item_btn_a fl">
+                                <a href="javascript:;" class="preview hover_a"></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                            </div>
+                            <div class="graphic_item_btn_a mid fl">
+                                <a href="javascript:;" class="edit hover_a"></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                            </div>
+                            <div class="graphic_item_btn_a fl">
+                                <a href="javascript:;" class="delete hover_a"></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_delete.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="graphic_item fl">
+                        <div class="graphic_item_time">星期五  15:18</div>
+                        <a href="javascript:;" class="graphic_preview">
+                            <div class="graphic_item_img"><img src="../../app/image/gra_icon_07.png" alt=""></div>
+                            <div class="graphic_item_tittle">亚麻棉混纺人字纹，舒适充满时尚感</div>
+                            <div class="black_preview hide"><span>预览文章</span></div>
+                        </a>
+                        <div class="graphic_item_btn clearfix">
+                            <div class="graphic_item_btn_a fl">
+                                <a href="javascript:;" class="preview hover_a"></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                            </div>
+                            <div class="graphic_item_btn_a mid fl">
+                                <a href="javascript:;" class="edit hover_a"></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                            </div>
+                            <div class="graphic_item_btn_a fl">
+                                <a href="javascript:;" class="delete hover_a"></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_delete.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="graphic_item fl">
+                        <div class="graphic_item_time">星期五  15:18</div>
+                        <a href="javascript:;" class="graphic_preview">
+                            <div class="graphic_item_img"><img src="../../app/image/gra_icon_08.png" alt=""></div>
+                            <div class="graphic_item_tittle">澳洲天然整张羊皮，手工织造皮毛一体</div>
+                            <div class="black_preview hide"><span>预览文章</span></div>
+                        </a>
+                        <div class="graphic_item_btn clearfix">
+                            <div class="graphic_item_btn_a fl">
+                                <a href="javascript:;" class="preview hover_a"></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                            </div>
+                            <div class="graphic_item_btn_a mid fl">
+                                <a href="javascript:;" class="edit hover_a"></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                            </div>
+                            <div class="graphic_item_btn_a fl">
+                                <a href="javascript:;" class="delete hover_a"></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_delete.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="graphic_item fl">
+                        <div class="graphic_item_time">星期五  15:18</div>
+                        <a href="javascript:;" class="graphic_preview">
+                            <div class="graphic_item_img"><img src="../../app/image/gra_icon_09.png" alt=""></div>
+                            <div class="graphic_item_tittle">C罗定制款，防水隔音音质出众</div>
+                            <div class="black_preview hide"><span>预览文章</span></div>
+                        </a>
+                        <div class="graphic_item_btn clearfix">
+                            <div class="graphic_item_btn_a fl">
+                                <a href="javascript:;" class="preview hover_a"></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                            </div>
+                            <div class="graphic_item_btn_a mid fl">
+                                <a href="javascript:;" class="edit hover_a"></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                            </div>
+                            <div class="graphic_item_btn_a fl">
+                                <a href="javascript:;" class="delete hover_a"></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_delete.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="n_change_right_page clearfix">
+                        <div class="n_change_box clearfix fr">
+                            <span class="fl"><i>1</i>/<i>3</i></span>
+                            <div class="page_btn fl">
+                                <a href="#" class="next_page"><img src="../../app/image/prev.png" alt=""></a>
+                                <a href="#" class="next_page"><img src="../../app/image/next.png" alt=""></a>
+                            </div>
+                            <input type="text" class="video_pages fl">
+                            <a href="#" class="change_page fl">跳转</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="image_box main_box hide clearfix" id="image_box">
+                    <div class="top_type_add">
+                        <span class="top_type_span">大小不超过5M</span>
+                        <a href="javascript:;" class="add_new add_new_image"><i></i>上传图片</a>
+                        <input type="file" class="add_new_img_input">
+                    </div>
+                    <div class="image_box_left my_left fl">
+                        <div class="video_top_tittle">全部图片</div>
+                        <div class="video_top_all clearfix">
+                            <div class="check_box mine_check fl"><span class="uncheck"></span><em>全部</em></div>
+                            <a href="javascript:;" class="top_btn move_group fl">移动分组</a>
+                            <a href="javascript:;" class="top_btn delete_it fl">删除</a>
+                        </div>
+                        <div class="image_box_main clearfix">
+                            <div class="image_box_item mine_image_box_item fl">
+                                <a href="javascript:;" class="image_item_infor">
+                                    <div class="image_item_img"><img src="../../app/image/video_01.jpg" alt=""></div>
+                                    <div class="image_item_name">图片12887.jpg</div>
+                                    <div class="checked_hover hide"><img src="../../app/image/gou.png" alt=""></div>
+                                </a>
+                                <div class="image_item_bottom clearfix">
+                                    <div class="image_item_btn fl">
+                                        <a href="javascript:;" class="edit hover_a"></a><!-- 
+                                        <div class="remind_mean edit"><img src="" alt=""></div> -->
+                                    </div>
+                                    <div class="image_item_btn fl">
+                                        <a href="javascript:;" class="move hover_a"></a><!-- 
+                                        <div class="remind_mean edit"><img src="" alt=""></div> -->
+                                    </div>
+                                    <div class="image_item_btn fl">
+                                        <a href="javascript:;" class="delete hover_a"></a><!-- 
+                                        <div class="remind_mean edit"><img src="" alt=""></div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image_box_item mine_image_box_item fl">
+                                <a href="javascript:;" class="image_item_infor">
+                                    <div class="image_item_img"><img src="../../app/image/video_02.jpg" alt=""></div>
+                                    <div class="image_item_name">图片12887eeerrrr</div>
+                                    <div class="checked_hover hide"><img src="../../app/image/gou.png" alt=""></div>
+                                </a>
+                                <div class="image_item_bottom clearfix">
+                                    <div class="image_item_btn fl">
+                                        <a href="javascript:;" class="edit hover_a"></a><!-- 
+                                        <div class="remind_mean edit"><img src="" alt=""></div> -->
+                                    </div>
+                                    <div class="image_item_btn fl">
+                                        <a href="javascript:;" class="move hover_a"></a><!-- 
+                                        <div class="remind_mean edit"><img src="" alt=""></div> -->
+                                    </div>
+                                    <div class="image_item_btn fl">
+                                        <a href="javascript:;" class="delete hover_a"></a><!-- 
+                                        <div class="remind_mean edit"><img src="" alt=""></div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image_box_item mine_image_box_item fl">
+                                <a href="javascript:;" class="image_item_infor">
+                                    <div class="image_item_img"><img src="../../app/image/video_03.jpg" alt=""></div>
+                                    <div class="image_item_name">图片1s847e247r2.</div>
+                                    <div class="checked_hover hide"><img src="../../app/image/gou.png" alt=""></div>
+                                </a>
+                                <div class="image_item_bottom clearfix">
+                                    <div class="image_item_btn fl">
+                                        <a href="javascript:;" class="edit hover_a"></a><!-- 
+                                        <div class="remind_mean edit"><img src="" alt=""></div> -->
+                                    </div>
+                                    <div class="image_item_btn fl">
+                                        <a href="javascript:;" class="move hover_a"></a><!-- 
+                                        <div class="remind_mean edit"><img src="" alt=""></div> -->
+                                    </div>
+                                    <div class="image_item_btn fl">
+                                        <a href="javascript:;" class="delete hover_a"></a><!-- 
+                                        <div class="remind_mean edit"><img src="" alt=""></div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image_box_item mine_image_box_item fl">
+                                <a href="javascript:;" class="image_item_infor">
+                                    <div class="image_item_img"><img src="../../app/image/video_03.jpg" alt=""></div>
+                                    <div class="image_item_name">图片1s847e247r2.</div>
+                                    <div class="checked_hover hide"><img src="../../app/image/gou.png" alt=""></div>
+                                </a>
+                                <div class="image_item_bottom clearfix">
+                                    <div class="image_item_btn fl">
+                                        <a href="javascript:;" class="edit hover_a"></a><!-- 
+                                        <div class="remind_mean edit"><img src="" alt=""></div> -->
+                                    </div>
+                                    <div class="image_item_btn fl">
+                                        <a href="javascript:;" class="move hover_a"></a><!-- 
+                                        <div class="remind_mean edit"><img src="" alt=""></div> -->
+                                    </div>
+                                    <div class="image_item_btn fl">
+                                        <a href="javascript:;" class="delete hover_a"></a><!-- 
+                                        <div class="remind_mean edit"><img src="" alt=""></div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image_box_item mine_image_box_item fl">
+                                <a href="javascript:;" class="image_item_infor">
+                                    <div class="image_item_img"><img src="../../app/image/video_01.jpg" alt=""></div>
+                                    <div class="image_item_name">图片12887.jpg</div>
+                                    <div class="checked_hover hide"><img src="../../app/image/gou.png" alt=""></div>
+                                </a>
+                                <div class="image_item_bottom clearfix">
+                                    <div class="image_item_btn fl">
+                                        <a href="javascript:;" class="edit hover_a"></a><!-- 
+                                        <div class="remind_mean edit"><img src="" alt=""></div> -->
+                                    </div>
+                                    <div class="image_item_btn fl">
+                                        <a href="javascript:;" class="move hover_a"></a><!-- 
+                                        <div class="remind_mean edit"><img src="" alt=""></div> -->
+                                    </div>
+                                    <div class="image_item_btn fl">
+                                        <a href="javascript:;" class="delete hover_a"></a><!-- 
+                                        <div class="remind_mean edit"><img src="" alt=""></div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image_box_item mine_image_box_item fl">
+                                <a href="javascript:;" class="image_item_infor">
+                                    <div class="image_item_img"><img src="../../app/image/video_02.jpg" alt=""></div>
+                                    <div class="image_item_name">图片12887eeerrrr</div>
+                                    <div class="checked_hover hide"><img src="../../app/image/gou.png" alt=""></div>
+                                </a>
+                                <div class="image_item_bottom clearfix">
+                                    <div class="image_item_btn fl">
+                                        <a href="javascript:;" class="edit hover_a"></a><!-- 
+                                        <div class="remind_mean edit"><img src="" alt=""></div> -->
+                                    </div>
+                                    <div class="image_item_btn fl">
+                                        <a href="javascript:;" class="move hover_a"></a><!-- 
+                                        <div class="remind_mean edit"><img src="" alt=""></div> -->
+                                    </div>
+                                    <div class="image_item_btn fl">
+                                        <a href="javascript:;" class="delete hover_a"></a><!-- 
+                                        <div class="remind_mean edit"><img src="" alt=""></div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image_box_item mine_image_box_item fl">
+                                <a href="javascript:;" class="image_item_infor">
+                                    <div class="image_item_img"><img src="../../app/image/video_03.jpg" alt=""></div>
+                                    <div class="image_item_name">图片1s847e247r2.</div>
+                                    <div class="checked_hover hide"><img src="../../app/image/gou.png" alt=""></div>
+                                </a>
+                                <div class="image_item_bottom clearfix">
+                                    <div class="image_item_btn fl">
+                                        <a href="javascript:;" class="edit hover_a"></a><!-- 
+                                        <div class="remind_mean edit"><img src="" alt=""></div> -->
+                                    </div>
+                                    <div class="image_item_btn fl">
+                                        <a href="javascript:;" class="move hover_a"></a><!-- 
+                                        <div class="remind_mean edit"><img src="" alt=""></div> -->
+                                    </div>
+                                    <div class="image_item_btn fl">
+                                        <a href="javascript:;" class="delete hover_a"></a><!-- 
+                                        <div class="remind_mean edit"><img src="" alt=""></div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image_box_item mine_image_box_item fl">
+                                <a href="javascript:;" class="image_item_infor">
+                                    <div class="image_item_img"><img src="../../app/image/video_03.jpg" alt=""></div>
+                                    <div class="image_item_name">图片1s847e247r2.</div>
+                                    <div class="checked_hover hide"><img src="../../app/image/gou.png" alt=""></div>
+                                </a>
+                                <div class="image_item_bottom clearfix">
+                                    <div class="image_item_btn fl">
+                                        <a href="javascript:;" class="edit hover_a"></a><!-- 
+                                        <div class="remind_mean edit"><img src="" alt=""></div> -->
+                                    </div>
+                                    <div class="image_item_btn fl">
+                                        <a href="javascript:;" class="move hover_a"></a><!-- 
+                                        <div class="remind_mean edit"><img src="" alt=""></div> -->
+                                    </div>
+                                    <div class="image_item_btn fl">
+                                        <a href="javascript:;" class="delete hover_a"></a><!-- 
+                                        <div class="remind_mean edit"><img src="" alt=""></div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image_box_item mine_image_box_item fl">
+                                <a href="javascript:;" class="image_item_infor">
+                                    <div class="image_item_img"><img src="../../app/image/video_01.jpg" alt=""></div>
+                                    <div class="image_item_name">图片12887.jpg</div>
+                                    <div class="checked_hover hide"><img src="../../app/image/gou.png" alt=""></div>
+                                </a>
+                                <div class="image_item_bottom clearfix">
+                                    <div class="image_item_btn fl">
+                                        <a href="javascript:;" class="edit hover_a"></a><!-- 
+                                        <div class="remind_mean edit"><img src="" alt=""></div> -->
+                                    </div>
+                                    <div class="image_item_btn fl">
+                                        <a href="javascript:;" class="move hover_a"></a><!-- 
+                                        <div class="remind_mean edit"><img src="" alt=""></div> -->
+                                    </div>
+                                    <div class="image_item_btn fl">
+                                        <a href="javascript:;" class="delete hover_a"></a><!-- 
+                                        <div class="remind_mean edit"><img src="" alt=""></div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image_box_item mine_image_box_item fl">
+                                <a href="javascript:;" class="image_item_infor">
+                                    <div class="image_item_img"><img src="../../app/image/video_02.jpg" alt=""></div>
+                                    <div class="image_item_name">图片12887eeerrrr</div>
+                                    <div class="checked_hover hide"><img src="../../app/image/gou.png" alt=""></div>
+                                </a>
+                                <div class="image_item_bottom clearfix">
+                                    <div class="image_item_btn fl">
+                                        <a href="javascript:;" class="edit hover_a"></a><!-- 
+                                        <div class="remind_mean edit"><img src="" alt=""></div> -->
+                                    </div>
+                                    <div class="image_item_btn fl">
+                                        <a href="javascript:;" class="move hover_a"></a><!-- 
+                                        <div class="remind_mean edit"><img src="" alt=""></div> -->
+                                    </div>
+                                    <div class="image_item_btn fl">
+                                        <a href="javascript:;" class="delete hover_a"></a><!-- 
+                                        <div class="remind_mean edit"><img src="" alt=""></div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image_box_item mine_image_box_item fl">
+                                <a href="javascript:;" class="image_item_infor">
+                                    <div class="image_item_img"><img src="../../app/image/video_03.jpg" alt=""></div>
+                                    <div class="image_item_name">图片1s847e247r2.</div>
+                                    <div class="checked_hover hide"><img src="../../app/image/gou.png" alt=""></div>
+                                </a>
+                                <div class="image_item_bottom clearfix">
+                                    <div class="image_item_btn fl">
+                                        <a href="javascript:;" class="edit hover_a"></a><!-- 
+                                        <div class="remind_mean edit"><img src="" alt=""></div> -->
+                                    </div>
+                                    <div class="image_item_btn fl">
+                                        <a href="javascript:;" class="move hover_a"></a><!-- 
+                                        <div class="remind_mean edit"><img src="" alt=""></div> -->
+                                    </div>
+                                    <div class="image_item_btn fl">
+                                        <a href="javascript:;" class="delete hover_a"></a><!-- 
+                                        <div class="remind_mean edit"><img src="" alt=""></div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image_box_item mine_image_box_item fl">
+                                <a href="javascript:;" class="image_item_infor">
+                                    <div class="image_item_img"><img src="../../app/image/video_03.jpg" alt=""></div>
+                                    <div class="image_item_name">图片1s847e247r2.</div>
+                                    <div class="checked_hover hide"><img src="../../app/image/gou.png" alt=""></div>
+                                </a>
+                                <div class="image_item_bottom clearfix">
+                                    <div class="image_item_btn fl">
+                                        <a href="javascript:;" class="edit hover_a"></a><!-- 
+                                        <div class="remind_mean edit"><img src="" alt=""></div> -->
+                                    </div>
+                                    <div class="image_item_btn fl">
+                                        <a href="javascript:;" class="move hover_a"></a><!-- 
+                                        <div class="remind_mean edit"><img src="" alt=""></div> -->
+                                    </div>
+                                    <div class="image_item_btn fl">
+                                        <a href="javascript:;" class="delete hover_a"></a><!-- 
+                                        <div class="remind_mean edit"><img src="" alt=""></div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="n_change_right_page2 clearfix">
+                            <div class="n_change_box clearfix fr">
+                                <span class="fl"><i>1</i>/<i>3</i></span>
+                                <div class="page_btn fl">
+                                    <a href="#" class="next_page"><img src="../../app/image/prev.png" alt=""></a>
+                                    <a href="#" class="next_page"><img src="../../app/image/next.png" alt=""></a>
+                                </div>
+                                <input type="text" class="video_pages fl">
+                                <a href="#" class="change_page fl">跳转</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image_box_right fl">
+                        <div class="box_right_tittle"><span>全部图片(12)</span></div>
+                        <div class="box_right_list">
+                            <div class="box_right_item"><span>未分组(1)</span></div>
+                            <div class="box_right_item"><span>文章配图(0)</span></div>
+                            <div class="box_right_item add_item">
+                                <i class="add_i"></i><span>新建分组</span>
+                                <div class="add_group_container hide clearfix">
+                                    <span class="fl add_group_span">创建分组</span>
+                                    <input type="text" class="fl add_group_text">
+                                    <div class="add_group_btn fl">
+                                        <a href="javascript:;" class="group_btn sure_group">确定</a>
+                                        <a href="javascript:;" class="group_btn cancel_group">取消</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sound_box main_box hide clearfix" id="sound_box">
+                    <div class="top_type_add">
+                        <a href="#" class="add_new add_new_sound" data-toggle="modal" data-target="#myModal4"><i></i>新建语音</a>
+                    </div>
+                    <div class="sound_item fl">
+                        <div class="sound_item_top clearfix">
+                            <div class="sound_item_img fl"><img src="../../app/image/big_vioce.png" alt=""></div>
+                            <div class="sound_item_info fl"><span class="sound_item_name">语音1</span><span class="sound_item_time fr">00:12</span></div>
+                            <div class="sound_item_start fl">创建于：12月14日</div>
+                        </div>
+                        <div class="sound_item_bottom">
+                            <div class="sound_item_btn fl">
+                                <a href="javascript:;" class="download hover_a sound_btn"><img src="../../app/image/download.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                            </div>
+                            <div class="sound_item_btn fl">
+                                <a href="javascript:;" class="edit hover_a sound_btn"><img src="../../app/image/bran_icon_03.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                            </div>
+                            <div class="sound_item_btn fl">
+                                <a href="javascript:;" class="delete hover_a sound_btn"><img src="../../app/image/delete_02.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_delete.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sound_item fl">
+                        <div class="sound_item_top clearfix">
+                            <div class="sound_item_img fl"><img src="../../app/image/big_vioce.png" alt=""></div>
+                            <div class="sound_item_info fl"><span class="sound_item_name">语音1</span><span class="sound_item_time fr">00:12</span></div>
+                            <div class="sound_item_start fl">创建于：12月14日</div>
+                        </div>
+                        <div class="sound_item_bottom">
+                            <div class="sound_item_btn fl">
+                                <a href="javascript:;" class="download hover_a sound_btn"><img src="../../app/image/download.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                            </div>
+                            <div class="sound_item_btn fl">
+                                <a href="javascript:;" class="edit hover_a sound_btn"><img src="../../app/image/bran_icon_03.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                            </div>
+                            <div class="sound_item_btn fl">
+                                <a href="javascript:;" class="delete hover_a sound_btn"><img src="../../app/image/delete_02.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_delete.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sound_item fl">
+                        <div class="sound_item_top clearfix">
+                            <div class="sound_item_img fl"><img src="../../app/image/big_vioce.png" alt=""></div>
+                            <div class="sound_item_info fl"><span class="sound_item_name">语音1</span><span class="sound_item_time fr">00:12</span></div>
+                            <div class="sound_item_start fl">创建于：12月14日</div>
+                        </div>
+                        <div class="sound_item_bottom">
+                            <div class="sound_item_btn fl">
+                                <a href="javascript:;" class="download hover_a sound_btn"><img src="../../app/image/download.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                            </div>
+                            <div class="sound_item_btn fl">
+                                <a href="javascript:;" class="edit hover_a sound_btn"><img src="../../app/image/bran_icon_03.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                            </div>
+                            <div class="sound_item_btn fl">
+                                <a href="javascript:;" class="delete hover_a sound_btn"><img src="../../app/image/delete_02.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_delete.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sound_item fl">
+                        <div class="sound_item_top clearfix">
+                            <div class="sound_item_img fl"><img src="../../app/image/big_vioce.png" alt=""></div>
+                            <div class="sound_item_info fl"><span class="sound_item_name">语音1</span><span class="sound_item_time fr">00:12</span></div>
+                            <div class="sound_item_start fl">创建于：12月14日</div>
+                        </div>
+                        <div class="sound_item_bottom">
+                            <div class="sound_item_btn fl">
+                                <a href="javascript:;" class="download hover_a sound_btn"><img src="../../app/image/download.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                            </div>
+                            <div class="sound_item_btn fl">
+                                <a href="javascript:;" class="edit hover_a sound_btn"><img src="../../app/image/bran_icon_03.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                            </div>
+                            <div class="sound_item_btn fl">
+                                <a href="javascript:;" class="delete hover_a sound_btn"><img src="../../app/image/delete_02.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_delete.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sound_item fl">
+                        <div class="sound_item_top clearfix">
+                            <div class="sound_item_img fl"><img src="../../app/image/big_vioce.png" alt=""></div>
+                            <div class="sound_item_info fl"><span class="sound_item_name">语音1</span><span class="sound_item_time fr">00:12</span></div>
+                            <div class="sound_item_start fl">创建于：12月14日</div>
+                        </div>
+                        <div class="sound_item_bottom">
+                            <div class="sound_item_btn fl">
+                                <a href="javascript:;" class="download hover_a sound_btn"><img src="../../app/image/download.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                            </div>
+                            <div class="sound_item_btn fl">
+                                <a href="javascript:;" class="edit hover_a sound_btn"><img src="../../app/image/bran_icon_03.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                            </div>
+                            <div class="sound_item_btn fl">
+                                <a href="javascript:;" class="delete hover_a sound_btn"><img src="../../app/image/delete_02.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_delete.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sound_item fl">
+                        <div class="sound_item_top clearfix">
+                            <div class="sound_item_img fl"><img src="../../app/image/big_vioce.png" alt=""></div>
+                            <div class="sound_item_info fl"><span class="sound_item_name">语音1</span><span class="sound_item_time fr">00:12</span></div>
+                            <div class="sound_item_start fl">创建于：12月14日</div>
+                        </div>
+                        <div class="sound_item_bottom">
+                            <div class="sound_item_btn fl">
+                                <a href="javascript:;" class="download hover_a sound_btn"><img src="../../app/image/download.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                            </div>
+                            <div class="sound_item_btn fl">
+                                <a href="javascript:;" class="edit hover_a sound_btn"><img src="../../app/image/bran_icon_03.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                            </div>
+                            <div class="sound_item_btn fl">
+                                <a href="javascript:;" class="delete hover_a sound_btn"><img src="../../app/image/delete_02.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_delete.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sound_item fl">
+                        <div class="sound_item_top clearfix">
+                            <div class="sound_item_img fl"><img src="../../app/image/big_vioce.png" alt=""></div>
+                            <div class="sound_item_info fl"><span class="sound_item_name">语音1</span><span class="sound_item_time fr">00:12</span></div>
+                            <div class="sound_item_start fl">创建于：12月14日</div>
+                        </div>
+                        <div class="sound_item_bottom">
+                            <div class="sound_item_btn fl">
+                                <a href="javascript:;" class="download hover_a sound_btn"><img src="../../app/image/download.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                            </div>
+                            <div class="sound_item_btn fl">
+                                <a href="javascript:;" class="edit hover_a sound_btn"><img src="../../app/image/bran_icon_03.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                            </div>
+                            <div class="sound_item_btn fl">
+                                <a href="javascript:;" class="delete hover_a sound_btn"><img src="../../app/image/delete_02.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_delete.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sound_item fl">
+                        <div class="sound_item_top clearfix">
+                            <div class="sound_item_img fl"><img src="../../app/image/big_vioce.png" alt=""></div>
+                            <div class="sound_item_info fl"><span class="sound_item_name">语音1</span><span class="sound_item_time fr">00:12</span></div>
+                            <div class="sound_item_start fl">创建于：12月14日</div>
+                        </div>
+                        <div class="sound_item_bottom">
+                            <div class="sound_item_btn fl">
+                                <a href="javascript:;" class="download hover_a sound_btn"><img src="../../app/image/download.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                            </div>
+                            <div class="sound_item_btn fl">
+                                <a href="javascript:;" class="edit hover_a sound_btn"><img src="../../app/image/bran_icon_03.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                            </div>
+                            <div class="sound_item_btn fl">
+                                <a href="javascript:;" class="delete hover_a sound_btn"><img src="../../app/image/delete_02.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_delete.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sound_item fl">
+                        <div class="sound_item_top clearfix">
+                            <div class="sound_item_img fl"><img src="../../app/image/big_vioce.png" alt=""></div>
+                            <div class="sound_item_info fl"><span class="sound_item_name">语音1</span><span class="sound_item_time fr">00:12</span></div>
+                            <div class="sound_item_start fl">创建于：12月14日</div>
+                        </div>
+                        <div class="sound_item_bottom">
+                            <div class="sound_item_btn fl">
+                                <a href="javascript:;" class="download hover_a sound_btn"><img src="../../app/image/download.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                            </div>
+                            <div class="sound_item_btn fl">
+                                <a href="javascript:;" class="edit hover_a sound_btn"><img src="../../app/image/bran_icon_03.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                            </div>
+                            <div class="sound_item_btn fl">
+                                <a href="javascript:;" class="delete hover_a sound_btn"><img src="../../app/image/delete_02.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_delete.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="n_change_right_page clearfix">
+                        <div class="n_change_box clearfix fr">
+                            <span class="fl"><i>1</i>/<i>3</i></span>
+                            <div class="page_btn fl">
+                                <a href="#" class="next_page"><img src="../../app/image/prev.png" alt=""></a>
+                                <a href="#" class="next_page"><img src="../../app/image/next.png" alt=""></a>
+                            </div>
+                            <input type="text" class="video_pages fl">
+                            <a href="#" class="change_page fl">跳转</a>
+                        </div>
+                    </div>
+                    <div class="modal fade voice" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content voice_content clearfix">
+                                <div class="modal-header voice_header">
+                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"><img src="../../app/image/close.png" alt=""></span><span class="sr-only">Close</span></button>
+                                    <div class="voice_tittle fl active">我的语音</div>
+                                </div>
+                                <div class="modal-body addnew_voice clearfix" id="voice_body">
+                                    <form action="" class="addnew_voice_form clearfix">
+                                        <div class="voice_form_box cout clearfix">
+                                            <label for="" class="voice_form_label tag_label fl">标题</label>
+                                            <input type="text" class="addnew_voice_text fl">
+                                            <span class="remind_span tittle_remind hide fl">请输入标题</span>
+                                            <span class="image_text_cout_words"><em>0</em>/<i>21</i></span>
+                                        </div>
+                                        <div class="voice_form_box clearfix">
+                                            <label for="" class="voice_form_label fl">分类</label>
+                                            <div class="voice_type_checkbox fl  claerfix">
+                                                <div class="voice_type_list fl claerfix">
+                                                    <div class="voice_type_item fl">
+                                                        <input type="checkbox" class="type_checkbox" id="type_item_01">
+                                                        <label for="type_item_01" class="type_label"></label>
+                                                        <span>财经</span>
+                                                    </div>
+                                                    <div class="voice_type_item fl">
+                                                        <input type="checkbox" class="type_checkbox" id="type_item_02">
+                                                        <label for="type_item_02" class="type_label"></label>
+                                                        <span>动漫</span>
+                                                    </div>
+                                                    <div class="voice_type_item fl">
+                                                        <input type="checkbox" class="type_checkbox" id="type_item_03">
+                                                        <label for="type_item_03" class="type_label"></label>
+                                                        <span>儿童</span>
+                                                    </div>
+                                                    <div class="voice_type_item fl">
+                                                        <input type="checkbox" class="type_checkbox" id="type_item_04">
+                                                        <label for="type_item_04" class="type_label"></label>
+                                                        <span>搞笑</span>
+                                                    </div>
+                                                    <div class="voice_type_item fl">
+                                                        <input type="checkbox" class="type_checkbox" id="type_item_05">
+                                                        <label for="type_item_05" class="type_label"></label>
+                                                        <span>健康</span>
+                                                    </div>
+                                                </div>
+                                                <div class="voice_type_list fl claerfix">
+                                                    <div class="voice_type_item fl">
+                                                        <input type="checkbox" class="type_checkbox" id="type_item_06">
+                                                        <label for="type_item_06" class="type_label"></label>
+                                                        <span>教育</span>
+                                                    </div>
+                                                    <div class="voice_type_item fl">
+                                                        <input type="checkbox" class="type_checkbox" id="type_item_07">
+                                                        <label for="type_item_07" class="type_label"></label>
+                                                        <span>军事</span>
+                                                    </div>
+                                                    <div class="voice_type_item fl">
+                                                        <input type="checkbox" class="type_checkbox" id="type_item_08">
+                                                        <label for="type_item_08" class="type_label"></label>
+                                                        <span>科技</span>
+                                                    </div>
+                                                    <div class="voice_type_item fl">
+                                                        <input type="checkbox" class="type_checkbox" id="type_item_09">
+                                                        <label for="type_item_09" class="type_label"></label>
+                                                        <span>历史</span>
+                                                    </div>
+                                                    <div class="voice_type_item fl">
+                                                        <input type="checkbox" class="type_checkbox" id="type_item_10">
+                                                        <label for="type_item_10" class="type_label"></label>
+                                                        <span>旅行</span>
+                                                    </div>
+                                                </div>
+                                                <div class="voice_type_list fl claerfix">
+                                                    <div class="voice_type_item fl">
+                                                        <input type="checkbox" class="type_checkbox" id="type_item_11">
+                                                        <label for="type_item_11" class="type_label"></label>
+                                                        <span>汽车</span>
+                                                    </div>
+                                                    <div class="voice_type_item fl">
+                                                        <input type="checkbox" class="type_checkbox" id="type_item_12">
+                                                        <label for="type_item_12" class="type_label"></label>
+                                                        <span>情感</span>
+                                                    </div>
+                                                    <div class="voice_type_item fl">
+                                                        <input type="checkbox" class="type_checkbox" id="type_item_13">
+                                                        <label for="type_item_13" class="type_label"></label>
+                                                        <span>体育</span>
+                                                    </div>
+                                                    <div class="voice_type_item fl">
+                                                        <input type="checkbox" class="type_checkbox" id="type_item_14">
+                                                        <label for="type_item_14" class="type_label"></label>
+                                                        <span>外语</span>
+                                                    </div>
+                                                    <div class="voice_type_item fl">
+                                                        <input type="checkbox" class="type_checkbox" id="type_item_15">
+                                                        <label for="type_item_15" class="type_label"></label>
+                                                        <span>文学</span>
+                                                    </div>
+                                                </div>
+                                                <div class="voice_type_list fl claerfix no_bott">
+                                                    <div class="voice_type_item fl">
+                                                        <input type="checkbox" class="type_checkbox" id="type_item_16">
+                                                        <label for="type_item_16" class="type_label"></label>
+                                                        <span>校园</span>
+                                                    </div>
+                                                    <div class="voice_type_item fl">
+                                                        <input type="checkbox" class="type_checkbox" id="type_item_17">
+                                                        <label for="type_item_17" class="type_label"></label>
+                                                        <span>音乐</span>
+                                                    </div>
+                                                    <div class="voice_type_item fl">
+                                                        <input type="checkbox" class="type_checkbox" id="type_item_18">
+                                                        <label for="type_item_18" class="type_label"></label>
+                                                        <span>影视</span>
+                                                    </div>
+                                                    <div class="voice_type_item fl">
+                                                        <input type="checkbox" class="type_checkbox" id="type_item_19">
+                                                        <label for="type_item_19" class="type_label"></label>
+                                                        <span>游戏</span>
+                                                    </div>
+                                                    <div class="voice_type_item fl">
+                                                        <input type="checkbox" class="type_checkbox" id="type_item_20">
+                                                        <label for="type_item_20" class="type_label"></label>
+                                                        <span>娱乐</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <span class="remind_span type_remind hide fl">请选择分类</span>
+                                        </div>
+                                        <div class="voice_form_box clearfix">
+                                            <label for="" class="voice_form_label fl">语音内容</label>
+                                            <span class="voice_type_span">格式支持mp3、wma、wav、amr，文件大小不超过30M，语音时长不超过30分钟</span>
+                                            <div class="add_voice_up fl">
+                                                <span class="file_up_span">上传</span>
+                                                <input type="file" class="up_file up_voice_file" id="up_file">
+                                            </div>
+                                            <span class="remind_span sent_remind hide fl">请上传语音文件</span>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer voice_footer fl">
+                                    <button type="button" class="btn btn-primary btn_sure sure_new_edit">确定</button>
+                                    <button type="button" class="btn btn-default btn_close" data-dismiss="modal">取消</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video_box main_box hide clearfix" id="video_box">
+                    <div class="top_type_add">
+                        <a href="#" class="add_new add_new_video" data-toggle="modal" data-target="#myModal"><i></i>新建视频</a>
+                    </div>
+                    <p class="video_p">视频列表(27)</p>
+                    <div class="video_box_item fl">
+                        <div class="video_item_top clearfix">
+                            <div class="video_item_img fl"><img src="../../app/image/video_icon_01.png" alt=""><span class="video_play_span"><img src="../../app/image/play.png" alt=""></span></div>
+                            <div class="video_item_info fl"><span class="video_item_name">视频1</span><span class="video_item_time fr">00:12</span></div>
+                            <div class="video_item_start fl">创建于：12月14日</div>
+                        </div>
+                        <div class="video_item_bottom">
+                            <div class="video_item_btn fl">
+                                <a href="javascript:;" class="download hover_a video_btn"><img src="../../app/image/download.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                            </div>
+                            <div class="video_item_btn fl">
+                                <a href="javascript:;" class="edit hover_a video_btn"><img src="../../app/image/bran_icon_03.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                            </div>
+                            <div class="video_item_btn fl">
+                                <a href="javascript:;" class="delete hover_a video_btn"><img src="../../app/image/delete_02.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_delete.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video_box_item fl">
+                        <div class="video_item_top clearfix">
+                            <div class="video_item_img fl"><img src="../../app/image/video_icon_02.png" alt=""><span class="video_play_span"><img src="../../app/image/play.png" alt=""></span></div>
+                            <div class="video_item_info fl"><span class="video_item_name">视频1</span><span class="video_item_time fr">00:12</span></div>
+                            <div class="video_item_start fl">创建于：12月14日</div>
+                        </div>
+                        <div class="video_item_bottom">
+                            <div class="video_item_btn fl">
+                                <a href="javascript:;" class="download hover_a video_btn"><img src="../../app/image/download.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                            </div>
+                            <div class="video_item_btn fl">
+                                <a href="javascript:;" class="edit hover_a video_btn"><img src="../../app/image/bran_icon_03.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                            </div>
+                            <div class="video_item_btn fl">
+                                <a href="javascript:;" class="delete hover_a video_btn"><img src="../../app/image/delete_02.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_delete.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video_box_item fl">
+                        <div class="video_item_top clearfix">
+                            <div class="video_item_img fl"><img src="../../app/image/video_icon_03.png" alt=""><span class="video_play_span"><img src="../../app/image/play.png" alt=""></span></div>
+                            <div class="video_item_info fl"><span class="video_item_name">视频1</span><span class="video_item_time fr">00:12</span></div>
+                            <div class="video_item_start fl">创建于：12月14日</div>
+                        </div>
+                        <div class="video_item_bottom">
+                            <div class="video_item_btn fl">
+                                <a href="javascript:;" class="download hover_a video_btn"><img src="../../app/image/download.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                            </div>
+                            <div class="video_item_btn fl">
+                                <a href="javascript:;" class="edit hover_a video_btn"><img src="../../app/image/bran_icon_03.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                            </div>
+                            <div class="video_item_btn fl">
+                                <a href="javascript:;" class="delete hover_a video_btn"><img src="../../app/image/delete_02.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_delete.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video_box_item fl">
+                        <div class="video_item_top clearfix">
+                            <div class="video_item_img fl"><img src="../../app/image/video_icon_04.png" alt=""><span class="video_play_span"><img src="../../app/image/play.png" alt=""></span></div>
+                            <div class="video_item_info fl"><span class="video_item_name">视频1</span><span class="video_item_time fr">00:12</span></div>
+                            <div class="video_item_start fl">创建于：12月14日</div>
+                        </div>
+                        <div class="video_item_bottom">
+                            <div class="video_item_btn fl">
+                                <a href="javascript:;" class="download hover_a video_btn"><img src="../../app/image/download.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                            </div>
+                            <div class="video_item_btn fl">
+                                <a href="javascript:;" class="edit hover_a video_btn"><img src="../../app/image/bran_icon_03.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                            </div>
+                            <div class="video_item_btn fl">
+                                <a href="javascript:;" class="delete hover_a video_btn"><img src="../../app/image/delete_02.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_delete.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video_box_item fl">
+                        <div class="video_item_top clearfix">
+                            <div class="video_item_img fl"><img src="../../app/image/video_icon_05.png" alt=""><span class="video_play_span"><img src="../../app/image/play.png" alt=""></span></div>
+                            <div class="video_item_info fl"><span class="video_item_name">视频1</span><span class="video_item_time fr">00:12</span></div>
+                            <div class="video_item_start fl">创建于：12月14日</div>
+                        </div>
+                        <div class="video_item_bottom">
+                            <div class="video_item_btn fl">
+                                <a href="javascript:;" class="download hover_a video_btn"><img src="../../app/image/download.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                            </div>
+                            <div class="video_item_btn fl">
+                                <a href="javascript:;" class="edit hover_a video_btn"><img src="../../app/image/bran_icon_03.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                            </div>
+                            <div class="video_item_btn fl">
+                                <a href="javascript:;" class="delete hover_a video_btn"><img src="../../app/image/delete_02.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_delete.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video_box_item fl">
+                        <div class="video_item_top clearfix">
+                            <div class="video_item_img fl"><img src="../../app/image/video_icon_06.png" alt=""><span class="video_play_span"><img src="../../app/image/play.png" alt=""></span></div>
+                            <div class="video_item_info fl"><span class="video_item_name">视频1</span><span class="video_item_time fr">00:12</span></div>
+                            <div class="video_item_start fl">创建于：12月14日</div>
+                        </div>
+                        <div class="video_item_bottom">
+                            <div class="video_item_btn fl">
+                                <a href="javascript:;" class="download hover_a video_btn"><img src="../../app/image/download.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                            </div>
+                            <div class="video_item_btn fl">
+                                <a href="javascript:;" class="edit hover_a video_btn"><img src="../../app/image/bran_icon_03.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                            </div>
+                            <div class="video_item_btn fl">
+                                <a href="javascript:;" class="delete hover_a video_btn"><img src="../../app/image/delete_02.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_delete.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video_box_item fl">
+                        <div class="video_item_top clearfix">
+                            <div class="video_item_img fl"><img src="../../app/image/video_icon_07.png" alt=""><span class="video_play_span"><img src="../../app/image/play.png" alt=""></span></div>
+                            <div class="video_item_info fl"><span class="video_item_name">视频1</span><span class="video_item_time fr">00:12</span></div>
+                            <div class="video_item_start fl">创建于：12月14日</div>
+                        </div>
+                        <div class="video_item_bottom">
+                            <div class="video_item_btn fl">
+                                <a href="javascript:;" class="download hover_a video_btn"><img src="../../app/image/download.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                            </div>
+                            <div class="video_item_btn fl">
+                                <a href="javascript:;" class="edit hover_a video_btn"><img src="../../app/image/bran_icon_03.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                            </div>
+                            <div class="video_item_btn fl">
+                                <a href="javascript:;" class="delete hover_a video_btn"><img src="../../app/image/delete_02.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_delete.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video_box_item fl">
+                        <div class="video_item_top clearfix">
+                            <div class="video_item_img fl"><img src="../../app/image/video_icon_02.png" alt=""><span class="video_play_span"><img src="../../app/image/play.png" alt=""></span></div>
+                            <div class="video_item_info fl"><span class="video_item_name">视频1</span><span class="video_item_time fr">00:12</span></div>
+                            <div class="video_item_start fl">创建于：12月14日</div>
+                        </div>
+                        <div class="video_item_bottom">
+                            <div class="video_item_btn fl">
+                                <a href="javascript:;" class="download hover_a video_btn"><img src="../../app/image/download.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                            </div>
+                            <div class="video_item_btn fl">
+                                <a href="javascript:;" class="edit hover_a video_btn"><img src="../../app/image/bran_icon_03.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                            </div>
+                            <div class="video_item_btn fl">
+                                <a href="javascript:;" class="delete hover_a video_btn"><img src="../../app/image/delete_02.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_delete.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video_box_item fl">
+                        <div class="video_item_top clearfix">
+                            <div class="video_item_img fl"><img src="../../app/image/video_icon_03.png" alt=""><span class="video_play_span"><img src="../../app/image/play.png" alt=""></span></div>
+                            <div class="video_item_info fl"><span class="video_item_name">视频1</span><span class="video_item_time fr">00:12</span></div>
+                            <div class="video_item_start fl">创建于：12月14日</div>
+                        </div>
+                        <div class="video_item_bottom">
+                            <div class="video_item_btn fl">
+                                <a href="javascript:;" class="download hover_a video_btn"><img src="../../app/image/download.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                            </div>
+                            <div class="video_item_btn fl">
+                                <a href="javascript:;" class="edit hover_a video_btn"><img src="../../app/image/bran_icon_03.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                            </div>
+                            <div class="video_item_btn fl">
+                                <a href="javascript:;" class="delete hover_a video_btn"><img src="../../app/image/delete_02.png" alt=""></a>
+                                <div class="remind_mean hide"><img src="../../app/image/remind_delete.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="n_change_right_page clearfix">
+                        <div class="n_change_box clearfix fr">
+                            <span class="fl"><i>1</i>/<i>3</i></span>
+                            <div class="page_btn fl">
+                                <a href="#" class="next_page"><img src="../../app/image/prev.png" alt=""></a>
+                                <a href="#" class="next_page"><img src="../../app/image/next.png" alt=""></a>
+                            </div>
+                            <input type="text" class="video_pages fl">
+                            <a href="#" class="change_page fl">跳转</a>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content add_video">
+                                <div class="modal-header add_video_header">
+                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                    <h4 class="modal-title" >上传视频</h4><!-- id="myModalLabel" -->
+                                </div>
+                                <div class="modal-body">
+                                    <form action="" class="add_video_form clearfix">
+                                        <div class="add_video_box clearfix">
+                                            <label for="up_file" class="add_video_label video_label fl">上传视频</label>
+                                            <span class="video_span fl">
+                                                视频不能超过20M，超过20M的也可通过添加视频详情页链接以及公众号文章链接插入视频，视频时长不少于1秒，不多于10小时，支持大部分主流<a href="#" class="format">视频格式</a>
+                                                <div class="format_box hidden">
+                                                    <ul class="format_list">
+                                                        <li class="format_item">常见在线流媒体格式：mp4、flv、f4v、webm</li>
+                                                        <li class="format_item">移动设备格式：m4v、mov、3gp、3g2</li>
+                                                        <li class="format_item">RealPlayer ：rm、rmvb</li>
+                                                        <li class="format_item">微软格式 ：wmv、avi、asf</li>
+                                                        <li class="format_item">MPEG 视频 ：mpg、mpeg、mpe、ts</li>
+                                                        <li class="format_item">DV格式 ：div、dv、divx</li>
+                                                        <li class="format_item">其他格式 ：vob、dat、mkv、swf、lavf、cpk、dirac、ram、qt、fli、flc、mod</li>
+                                                        <li class="format_item">主流音频格式：mp3、aac、ac3、wav、m4a、ogg</li>
+                                                    </ul>
+                                                </div>
+                                            </span>
+                                            <div class="add_video_up fl">
+                                                <span class="file_up_span">上传文件</span>
+                                                <input type="file" class="up_file" id="up_video_file" accept="video/*">
+                                            </div>
+                                        </div>
+                                        <div class="add_video_box clearfix cout">
+                                            <label for="" class="add_video_label fl">标题</label>
+                                            <input type="text" class="video_text video_tittle fl">
+                                            <span class="cout_words"><em>0</em>/<i>21</i></span>
+                                        </div>
+                                        <div class="add_video_box no_bott clearfix">
+                                            <label for="" class="add_video_label video_label fl">封面</label>                                        
+                                            <span class="video_span fl">
+                                                视频转码完成后可以设置封面图
+                                                <img src="../../app/image/remind.png" alt="" class="remind_imgs">
+                                            </span>
+                                            <div class="cover_box hidden">
+                                                <span>视频转码完成后，进入编辑页面可以选择视频内的画面作为视频封面。如果不作选择，默认封面为视频的第一帧。
+                                                </span>
+                                            </div>
+                                        </div>
+                                         <div class="add_video_box clearfix">
+                                            <label for="" class="add_video_label fl">分类</label>
+                                            <div class="select fl">
+                                                <div class="select_text">请选择</div>
+                                                <div class="select_list">
+                                                    <ul>
+                                                        <li class="select_list_item">选择1</li>
+                                                        <li class="select_list_item">选择2</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="add_video_box video_box_tag clearfix">
+                                            <label for="" class="add_video_label tag_label fl">标签
+                                                <img src="../../app/image/remind.png" alt="" class="remind_img">
+                                            </label>
+                                            <div class="tag_text_box clearfix fl">
+                                                <input type="text" class="video_text tag_text fl" maxlength="10">
+
+                                            </div>
+                                            
+                                            <div class="tag_box hidden">
+                                                <span>标签用回车分开，填写与视频内容相关的标签，你的视频会被合理的分类整理</span>
+                                            </div>
+                                        </div>
+                                        <div class="add_video_box clearfix">
+                                            <label for="" class="add_video_label fl">简介</label>
+                                            <!-- <input type="text" class="video_text tag_text fl"> -->
+                                            <textarea name="video_area" id="video_area"></textarea>
+                                            <span class="area_count"><em>0</em>/<i>200</i></span>
+                                        </div>
+                                        <div class="add_video_box remind process_remind">
+                                            <p>不得上传未经授权的他人作品，以及色情、反动等违法视频。查看<em class="process">视频处理流程</em></p>
+                                            <div class="process_box hidden">
+                                                <ul>
+                                                    <li>流程：</li>
+                                                    <li>1.上传：将视频上传至服务器，需视频和文案资料完成才能完成上传。</li>
+                                                    <li>2.转码：上传成功后服务器将视频转码成播放器可识别的格式。</li>
+                                                    <li>3.审核：转码完成后视频进入内容审核阶段。</li>
+                                                    <li>4.可用：只有审核通过的视频素材才可以被使用。</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="add_video_box remind check_rem">
+                                            <input type="checkbox" class="agree_check" id="agree_check">
+                                            <label for="agree_check" class="agree_label"></label>
+                                            <span>我已阅读并同意<a href="#">《腾讯视频上传服务规则》</a></span>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer add_video_footer">
+                                    <button type="button" class="btn btn-primary add_sure_btn">确定</button>
+                                    <button type="button" class="btn btn-default add_del_btn" data-dismiss="modal">取消</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="new_video_box hide">
+                            <div class="video_box_new">
+                                <div class="choosen_video_box fl">
+                                    <p class="video_tittle_p">《brotherly love》可口可乐这支广告好暖！</p>
+                                    <div class="video_main">
+                                        <img src="../../app/image/video_cover.jpg" alt="">
+                                        <span class="video_main_span"><em class="fr">01:00</em></span>
+                                    </div>
+                                </div>
+                                <a href="javasript:;" class="remove_video fl">删除</a>
+                            </div>
+                            <div class="sent_out">
+                                <a href="javasceipt:;" class="sent_out_btn sent_new_video">发送</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main_wrapper_box hide brand_box" id="brand_box">
+                <div class="top_type">
+                    <div class="top_type_choose clearfix">
+                        <div class="brand_type_item type_item_active bor_left fl" data-type="#brand_image-text_box">图文消息</div>
+                        <div class="brand_type_item  fl" data-type="#brand_image_box">图片</div>
+                        <div class="brand_type_item fl" data-type="#brand_sound_box">语音</div>
+                        <div class="brand_type_item no_border bor_right fl" data-type="#brand_video_box">视频</div>
+                    </div>
+                </div>
+                <div class="graphic_box brand_main_box clearfix" id="brand_image-text_box">
+                    <div class="graphic_type clearfix">
+                        <div class="graphic_type_item active fl" data-most="#new">最新</div>
+                        <div class="graphic_type_item fl" data-most="#forward">最高转发</div>
+                        <div class="graphic_type_item fl" data-most="#read">最高阅读</div>
+                    </div>
+                    <div class="graphic_item_box clearfix" id="new">
+                        <div class="graphic_item fl">
+                            <div class="graphic_item_time">星期五  15:18</div>
+                            <a href="javascript:;" class="graphic_preview">
+                                <div class="graphic_item_img"><img src="../../app/image/gra_icon_01.png" alt=""></div>
+                                <div class="graphic_item_tittle2">教你如何把一杯啤酒玩出花样</div>
+                                <div class="graphic_item_num">
+                                    <span class="num_item read_num">阅读量：245550</span>
+                                    <span class="num_item forward_num">转发量：245550</span>
+                                </div>
+                                <div class="black_preview hide"><span>预览文章</span></div>
+                            </a>
+                            <div class="graphic_item_btn clearfix">
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="add hover_a"></a>
+                                    <div class="remind_mean remind_add hide"><img src="../../app/image/remind_add.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a mid fl">
+                                    <a href="javascript:;" class="preview hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="edit hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="graphic_item fl">
+                            <div class="graphic_item_time">星期五  15:18</div>
+                            <a href="javascript:;" class="graphic_preview">
+                                <div class="graphic_item_img"><img src="../../app/image/gra_icon_02.png" alt=""></div>
+                                <div class="graphic_item_tittle2">姐妹们的聚会好 happy，少不了这些果味啤酒</div>
+                                <div class="graphic_item_num">
+                                    <span class="num_item read_num">阅读量：245550</span>
+                                    <span class="num_item forward_num">转发量：245550</span>
+                                </div>
+                                <div class="black_preview hide"><span>预览文章</span></div>
+                            </a>
+                            <div class="graphic_item_btn clearfix">
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="add hover_a"></a>
+                                    <div class="remind_mean remind_add hide"><img src="../../app/image/remind_add.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a mid fl">
+                                    <a href="javascript:;" class="preview hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="edit hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="graphic_item fl">
+                            <div class="graphic_item_time">星期五  15:18</div>
+                            <a href="javascript:;" class="graphic_preview">
+                                <div class="graphic_item_img"><img src="../../app/image/gra_icon_03.png" alt=""></div>
+                                <div class="graphic_item_tittle2">控温精准长得美，摩飞电热水壶让你爱上喝水</div>
+                                <div class="graphic_item_num">
+                                    <span class="num_item read_num">阅读量：245550</span>
+                                    <span class="num_item forward_num">转发量：245550</span>
+                                </div>
+                                <div class="black_preview hide"><span>预览文章</span></div>
+                            </a>
+                            <div class="graphic_item_btn clearfix">
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="add hover_a"></a>
+                                    <div class="remind_mean remind_add hide"><img src="../../app/image/remind_add.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a mid fl">
+                                    <a href="javascript:;" class="preview hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="edit hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="graphic_item fl">
+                            <div class="graphic_item_time">星期五  15:18</div>
+                            <a href="javascript:;" class="graphic_preview">
+                                <div class="graphic_item_img"><img src="../../app/image/gra_icon_01.png" alt=""></div>
+                                <div class="graphic_item_tittle2">教你如何把一杯啤酒玩出花样</div>
+                                <div class="graphic_item_num">
+                                    <span class="num_item read_num">阅读量：245550</span>
+                                    <span class="num_item forward_num">转发量：245550</span>
+                                </div>
+                                <div class="black_preview hide"><span>预览文章</span></div>
+                            </a>
+                            <div class="graphic_item_btn clearfix">
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="add hover_a"></a>
+                                    <div class="remind_mean remind_add hide"><img src="../../app/image/remind_add.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a mid fl">
+                                    <a href="javascript:;" class="preview hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="edit hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="graphic_item fl">
+                            <div class="graphic_item_time">星期五  15:18</div>
+                            <a href="javascript:;" class="graphic_preview">
+                                <div class="graphic_item_img"><img src="../../app/image/gra_icon_02.png" alt=""></div>
+                                <div class="graphic_item_tittle2">姐妹们的聚会好 happy，少不了这些果味啤酒</div>
+                                <div class="graphic_item_num">
+                                    <span class="num_item read_num">阅读量：245550</span>
+                                    <span class="num_item forward_num">转发量：245550</span>
+                                </div>
+                                <div class="black_preview hide"><span>预览文章</span></div>
+                            </a>
+                            <div class="graphic_item_btn clearfix">
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="add hover_a"></a>
+                                    <div class="remind_mean remind_add hide"><img src="../../app/image/remind_add.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a mid fl">
+                                    <a href="javascript:;" class="preview hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="edit hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="graphic_item fl">
+                            <div class="graphic_item_time">星期五  15:18</div>
+                            <a href="javascript:;" class="graphic_preview">
+                                <div class="graphic_item_img"><img src="../../app/image/gra_icon_03.png" alt=""></div>
+                                <div class="graphic_item_tittle2">控温精准长得美，摩飞电热水壶让你爱上喝水</div>
+                                <div class="graphic_item_num">
+                                    <span class="num_item read_num">阅读量：245550</span>
+                                    <span class="num_item forward_num">转发量：245550</span>
+                                </div>
+                                <div class="black_preview hide"><span>预览文章</span></div>
+                            </a>
+                            <div class="graphic_item_btn clearfix">
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="add hover_a"></a>
+                                    <div class="remind_mean remind_add hide"><img src="../../app/image/remind_add.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a mid fl">
+                                    <a href="javascript:;" class="preview hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="edit hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="graphic_item fl">
+                            <div class="graphic_item_time">星期五  15:18</div>
+                            <a href="javascript:;" class="graphic_preview">
+                                <div class="graphic_item_img"><img src="../../app/image/gra_icon_01.png" alt=""></div>
+                                <div class="graphic_item_tittle2">教你如何把一杯啤酒玩出花样</div>
+                                <div class="graphic_item_num">
+                                    <span class="num_item read_num">阅读量：245550</span>
+                                    <span class="num_item forward_num">转发量：245550</span>
+                                </div>
+                                <div class="black_preview hide"><span>预览文章</span></div>
+                            </a>
+                            <div class="graphic_item_btn clearfix">
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="add hover_a"></a>
+                                    <div class="remind_mean remind_add hide"><img src="../../app/image/remind_add.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a mid fl">
+                                    <a href="javascript:;" class="preview hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="edit hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="graphic_item fl">
+                            <div class="graphic_item_time">星期五  15:18</div>
+                            <a href="javascript:;" class="graphic_preview">
+                                <div class="graphic_item_img"><img src="../../app/image/gra_icon_02.png" alt=""></div>
+                                <div class="graphic_item_tittle2">姐妹们的聚会好 happy，少不了这些果味啤酒</div>
+                                <div class="graphic_item_num">
+                                    <span class="num_item read_num">阅读量：245550</span>
+                                    <span class="num_item forward_num">转发量：245550</span>
+                                </div>
+                                <div class="black_preview hide"><span>预览文章</span></div>
+                            </a>
+                            <div class="graphic_item_btn clearfix">
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="add hover_a"></a>
+                                    <div class="remind_mean remind_add hide"><img src="../../app/image/remind_add.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a mid fl">
+                                    <a href="javascript:;" class="preview hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="edit hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="graphic_item fl">
+                            <div class="graphic_item_time">星期五  15:18</div>
+                            <a href="javascript:;" class="graphic_preview">
+                                <div class="graphic_item_img"><img src="../../app/image/gra_icon_03.png" alt=""></div>
+                                <div class="graphic_item_tittle2">控温精准长得美，摩飞电热水壶让你爱上喝水</div>
+                                <div class="graphic_item_num">
+                                    <span class="num_item read_num">阅读量：245550</span>
+                                    <span class="num_item forward_num">转发量：245550</span>
+                                </div>
+                                <div class="black_preview hide"><span>预览文章</span></div>
+                            </a>
+                            <div class="graphic_item_btn clearfix">
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="add hover_a"></a>
+                                    <div class="remind_mean remind_add hide"><img src="../../app/image/remind_add.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a mid fl">
+                                    <a href="javascript:;" class="preview hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="edit hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="graphic_item_box hide clearfix" id="forward">
+                        <div class="graphic_item fl">
+                            <div class="graphic_item_time">星期五  15:18</div>
+                            <a href="javascript:;" class="graphic_preview">
+                                <div class="graphic_item_img"><img src="../../app/image/gra_icon_02.png" alt=""></div>
+                                <div class="graphic_item_tittle2">姐妹们的聚会好 happy，少不了这些果味啤酒</div>
+                                <div class="graphic_item_num">
+                                    <span class="num_item read_num">阅读量：245550</span>
+                                    <span class="num_item forward_num">转发量：245550</span>
+                                </div>
+                                <div class="black_preview hide"><span>预览文章</span></div>
+                            </a>
+                            <div class="graphic_item_btn clearfix">
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="add hover_a"></a>
+                                    <div class="remind_mean remind_add hide"><img src="../../app/image/remind_add.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a mid fl">
+                                    <a href="javascript:;" class="preview hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="edit hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="graphic_item fl">
+                            <div class="graphic_item_time">星期五  15:18</div>
+                            <a href="javascript:;" class="graphic_preview">
+                                <div class="graphic_item_img"><img src="../../app/image/gra_icon_01.png" alt=""></div>
+                                <div class="graphic_item_tittle2">教你如何把一杯啤酒玩出花样</div>
+                                <div class="graphic_item_num">
+                                    <span class="num_item read_num">阅读量：245550</span>
+                                    <span class="num_item forward_num">转发量：245550</span>
+                                </div>
+                                <div class="black_preview hide"><span>预览文章</span></div>
+                            </a>
+                            <div class="graphic_item_btn clearfix">
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="add hover_a"></a>
+                                    <div class="remind_mean remind_add hide"><img src="../../app/image/remind_add.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a mid fl">
+                                    <a href="javascript:;" class="preview hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="edit hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="graphic_item fl">
+                            <div class="graphic_item_time">星期五  15:18</div>
+                            <a href="javascript:;" class="graphic_preview">
+                                <div class="graphic_item_img"><img src="../../app/image/gra_icon_03.png" alt=""></div>
+                                <div class="graphic_item_tittle2">控温精准长得美，摩飞电热水壶让你爱上喝水</div>
+                                <div class="graphic_item_num">
+                                    <span class="num_item read_num">阅读量：245550</span>
+                                    <span class="num_item forward_num">转发量：245550</span>
+                                </div>
+                                <div class="black_preview hide"><span>预览文章</span></div>
+                            </a>
+                            <div class="graphic_item_btn clearfix">
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="add hover_a"></a>
+                                    <div class="remind_mean remind_add hide"><img src="../../app/image/remind_add.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a mid fl">
+                                    <a href="javascript:;" class="preview hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="edit hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="graphic_item fl">
+                            <div class="graphic_item_time">星期五  15:18</div>
+                            <a href="javascript:;" class="graphic_preview">
+                                <div class="graphic_item_img"><img src="../../app/image/gra_icon_01.png" alt=""></div>
+                                <div class="graphic_item_tittle2">教你如何把一杯啤酒玩出花样</div>
+                                <div class="graphic_item_num">
+                                    <span class="num_item read_num">阅读量：245550</span>
+                                    <span class="num_item forward_num">转发量：245550</span>
+                                </div>
+                                <div class="black_preview hide"><span>预览文章</span></div>
+                            </a>
+                            <div class="graphic_item_btn clearfix">
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="add hover_a"></a>
+                                    <div class="remind_mean remind_add hide"><img src="../../app/image/remind_add.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a mid fl">
+                                    <a href="javascript:;" class="preview hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="edit hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="graphic_item fl">
+                            <div class="graphic_item_time">星期五  15:18</div>
+                            <a href="javascript:;" class="graphic_preview">
+                                <div class="graphic_item_img"><img src="../../app/image/gra_icon_02.png" alt=""></div>
+                                <div class="graphic_item_tittle2">姐妹们的聚会好 happy，少不了这些果味啤酒</div>
+                                <div class="graphic_item_num">
+                                    <span class="num_item read_num">阅读量：245550</span>
+                                    <span class="num_item forward_num">转发量：245550</span>
+                                </div>
+                                <div class="black_preview hide"><span>预览文章</span></div>
+                            </a>
+                            <div class="graphic_item_btn clearfix">
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="add hover_a"></a>
+                                    <div class="remind_mean remind_add hide"><img src="../../app/image/remind_add.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a mid fl">
+                                    <a href="javascript:;" class="preview hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="edit hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="graphic_item fl">
+                            <div class="graphic_item_time">星期五  15:18</div>
+                            <a href="javascript:;" class="graphic_preview">
+                                <div class="graphic_item_img"><img src="../../app/image/gra_icon_03.png" alt=""></div>
+                                <div class="graphic_item_tittle2">控温精准长得美，摩飞电热水壶让你爱上喝水</div>
+                                <div class="graphic_item_num">
+                                    <span class="num_item read_num">阅读量：245550</span>
+                                    <span class="num_item forward_num">转发量：245550</span>
+                                </div>
+                                <div class="black_preview hide"><span>预览文章</span></div>
+                            </a>
+                            <div class="graphic_item_btn clearfix">
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="add hover_a"></a>
+                                    <div class="remind_mean remind_add hide"><img src="../../app/image/remind_add.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a mid fl">
+                                    <a href="javascript:;" class="preview hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="edit hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="graphic_item fl">
+                            <div class="graphic_item_time">星期五  15:18</div>
+                            <a href="javascript:;" class="graphic_preview">
+                                <div class="graphic_item_img"><img src="../../app/image/gra_icon_01.png" alt=""></div>
+                                <div class="graphic_item_tittle2">教你如何把一杯啤酒玩出花样</div>
+                                <div class="graphic_item_num">
+                                    <span class="num_item read_num">阅读量：245550</span>
+                                    <span class="num_item forward_num">转发量：245550</span>
+                                </div>
+                                <div class="black_preview hide"><span>预览文章</span></div>
+                            </a>
+                            <div class="graphic_item_btn clearfix">
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="add hover_a"></a>
+                                    <div class="remind_mean remind_add hide"><img src="../../app/image/remind_add.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a mid fl">
+                                    <a href="javascript:;" class="preview hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="edit hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="graphic_item fl">
+                            <div class="graphic_item_time">星期五  15:18</div>
+                            <a href="javascript:;" class="graphic_preview">
+                                <div class="graphic_item_img"><img src="../../app/image/gra_icon_02.png" alt=""></div>
+                                <div class="graphic_item_tittle2">姐妹们的聚会好 happy，少不了这些果味啤酒</div>
+                                <div class="graphic_item_num">
+                                    <span class="num_item read_num">阅读量：245550</span>
+                                    <span class="num_item forward_num">转发量：245550</span>
+                                </div>
+                                <div class="black_preview hide"><span>预览文章</span></div>
+                            </a>
+                            <div class="graphic_item_btn clearfix">
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="add hover_a"></a>
+                                    <div class="remind_mean remind_add hide"><img src="../../app/image/remind_add.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a mid fl">
+                                    <a href="javascript:;" class="preview hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="edit hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="graphic_item fl">
+                            <div class="graphic_item_time">星期五  15:18</div>
+                            <a href="javascript:;" class="graphic_preview">
+                                <div class="graphic_item_img"><img src="../../app/image/gra_icon_03.png" alt=""></div>
+                                <div class="graphic_item_tittle2">控温精准长得美，摩飞电热水壶让你爱上喝水</div>
+                                <div class="graphic_item_num">
+                                    <span class="num_item read_num">阅读量：245550</span>
+                                    <span class="num_item forward_num">转发量：245550</span>
+                                </div>
+                                <div class="black_preview hide"><span>预览文章</span></div>
+                            </a>
+                            <div class="graphic_item_btn clearfix">
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="add hover_a"></a>
+                                    <div class="remind_mean remind_add hide"><img src="../../app/image/remind_add.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a mid fl">
+                                    <a href="javascript:;" class="preview hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="edit hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="graphic_item_box hide clearfix" id="read">
+                        <div class="graphic_item fl">
+                            <div class="graphic_item_time">星期五  15:18</div>
+                            <a href="javascript:;" class="graphic_preview">
+                                <div class="graphic_item_img"><img src="../../app/image/gra_icon_01.png" alt=""></div>
+                                <div class="graphic_item_tittle2">教你如何把一杯啤酒玩出花样</div>
+                                <div class="graphic_item_num">
+                                    <span class="num_item read_num">阅读量：245550</span>
+                                    <span class="num_item forward_num">转发量：245550</span>
+                                </div>
+                                <div class="black_preview hide"><span>预览文章</span></div>
+                            </a>
+                            <div class="graphic_item_btn clearfix">
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="add hover_a"></a>
+                                    <div class="remind_mean remind_add hide"><img src="../../app/image/remind_add.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a mid fl">
+                                    <a href="javascript:;" class="preview hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="edit hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="graphic_item fl">
+                            <div class="graphic_item_time">星期五  15:18</div>
+                            <a href="javascript:;" class="graphic_preview">
+                                <div class="graphic_item_img"><img src="../../app/image/gra_icon_02.png" alt=""></div>
+                                <div class="graphic_item_tittle2">姐妹们的聚会好 happy，少不了这些果味啤酒</div>
+                                <div class="graphic_item_num">
+                                    <span class="num_item read_num">阅读量：245550</span>
+                                    <span class="num_item forward_num">转发量：245550</span>
+                                </div>
+                                <div class="black_preview hide"><span>预览文章</span></div>
+                            </a>
+                            <div class="graphic_item_btn clearfix">
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="add hover_a"></a>
+                                    <div class="remind_mean remind_add hide"><img src="../../app/image/remind_add.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a mid fl">
+                                    <a href="javascript:;" class="preview hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="edit hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="graphic_item fl">
+                            <div class="graphic_item_time">星期五  15:18</div>
+                            <a href="javascript:;" class="graphic_preview">
+                                <div class="graphic_item_img"><img src="../../app/image/gra_icon_03.png" alt=""></div>
+                                <div class="graphic_item_tittle2">控温精准长得美，摩飞电热水壶让你爱上喝水</div>
+                                <div class="graphic_item_num">
+                                    <span class="num_item read_num">阅读量：245550</span>
+                                    <span class="num_item forward_num">转发量：245550</span>
+                                </div>
+                                <div class="black_preview hide"><span>预览文章</span></div>
+                            </a>
+                            <div class="graphic_item_btn clearfix">
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="add hover_a"></a>
+                                    <div class="remind_mean remind_add hide"><img src="../../app/image/remind_add.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a mid fl">
+                                    <a href="javascript:;" class="preview hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="edit hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="graphic_item fl">
+                            <div class="graphic_item_time">星期五  15:18</div>
+                            <a href="javascript:;" class="graphic_preview">
+                                <div class="graphic_item_img"><img src="../../app/image/gra_icon_01.png" alt=""></div>
+                                <div class="graphic_item_tittle2">教你如何把一杯啤酒玩出花样</div>
+                                <div class="graphic_item_num">
+                                    <span class="num_item read_num">阅读量：245550</span>
+                                    <span class="num_item forward_num">转发量：245550</span>
+                                </div>
+                                <div class="black_preview hide"><span>预览文章</span></div>
+                            </a>
+                            <div class="graphic_item_btn clearfix">
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="add hover_a"></a>
+                                    <div class="remind_mean remind_add hide"><img src="../../app/image/remind_add.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a mid fl">
+                                    <a href="javascript:;" class="preview hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="edit hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="graphic_item fl">
+                            <div class="graphic_item_time">星期五  15:18</div>
+                            <a href="javascript:;" class="graphic_preview">
+                                <div class="graphic_item_img"><img src="../../app/image/gra_icon_02.png" alt=""></div>
+                                <div class="graphic_item_tittle2">姐妹们的聚会好 happy，少不了这些果味啤酒</div>
+                                <div class="graphic_item_num">
+                                    <span class="num_item read_num">阅读量：245550</span>
+                                    <span class="num_item forward_num">转发量：245550</span>
+                                </div>
+                                <div class="black_preview hide"><span>预览文章</span></div>
+                            </a>
+                            <div class="graphic_item_btn clearfix">
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="add hover_a"></a>
+                                    <div class="remind_mean remind_add hide"><img src="../../app/image/remind_add.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a mid fl">
+                                    <a href="javascript:;" class="preview hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="edit hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="graphic_item fl">
+                            <div class="graphic_item_time">星期五  15:18</div>
+                            <a href="javascript:;" class="graphic_preview">
+                                <div class="graphic_item_img"><img src="../../app/image/gra_icon_03.png" alt=""></div>
+                                <div class="graphic_item_tittle2">控温精准长得美，摩飞电热水壶让你爱上喝水</div>
+                                <div class="graphic_item_num">
+                                    <span class="num_item read_num">阅读量：245550</span>
+                                    <span class="num_item forward_num">转发量：245550</span>
+                                </div>
+                                <div class="black_preview hide"><span>预览文章</span></div>
+                            </a>
+                            <div class="graphic_item_btn clearfix">
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="add hover_a"></a>
+                                    <div class="remind_mean remind_add hide"><img src="../../app/image/remind_add.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a mid fl">
+                                    <a href="javascript:;" class="preview hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="edit hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="graphic_item fl">
+                            <div class="graphic_item_time">星期五  15:18</div>
+                            <a href="javascript:;" class="graphic_preview">
+                                <div class="graphic_item_img"><img src="../../app/image/gra_icon_01.png" alt=""></div>
+                                <div class="graphic_item_tittle2">教你如何把一杯啤酒玩出花样</div>
+                                <div class="graphic_item_num">
+                                    <span class="num_item read_num">阅读量：245550</span>
+                                    <span class="num_item forward_num">转发量：245550</span>
+                                </div>
+                                <div class="black_preview hide"><span>预览文章</span></div>
+                            </a>
+                            <div class="graphic_item_btn clearfix">
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="add hover_a"></a>
+                                    <div class="remind_mean remind_add hide"><img src="../../app/image/remind_add.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a mid fl">
+                                    <a href="javascript:;" class="preview hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="edit hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="graphic_item fl">
+                            <div class="graphic_item_time">星期五  15:18</div>
+                            <a href="javascript:;" class="graphic_preview">
+                                <div class="graphic_item_img"><img src="../../app/image/gra_icon_02.png" alt=""></div>
+                                <div class="graphic_item_tittle2">姐妹们的聚会好 happy，少不了这些果味啤酒</div>
+                                <div class="graphic_item_num">
+                                    <span class="num_item read_num">阅读量：245550</span>
+                                    <span class="num_item forward_num">转发量：245550</span>
+                                </div>
+                                <div class="black_preview hide"><span>预览文章</span></div>
+                            </a>
+                            <div class="graphic_item_btn clearfix">
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="add hover_a"></a>
+                                    <div class="remind_mean remind_add hide"><img src="../../app/image/remind_add.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a mid fl">
+                                    <a href="javascript:;" class="preview hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="edit hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="graphic_item fl">
+                            <div class="graphic_item_time">星期五  15:18</div>
+                            <a href="javascript:;" class="graphic_preview">
+                                <div class="graphic_item_img"><img src="../../app/image/gra_icon_03.png" alt=""></div>
+                                <div class="graphic_item_tittle2">控温精准长得美，摩飞电热水壶让你爱上喝水</div>
+                                <div class="graphic_item_num">
+                                    <span class="num_item read_num">阅读量：245550</span>
+                                    <span class="num_item forward_num">转发量：245550</span>
+                                </div>
+                                <div class="black_preview hide"><span>预览文章</span></div>
+                            </a>
+                            <div class="graphic_item_btn clearfix">
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="add hover_a"></a>
+                                    <div class="remind_mean remind_add hide"><img src="../../app/image/remind_add.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a mid fl">
+                                    <a href="javascript:;" class="preview hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_preview.png" alt=""></div>
+                                </div>
+                                <div class="graphic_item_btn_a fl">
+                                    <a href="javascript:;" class="edit hover_a"></a>
+                                    <div class="remind_mean hide"><img src="../../app/image/remind_edit.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="n_change_right_page clearfix">
+                        <div class="n_change_box clearfix fr">
+                            <span class="fl"><i>1</i>/<i>3</i></span>
+                            <div class="page_btn fl">
+                                <a href="#" class="next_page"><img src="../../app/image/prev.png" alt=""></a>
+                                <a href="#" class="next_page"><img src="../../app/image/next.png" alt=""></a>
+                            </div>
+                            <input type="text" class="video_pages fl">
+                            <a href="#" class="change_page fl">跳转</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="image_box brand_main_box hide clearfix" id="brand_image_box">
+                    <div class="image_box_left brand_left fl">
+                        <div class="video_top_tittle">全部图片</div>
+                        <div class="video_top_all clearfix">
+                            <div class="check_box brand_check fl"><span class="uncheck"></span><em>全部</em></div>
+                            <a href="javascript:;" class="top_btn brand_move_group fl">移动分组</a>
+                        </div>
+                        <div class="image_box_main clearfix">
+                            <div class="image_box_item brand_image_box_item fl">
+                                <a href="javascript:;" class="image_item_infor">
+                                    <div class="image_item_img"><img src="../../app/image/video_01.jpg" alt=""></div>
+                                    <div class="image_item_name">图片12887.jpg</div>
+                                    <div class="checked_hover hide"><img src="../../app/image/gou.png" alt=""></div>
+                                </a>
+                            </div>
+                            <div class="image_box_item brand_image_box_item fl">
+                                <a href="javascript:;" class="image_item_infor">
+                                    <div class="image_item_img"><img src="../../app/image/video_02.jpg" alt=""></div>
+                                    <div class="image_item_name">图片12887eeerrrr</div>
+                                    <div class="checked_hover hide"><img src="../../app/image/gou.png" alt=""></div>
+                                </a>
+                            </div>
+                            <div class="image_box_item brand_image_box_item fl">
+                                <a href="javascript:;" class="image_item_infor">
+                                    <div class="image_item_img"><img src="../../app/image/video_03.jpg" alt=""></div>
+                                    <div class="image_item_name">图片1s847e247r2.</div>
+                                    <div class="checked_hover hide"><img src="../../app/image/gou.png" alt=""></div>
+                                </a>
+                            </div>
+                            <div class="image_box_item brand_image_box_item fl">
+                                <a href="javascript:;" class="image_item_infor">
+                                    <div class="image_item_img"><img src="../../app/image/video_03.jpg" alt=""></div>
+                                    <div class="image_item_name">图片1s847e247r2.</div>
+                                    <div class="checked_hover hide"><img src="../../app/image/gou.png" alt=""></div>
+                                </a>
+                            </div>
+                            <div class="image_box_item brand_image_box_item fl">
+                                <a href="javascript:;" class="image_item_infor">
+                                    <div class="image_item_img"><img src="../../app/image/video_01.jpg" alt=""></div>
+                                    <div class="image_item_name">图片12887.jpg</div>
+                                    <div class="checked_hover hide"><img src="../../app/image/gou.png" alt=""></div>
+                                </a>
+                            </div>
+                            <div class="image_box_item brand_image_box_item fl">
+                                <a href="javascript:;" class="image_item_infor">
+                                    <div class="image_item_img"><img src="../../app/image/video_02.jpg" alt=""></div>
+                                    <div class="image_item_name">图片12887eeerrrr</div>
+                                    <div class="checked_hover hide"><img src="../../app/image/gou.png" alt=""></div>
+                                </a>
+                            </div>
+                            <div class="image_box_item brand_image_box_item fl">
+                                <a href="javascript:;" class="image_item_infor">
+                                    <div class="image_item_img"><img src="../../app/image/video_03.jpg" alt=""></div>
+                                    <div class="image_item_name">图片1s847e247r2.</div>
+                                    <div class="checked_hover hide"><img src="../../app/image/gou.png" alt=""></div>
+                                </a>
+                            </div>
+                            <div class="image_box_item brand_image_box_item fl">
+                                <a href="javascript:;" class="image_item_infor">
+                                    <div class="image_item_img"><img src="../../app/image/video_03.jpg" alt=""></div>
+                                    <div class="image_item_name">图片1s847e247r2.</div>
+                                    <div class="checked_hover hide"><img src="../../app/image/gou.png" alt=""></div>
+                                </a>
+                            </div>
+                            <div class="image_box_item brand_image_box_item fl">
+                                <a href="javascript:;" class="image_item_infor">
+                                    <div class="image_item_img"><img src="../../app/image/video_01.jpg" alt=""></div>
+                                    <div class="image_item_name">图片12887.jpg</div>
+                                    <div class="checked_hover hide"><img src="../../app/image/gou.png" alt=""></div>
+                                </a>
+                            </div>
+                            <div class="image_box_item brand_image_box_item fl">
+                                <a href="javascript:;" class="image_item_infor">
+                                    <div class="image_item_img"><img src="../../app/image/video_02.jpg" alt=""></div>
+                                    <div class="image_item_name">图片12887eeerrrr</div>
+                                    <div class="checked_hover hide"><img src="../../app/image/gou.png" alt=""></div>
+                                </a>
+                            </div>
+                            <div class="image_box_item brand_image_box_item fl">
+                                <a href="javascript:;" class="image_item_infor">
+                                    <div class="image_item_img"><img src="../../app/image/video_03.jpg" alt=""></div>
+                                    <div class="image_item_name">图片1s847e247r2.</div>
+                                    <div class="checked_hover hide"><img src="../../app/image/gou.png" alt=""></div>
+                                </a>
+                            </div>
+                            <div class="image_box_item brand_image_box_item fl">
+                                <a href="javascript:;" class="image_item_infor">
+                                    <div class="image_item_img"><img src="../../app/image/video_03.jpg" alt=""></div>
+                                    <div class="image_item_name">图片1s847e247r2.</div>
+                                    <div class="checked_hover hide"><img src="../../app/image/gou.png" alt=""></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="n_change_right_page2 clearfix">
+                            <div class="n_change_box clearfix fr">
+                                <span class="fl"><i>1</i>/<i>3</i></span>
+                                <div class="page_btn fl">
+                                    <a href="#" class="next_page"><img src="../../app/image/prev.png" alt=""></a>
+                                    <a href="#" class="next_page"><img src="../../app/image/next.png" alt=""></a>
+                                </div>
+                                <input type="text" class="video_pages fl">
+                                <a href="#" class="change_page fl">跳转</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image_box_right fl">
+                        <div class="box_right_tittle"><span>全部图片(12)</span></div>
+                        <div class="box_right_list">
+                            <div class="box_right_item"><span>未分组(1)</span></div>
+                            <div class="box_right_item"><span>文章配图(0)</span></div>
+                            <div class="box_right_item add_item">
+                                <i class="add_i"></i><span>新建分组</span>
+                                <div class="add_group_container hide clearfix">
+                                    <span class="fl add_group_span">创建分组</span>
+                                    <input type="text" class="fl add_group_text">
+                                    <div class="add_group_btn fl">
+                                        <a href="javascript:;" class="group_btn sure_group">确定</a>
+                                        <a href="javascript:;" class="group_btn cancel_group">取消</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sound_box brand_main_box hide clearfix" id="brand_sound_box">
+                    <p class="sound_tittle">语音列表 (27)</p>
+                    <div class="sound_item brand_sound_item fl">
+                        <div class="sound_item_top clearfix">
+                            <div class="sound_item_img fl"><img src="../../app/image/big_vioce.png" alt=""></div>
+                            <div class="sound_item_info fl"><span class="sound_item_name">语音1</span><span class="sound_item_time fr">00:12</span></div>
+                            <div class="sound_item_start fl">创建于：12月14日</div>
+                        </div>
+                        <div class="brand_sound_item_bottom">
+                            <a href="javascript:;" class="add_material">添加到我的素材库</a>
+                        </div>
+                    </div>
+                    <div class="sound_item brand_sound_item fl">
+                        <div class="sound_item_top clearfix">
+                            <div class="sound_item_img fl"><img src="../../app/image/big_vioce.png" alt=""></div>
+                            <div class="sound_item_info fl"><span class="sound_item_name">语音1</span><span class="sound_item_time fr">00:12</span></div>
+                            <div class="sound_item_start fl">创建于：12月14日</div>
+                        </div>
+                        <div class="brand_sound_item_bottom">
+                            <a href="javascript:;" class="add_material">添加到我的素材库</a>
+                        </div>
+                    </div>
+                    <div class="sound_item brand_sound_item fl">
+                        <div class="sound_item_top clearfix">
+                            <div class="sound_item_img fl"><img src="../../app/image/big_vioce.png" alt=""></div>
+                            <div class="sound_item_info fl"><span class="sound_item_name">语音1</span><span class="sound_item_time fr">00:12</span></div>
+                            <div class="sound_item_start fl">创建于：12月14日</div>
+                        </div>
+                        <div class="brand_sound_item_bottom">
+                            <a href="javascript:;" class="add_material">添加到我的素材库</a>
+                        </div>
+                    </div>
+                    <div class="sound_item brand_sound_item fl">
+                        <div class="sound_item_top clearfix">
+                            <div class="sound_item_img fl"><img src="../../app/image/big_vioce.png" alt=""></div>
+                            <div class="sound_item_info fl"><span class="sound_item_name">语音1</span><span class="sound_item_time fr">00:12</span></div>
+                            <div class="sound_item_start fl">创建于：12月14日</div>
+                        </div>
+                        <div class="brand_sound_item_bottom">
+                            <a href="javascript:;" class="add_material">添加到我的素材库</a>
+                        </div>
+                    </div>
+                    <div class="sound_item brand_sound_item fl">
+                        <div class="sound_item_top clearfix">
+                            <div class="sound_item_img fl"><img src="../../app/image/big_vioce.png" alt=""></div>
+                            <div class="sound_item_info fl"><span class="sound_item_name">语音1</span><span class="sound_item_time fr">00:12</span></div>
+                            <div class="sound_item_start fl">创建于：12月14日</div>
+                        </div>
+                        <div class="brand_sound_item_bottom">
+                            <a href="javascript:;" class="add_material">添加到我的素材库</a>
+                        </div>
+                    </div>
+                    <div class="sound_item brand_sound_item fl">
+                        <div class="sound_item_top clearfix">
+                            <div class="sound_item_img fl"><img src="../../app/image/big_vioce.png" alt=""></div>
+                            <div class="sound_item_info fl"><span class="sound_item_name">语音1</span><span class="sound_item_time fr">00:12</span></div>
+                            <div class="sound_item_start fl">创建于：12月14日</div>
+                        </div>
+                        <div class="brand_sound_item_bottom">
+                            <a href="javascript:;" class="add_material">添加到我的素材库</a>
+                        </div>
+                    </div><div class="sound_item brand_sound_item fl">
+                        <div class="sound_item_top clearfix">
+                            <div class="sound_item_img fl"><img src="../../app/image/big_vioce.png" alt=""></div>
+                            <div class="sound_item_info fl"><span class="sound_item_name">语音1</span><span class="sound_item_time fr">00:12</span></div>
+                            <div class="sound_item_start fl">创建于：12月14日</div>
+                        </div>
+                        <div class="brand_sound_item_bottom">
+                            <a href="javascript:;" class="add_material">添加到我的素材库</a>
+                        </div>
+                    </div>
+                    <div class="sound_item brand_sound_item fl">
+                        <div class="sound_item_top clearfix">
+                            <div class="sound_item_img fl"><img src="../../app/image/big_vioce.png" alt=""></div>
+                            <div class="sound_item_info fl"><span class="sound_item_name">语音1</span><span class="sound_item_time fr">00:12</span></div>
+                            <div class="sound_item_start fl">创建于：12月14日</div>
+                        </div>
+                        <div class="brand_sound_item_bottom">
+                            <a href="javascript:;" class="add_material">添加到我的素材库</a>
+                        </div>
+                    </div>
+                    <div class="sound_item brand_sound_item fl">
+                        <div class="sound_item_top clearfix">
+                            <div class="sound_item_img fl"><img src="../../app/image/big_vioce.png" alt=""></div>
+                            <div class="sound_item_info fl"><span class="sound_item_name">语音1</span><span class="sound_item_time fr">00:12</span></div>
+                            <div class="sound_item_start fl">创建于：12月14日</div>
+                        </div>
+                        <div class="brand_sound_item_bottom">
+                            <a href="javascript:;" class="add_material">添加到我的素材库</a>
+                        </div>
+                    </div>
+                    <div class="n_change_right_page clearfix">
+                        <div class="n_change_box clearfix fr">
+                            <span class="fl"><i>1</i>/<i>3</i></span>
+                            <div class="page_btn fl">
+                                <a href="#" class="next_page"><img src="../../app/image/prev.png" alt=""></a>
+                                <a href="#" class="next_page"><img src="../../app/image/next.png" alt=""></a>
+                            </div>
+                            <input type="text" class="video_pages fl">
+                            <a href="#" class="change_page fl">跳转</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="video_box brand_main_box hide clearfix" id="brand_video_box">
+                    <p class="video_p">视频列表(27)</p>
+                    <div class="video_box_item brand_video_box_item fl">
+                        <div class="video_item_top clearfix">
+                            <div class="video_item_img fl"><img src="../../app/image/video_icon_01.png" alt=""><span class="video_play_span"><img src="../../app/image/play.png" alt=""></span></div>
+                            <div class="video_item_info fl"><span class="video_item_name">视频1</span><span class="video_item_time fr">00:12</span></div>
+                            <div class="video_item_start fl">创建于：12月14日</div>
+                        </div>
+                        <div class="brand_video_item_bottom">
+                            <a href="javascript:;" class="add_material">添加到我的素材库</a>
+                        </div>
+                    </div>
+                    <div class="video_box_item brand_video_box_item fl">
+                        <div class="video_item_top clearfix">
+                            <div class="video_item_img fl"><img src="../../app/image/video_icon_02.png" alt=""><span class="video_play_span"><img src="../../app/image/play.png" alt=""></span></div>
+                            <div class="video_item_info fl"><span class="video_item_name">视频1</span><span class="video_item_time fr">00:12</span></div>
+                            <div class="video_item_start fl">创建于：12月14日</div>
+                        </div>
+                        <div class="brand_video_item_bottom">
+                            <a href="javascript:;" class="add_material">添加到我的素材库</a>
+                        </div>
+                    </div>
+                    <div class="video_box_item brand_video_box_item fl">
+                        <div class="video_item_top clearfix">
+                            <div class="video_item_img fl"><img src="../../app/image/video_icon_03.png" alt=""><span class="video_play_span"><img src="../../app/image/play.png" alt=""></span></div>
+                            <div class="video_item_info fl"><span class="video_item_name">视频1</span><span class="video_item_time fr">00:12</span></div>
+                            <div class="video_item_start fl">创建于：12月14日</div>
+                        </div>
+                        <div class="brand_video_item_bottom">
+                            <a href="javascript:;" class="add_material">添加到我的素材库</a>
+                        </div>
+                    </div>
+                    <div class="video_box_item brand_video_box_item fl">
+                        <div class="video_item_top clearfix">
+                            <div class="video_item_img fl"><img src="../../app/image/video_icon_01.png" alt=""><span class="video_play_span"><img src="../../app/image/play.png" alt=""></span></div>
+                            <div class="video_item_info fl"><span class="video_item_name">视频1</span><span class="video_item_time fr">00:12</span></div>
+                            <div class="video_item_start fl">创建于：12月14日</div>
+                        </div>
+                        <div class="brand_video_item_bottom">
+                            <a href="javascript:;" class="add_material">添加到我的素材库</a>
+                        </div>
+                    </div>
+                    <div class="video_box_item brand_video_box_item fl">
+                        <div class="video_item_top clearfix">
+                            <div class="video_item_img fl"><img src="../../app/image/video_icon_02.png" alt=""><span class="video_play_span"><img src="../../app/image/play.png" alt=""></span></div>
+                            <div class="video_item_info fl"><span class="video_item_name">视频1</span><span class="video_item_time fr">00:12</span></div>
+                            <div class="video_item_start fl">创建于：12月14日</div>
+                        </div>
+                        <div class="brand_video_item_bottom">
+                            <a href="javascript:;" class="add_material">添加到我的素材库</a>
+                        </div>
+                    </div>
+                    <div class="video_box_item brand_video_box_item fl">
+                        <div class="video_item_top clearfix">
+                            <div class="video_item_img fl"><img src="../../app/image/video_icon_03.png" alt=""><span class="video_play_span"><img src="../../app/image/play.png" alt=""></span></div>
+                            <div class="video_item_info fl"><span class="video_item_name">视频1</span><span class="video_item_time fr">00:12</span></div>
+                            <div class="video_item_start fl">创建于：12月14日</div>
+                        </div>
+                        <div class="brand_video_item_bottom">
+                            <a href="javascript:;" class="add_material">添加到我的素材库</a>
+                        </div>
+                    </div>
+                    <div class="video_box_item brand_video_box_item fl">
+                        <div class="video_item_top clearfix">
+                            <div class="video_item_img fl"><img src="../../app/image/video_icon_01.png" alt=""><span class="video_play_span"><img src="../../app/image/play.png" alt=""></span></div>
+                            <div class="video_item_info fl"><span class="video_item_name">视频1</span><span class="video_item_time fr">00:12</span></div>
+                            <div class="video_item_start fl">创建于：12月14日</div>
+                        </div>
+                        <div class="brand_video_item_bottom">
+                            <a href="javascript:;" class="add_material">添加到我的素材库</a>
+                        </div>
+                    </div>
+                    <div class="video_box_item brand_video_box_item fl">
+                        <div class="video_item_top clearfix">
+                            <div class="video_item_img fl"><img src="../../app/image/video_icon_02.png" alt=""><span class="video_play_span"><img src="../../app/image/play.png" alt=""></span></div>
+                            <div class="video_item_info fl"><span class="video_item_name">视频1</span><span class="video_item_time fr">00:12</span></div>
+                            <div class="video_item_start fl">创建于：12月14日</div>
+                        </div>
+                        <div class="brand_video_item_bottom">
+                            <a href="javascript:;" class="add_material">添加到我的素材库</a>
+                        </div>
+                    </div>
+                    <div class="video_box_item brand_video_box_item fl">
+                        <div class="video_item_top clearfix">
+                            <div class="video_item_img fl"><img src="../../app/image/video_icon_03.png" alt=""><span class="video_play_span"><img src="../../app/image/play.png" alt=""></span></div>
+                            <div class="video_item_info fl"><span class="video_item_name">视频1</span><span class="video_item_time fr">00:12</span></div>
+                            <div class="video_item_start fl">创建于：12月14日</div>
+                        </div>
+                        <div class="brand_video_item_bottom">
+                            <a href="javascript:;" class="add_material">添加到我的素材库</a>
+                        </div>
+                    </div>
+                    
+                    <div class="n_change_right_page clearfix">
+                        <div class="n_change_box clearfix fr">
+                            <span class="fl"><i>1</i>/<i>3</i></span>
+                            <div class="page_btn fl">
+                                <a href="#" class="next_page"><img src="../../app/image/prev.png" alt=""></a>
+                                <a href="#" class="next_page"><img src="../../app/image/next.png" alt=""></a>
+                            </div>
+                            <input type="text" class="video_pages fl">
+                            <a href="#" class="change_page fl">跳转</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>   
+    <script src="../../app/js/jquery/1.10.2/jquery.js"></script>
+    <script src="../../app/js/bootstrap/3.3.0/bootstrap.min.js"></script>
+    <script src="../../app/js/bootstrap/3.3.0/bootstrap-datetimepicker.min.js"></script>
+    <script src="../../app/js/bootstrap/3.3.0/bootstrap-datetimepicker.zh-CN.js"></script>
+    
+    
+    <script>
+        $(function(){
+            var ifunction= {};
+
+            ifunction = {
+                init: function(){
+                    ifunction.change_type();
+                    ifunction.graphic_box();
+                    ifunction.sound_box();
+                    ifunction.video_box();
+                    ifunction.image_box();
+                },
+
+                change_type: function() {
+
+                    $(document).on('click','.top_tittle_item',function(){
+                        $('.top_tittle_item').removeClass('active');
+                        $(this).addClass('active');
+                        var iID=$(this).attr('data-change');
+                        $('.main_wrapper_box').addClass('hide');
+                        $(iID).removeClass('hide');
+                    })
+
+                    $(document).on('click','.brand_type_item',function(){
+                        $('.brand_type_item').removeClass('type_item_active');
+                        $(this).addClass('type_item_active');
+                        var tID=$(this).attr('data-type');
+                        $('.brand_main_box').addClass('hide');
+                        $(tID).removeClass('hide');
+                    });
+
+                    $(document).on('click','.type_item',function(){
+                        $('.type_item').removeClass('type_item_active');
+                        $(this).addClass('type_item_active');
+                        var tID=$(this).attr('data-type');
+                        $('.main_box').addClass('hide');
+                        $(tID).removeClass('hide');
+                    });
+
+                    $(document).on('click','.graphic_type_item',function(){
+                        $('.graphic_type_item').removeClass('active');
+                        $(this).addClass('active');
+                        var tID=$(this).attr('data-most');
+                        $('.graphic_item_box').addClass('hide');
+                        $(tID).removeClass('hide');
+                    });
+
+                },
+
+                graphic_box: function() {
+
+                    $(document).on('mouseover','.graphic_preview',function(){
+                        $(this).find('.black_preview').removeClass('hide');
+                    });
+                    $(document).on('mouseleave','.graphic_preview',function(){
+                        $(this).find('.black_preview').addClass('hide');
+                    });
+
+                    $(document).on('mouseover','.hover_a',function(){
+                        $(this).next().removeClass('hide');
+                    });
+                    $(document).on('mouseleave','.hover_a',function(){
+                        $(this).next().addClass('hide');
+                    });
+
+                    $(document).on('mouseleave','.delete',function(){
+                        $(this).parents('.graphic_item').remove();
+                    });
+
+
+                },
+
+                image_box: function() {
+                    $(document).on('click','.mine_check .uncheck',function(){
+                        $(this).toggleClass('checked');
+                        if($(this).hasClass('checked')){
+                            $('.mine_image_box_item .image_item_infor').find('.checked_hover').removeClass('hide');
+                            $('.mine_image_box_item .image_item_infor').addClass('isChecked');
+                        } else{
+                            $('.mine_image_box_item .image_item_infor').find('.checked_hover').addClass('hide');
+                            $('.mine_image_box_item .image_item_infor').removeClass('isChecked');
+                        }
+
+                        var checked_length=$('.isChecked').length;
+
+                        if(checked_length>0){
+
+                            $('.move_group').addClass('move_group_active');
+                            $('.delete_it').addClass('delete_it_active');
+
+                        } else {
+
+                            $('.move_group').removeClass('move_group_active');
+                            $('.delete_it').removeClass('delete_it_active');
+
+                        }
+
+                    });
+                    
+                    $(document).on('click','.mine_image_box_item .image_item_infor',function(){
+
+                        $(this).find('.checked_hover').toggleClass('hide');
+                        if($(this).find('.checked_hover').hasClass('hide')){
+                            $(this).removeClass('isChecked');
+                        } else{
+                            $(this).addClass('isChecked');
+                        }
+
+                        var checked_length=$('.isChecked').length;
+
+                        if(checked_length>0){
+
+                            $('.move_group').addClass('move_group_active');
+                            $('.delete_it').addClass('delete_it_active');
+
+                        } else {
+
+                            $('.move_group').removeClass('move_group_active');
+                            $('.delete_it').removeClass('delete_it_active');
+                            $('.uncheck').removeClass('checked');
+
+                        }
+                    });
+
+                    $(document).on('click','.brand_check .uncheck',function(){
+                        $(this).toggleClass('checked');
+                        if($(this).hasClass('checked')){
+                            $('.brand_image_box_item .image_item_infor').find('.checked_hover').removeClass('hide');
+                            $('.brand_image_box_item .image_item_infor').addClass('brand_isChecked');
+                        } else{
+                            $('.brand_image_box_item .image_item_infor').find('.checked_hover').addClass('hide');
+                            $('.brand_image_box_item .image_item_infor').removeClass('brand_isChecked');
+                        }
+
+                        var checked_length=$('.brand_isChecked').length;
+
+                        if(checked_length>0){
+
+                            $('.brand_move_group').addClass('move_group_active');
+
+                        } else {
+
+                            $('.brand_move_group').removeClass('move_group_active');
+
+                        }
+
+
+                    });
+                    
+                    $(document).on('click','.brand_image_box_item .image_item_infor',function(){
+
+                        $(this).find('.checked_hover').toggleClass('hide');
+                        if($(this).find('.checked_hover').hasClass('hide')){
+                            $(this).removeClass('brand_isChecked');
+                        } else{
+                            $(this).addClass('brand_isChecked');
+                        }
+
+                        var checked_length=$('.brand_isChecked').length;
+
+                        if(checked_length>0){
+
+                            $('.brand_move_group').addClass('move_group_active');
+
+                        } else {
+
+                            $('.brand_move_group').removeClass('move_group_active');
+                            $('.uncheck').removeClass('checked');
+
+                        }
+                    });
+
+                    $(document).on('mouseover','.add_item',function(){
+                        $(this).find('.add_group_container').removeClass('hide');
+                    });
+                    $(document).on('mouseleave','.add_group_container',function(){
+                        $(this).addClass('hide');
+                    });
+                    $(document).on('click','.sure_group',function(){
+
+                        var group_name=$('.add_group_text').val();
+                        if(group_name==""||group_name==null){
+
+                        } else{
+                            $(this).parents('.add_group_container').addClass('hide');
+                            $('.add_group_text').val('');
+                            $('.box_right_list').prepend('<div class="box_right_item"><span>'+ group_name +'</span></div>');
+                        }
+                        
+                    });
+                    $(document).on('click','.cancel_group',function(){
+                        $(this).parents('.add_group_container').addClass('hide');
+                    });
+
+                    $(document).on('click','.delete_it_active',function(){
+                        $('.image_box_main').find('.isChecked').parent().remove();
+                        $(this).removeClass('delete_it_active');
+                        $('.move_group ').removeClass('move_group_active');
+                    });
+
+
+                    $(document).on('click','.add_material',function(){
+                        $(this).toggleClass('active');
+                        if($(this).hasClass('active')){
+                            $(this).text('已添加到素材库');
+                        } else{
+                            $(this).text('添加到我的素材库');
+                        }
+                    });
+
+                    $(document).on('mouseleave','.delete',function(){
+                        $(this).parents('.image_box_item').remove();
+                    });
+                },
+
+                sound_box: function() {
+
+                    $(document).on('click','.sure_new_edit',function(){
+
+                        var checkbox_length=$("input[class='type_checkbox']:checked").size();
+                        if(checkbox_length<=0){
+                            $('.type_remind').removeClass('hide');
+                        } else {
+                            $('.type_remind').addClass('hide');
+                        }
+
+                        var addnew_voice_title=$('.addnew_voice_text').val();
+                        if(addnew_voice_title==""||addnew_voice_title==null){
+                            $('.tittle_remind').removeClass('hide');
+                        } else {
+                            $('.tittle_remind').addClass('hide');
+                        }
+
+                        var up_voice_file=$('.up_voice_file').val();
+                        if(up_voice_file==""||up_voice_file==null){
+                            $('.sent_remind').removeClass('hide');
+                        } else {
+                            $('.sent_remind').addClass('hide');
+                        }
+                    });
+
+                    $(document).on('keyup','.addnew_voice_text',function(){
+                        var title_length=$(this).val().length;
+                        if(title_length<21){
+                            $('.image_text_cout_words em').text(title_length);
+                        } else{
+                            $('.image_text_cout_words em').text(21);
+                            $('.addnew_voice_text').val($('.addnew_voice_text').val().substring(0,21));
+                        }
+                    });
+
+                    $(document).on('mouseleave','.delete',function(){
+                        $(this).parents('.sound_item').remove();
+                    });
+
+                },
+
+                video_box: function() {
+
+                    $(document).on('mouseover','.format',function(){
+                        $('.format_box').removeClass('hidden');
+                    })
+                    $(document).on('mouseout','.format',function(){
+                        $('.format_box').addClass('hidden');
+                    });
+
+                    $(document).on('mouseover','.remind_imgs',function(){
+                        $('.cover_box').removeClass('hidden');
+                    })
+                    $(document).on('mouseout','.remind_imgs',function(){
+                        $('.cover_box').addClass('hidden');
+                    });
+
+                    $(document).on('mouseover','.remind_img',function(){
+                        $('.tag_box').removeClass('hidden');
+                    })
+                    $(document).on('mouseout','.remind_img',function(){
+                        $('.tag_box').addClass('hidden');
+                    });
+
+                    $(document).on('mouseover','.process',function(){
+                        $('.process_box').removeClass('hidden');
+                    })
+                    $(document).on('mouseout','.process',function(){
+                        $('.process_box').addClass('hidden');
+                    });
+
+                    $(document).on('keyup','.video_tittle',function(){
+                        var title_length=$(this).val().length;
+                        if(title_length<21){
+                            $('.cout_words em').text(title_length);
+                        } else{
+                            $('.cout_words em').text(21);
+                            $('.video_tittle').val($('.video_tittle').val().substring(0,21));
+                        }
+                    });
+
+                    $('.select').on('click','.select_text',function(e){                        
+                        $(this).next().toggleClass('hidden');
+                        e.stopPropagation();
+                    });
+                    $('.select').on('click','.select_list_item',function(e){
+                        e.stopPropagation();
+                        var select_list_item=$(this).text();
+                        $(this).parents('.select_list').prev().text(select_list_item);
+                        $(this).parents('.select_list').addClass('hidden');
+                    });
+                    $(document).on('mouseleave','.select_list',function(){
+                        $(this).addClass('hidden');
+                    });
+                    $('body').click(function(){
+                        $('.select_list').addClass('hidden');
+                    });
+
+                    //添加标签
+                    $(document).on('keyup','.tag_text',function(e){
+                        if(e.keyCode==13){
+                            var tag=$('.tag_text').val();
+                            console.log(tag);
+                            $('.tag_text').before('<a href="javascript:;" class="tag_a fl clearfix"><span class="fl">'+ tag +'</span><img src="../../app/image/del.png" alt="" class="del_img fl">'+ '</a>');
+                            $('.tag_text').val('');
+                        }
+                    });
+                    $(document).on('mouseover','.tag_a',function(){
+                        $(this).children('.del_img').attr('src','../../app/image/delete.png');
+                        $(this).children('.del_img').addClass('delete_img');
+                    });
+                    $(document).on('mouseout','.tag_a',function(){
+                        $(this).children('.del_img').attr('src','../../app/image/del.png');
+                        $(this).children('.del_img').removeClass('delete_img');
+                    });
+                    $(document).on('click','.del_img',function(){
+                        $(this).parents('.tag_a').remove();
+                    });
+
+                    $(document).on('click','.agree_check',function(){
+                        if($('.agree_check').is(':checked')){
+                            $('.add_sure_btn').addClass('sure_active');
+                        } else{
+                            $('.add_sure_btn').removeClass('sure_active');
+                        } 
+                    });
+
+                    $(document).on('mouseleave','.delete',function(){
+                        $(this).parents('.video_box_item').remove();
+                    });
+                }
+                    
+
+            }
+            var materialFuc = (function(){
+                ifunction.init();
+            }());
+        })
+    </script>
+</body>
+</html>

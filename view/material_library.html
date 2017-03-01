@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>模板</title>
+    <title>图文素材库</title>
     <link rel="stylesheet" href="../app/css/bootstrap/3.3.0/bootstrap.min.css">
     <link rel="stylesheet" href="../app/css/bootstrap/3.3.0/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" href="../app/css/material_library.css"> 
@@ -40,15 +40,22 @@
         </aside>
         <div class="main_wrapper fl">
             <div class="n_tittle">
-                <a href="#" class="a_btn">新建群发消息</a>
+                <a href="./new_info.html" class="a_btn">新建群发消息</a>
                 <a href="#" class="a_btn has_bor choose">图文素材库</a>
             </div>
             <div class="n_main fl clearfix">
                 <div class="graphic_list fl">
-                    <div class="graphic_num fl"><span>图文列表<em>2</em>/7</span></div>
-
-                    <!-- 这里还要写图文列表，不要忘记了啊啊啊啊 -->
-                    
+                    <div class="graphic_num"><span class="graphic_num_span">图文列表<em>0</em>/7</span></div>
+                    <div class="graphic_item">
+                        <!-- <div class="graphic_list_item graphic_list_first">
+                            <img src="../app/image/ku_01.jpg" alt="" class="cover fr">
+                            <p class="title">难道咖啡也如普通</p>
+                        </div>
+                        <div class="graphic_list_item">
+                            <img src="../app/image/ku_01.jpg" alt="" class="cover fr">
+                            <p class="title">难道咖啡也如普通</p>
+                        </div> -->
+                    </div>
                 </div>
                 <div class="library_box fl">
                 <div class="graphic_library fl">
@@ -288,7 +295,16 @@
                     ifunction.sel_date_html();
                     ifunction.add_calendar();
                     ifunction.edit_person();
+                    ifunction.graphic_list();
                 },
+
+                graphic_list: function () {
+                    $(document).on('click','.graphic_list_item',function(){
+                        $('.graphic_list_item').removeClass('active');
+                        $(this).addClass('active');
+                    })
+                },
+
                 show_it: function () {
                     $('.select').on('click','.select_text',function(e){                        
                         $(this).next().toggleClass('hidden');
@@ -308,7 +324,50 @@
                     })
 
                     $(document).on('click','.graphic_library_a',function(){
-                        $(this).toggleClass('active');
+                        $('.graphic_library_a').removeClass('active');
+                        $(this).addClass('active');
+
+
+
+                        if($(this).hasClass('active')){
+                            $(this).addClass('checked_actical');
+                            var cover=$(this).find('.ku_img').attr('src');
+                            var title=$(this).find('.ku_span_item').text();
+
+                            var checked_length=$('.checked_actical').length;
+                            console.log(checked_length);
+
+                            if(checked_length==1){
+
+                                var first_html= '<div class="graphic_list_item graphic_list_first">'
+                                                    +'<img src="'+ cover +'" alt="" class="cover fr">'
+                                                    +'<p class="title">'+ title +'</p>'
+                                                +'</div>';
+                                $('.graphic_item').append(first_html);
+                                $('.graphic_num_span em').text(checked_length);
+
+                            } else if(checked_length>1&&checked_length<=7){
+
+                                var other_html= '<div class="graphic_list_item">'
+                                                    +'<img src="'+ cover +'" alt="" class="cover fr">'
+                                                    +'<p class="title">'+ title +'</p>'
+                                                +'</div>';
+                                $('.graphic_item').append(other_html);
+                                
+                                $('.graphic_num_span em').text(checked_length);
+
+                            } else {
+                                alert('已达到可添加上限');
+                            }
+                            
+                        }else {
+                            $(this).removeClass('checked_actical');
+                            $(this).removeClass('active');
+                        }
+
+                        
+
+                        
                     })
                     
                     $(document).on('click','.graphic_library_set',function(){
@@ -323,7 +382,39 @@
                     })
 
                     $(document).on('click','.brand_library_a',function(){
+                        $('.brand_library_a').next().addClass('hidden');
                         $(this).next().removeClass('hidden');
+                        $(this).parent().addClass('checked_actical');
+
+                        var cover=$(this).find('.bran_img').attr('src');
+                        var title=$(this).find('.bran_span_item').text();
+
+                        var checked_length=$('.checked_actical').length;
+                            console.log(checked_length);
+
+                        if(checked_length==1){
+
+                            var first_html= '<div class="graphic_list_item graphic_list_first">'
+                                                +'<img src="'+ cover +'" alt="" class="cover fr">'
+                                                +'<p class="title">'+ title +'</p>'
+                                            +'</div>';
+                            $('.graphic_item').append(first_html);
+                            $('.graphic_num_span em').text(checked_length);
+
+                        } else if(checked_length>1&&checked_length<=7){
+
+                            var other_html= '<div class="graphic_list_item">'
+                                                +'<img src="'+ cover +'" alt="" class="cover fr">'
+                                                +'<p class="title">'+ title +'</p>'
+                                            +'</div>';
+                            $('.graphic_item').append(other_html);
+                            $('.graphic_num_span em').text(checked_length);
+
+                        } else {
+                            alert('已达到可添加上限');
+                            $(this).next().addClass('hidden');
+                        }
+
                     })
                     $(document).on('click','.brand_library_checked',function(){
                         $(this).addClass('hidden');

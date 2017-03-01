@@ -44,12 +44,12 @@
         <div class="main_wrapper fl">
             <div class="n_tittle">
                 <div class="a_btn choose">新建群发消息</div>
-                <div class="a_btn has_bor">图文素材库</div>
+                <div class="a_btn has_bor"><a href="./material_library.html">图文素材库</a></div>
             </div>
             <div class="n_type">
                 <ul class="n_type_list">
                     <li class="n_type_item">
-                        <a href="#" class="n_type_btn cho_icon1">
+                        <a href="./publish.html" class="n_type_btn cho_icon1">
                             <!-- <img src="../app/image/cho_icon_01.png" alt="" class="cho_icon"> -->
                             <span>图文消息</span>
                         </a>                        
@@ -116,12 +116,12 @@
                                 </div>
                             </div>
                         </div>
-                        
                     </div>
                     <div class="n_vidio_right fl">
                         <div class="n_vidio_right_item fl" id="all_p">
                             <div class="n_vidio_right_list">
-                                <a href="#"><img src="../app/image/video_add.jpg" alt=""></a>
+                                <a href="#"  class="img_up"><img src="../app/image/video_add.jpg" alt=""></a>
+                                <input type="file" class="up_img_file" id="up_img_file">
                             </div>
                             <div class="n_vidio_right_list video_item">
                                 <a href="#" class="choose_video">
@@ -211,11 +211,16 @@
                                 <a href="#"><img src="../app/image/video_add.jpg" alt=""></a>
                             </div>
                         </div> -->
-                        <div class="n_vidio_right_page fr">
-                            <a href="#" class="change_page fr">跳转</a>
-                            <input type="text" class="video_pages fr">
-                            <a href="#" class="next_page fr"><img src="../app/image/next.png" alt=""></a>
-                            <p class="fr"><i>1</i>/<i>3</i></p>
+                        <div class="n_change_right_page n_change_right_page2 fr clearfix">
+                            <div class="n_change_box clearfix fr">
+                                <span class="fl"><i>1</i>/<i>3</i></span>
+                                <div class="page_btn fl">
+                                    <a href="#" class="next_page"><img src="../../app/image/prev.png" alt=""></a>
+                                    <a href="#" class="next_page"><img src="../../app/image/next.png" alt=""></a>
+                                </div>
+                                <input type="text" class="video_pages fl">
+                                <a href="#" class="change_page fl">跳转</a>
+                            </div>
                         </div>
 
                     </div>
@@ -321,11 +326,16 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="n_vidio_right_page fr">
-                        <a href="#" class="change_page fr">跳转</a>
-                        <input type="text" class="video_pages fr">
-                        <a href="#" class="next_page fr"><img src="../app/image/next.png" alt=""></a>
-                        <p class="fr"><i>1</i>/<i>3</i></p>
+                    <div class="n_change_right_page n_change_right_page2 fr clearfix">
+                        <div class="n_change_box clearfix fr">
+                            <span class="fl"><i>1</i>/<i>3</i></span>
+                            <div class="page_btn fl">
+                                <a href="#" class="next_page"><img src="../../app/image/prev.png" alt=""></a>
+                                <a href="#" class="next_page"><img src="../../app/image/next.png" alt=""></a>
+                            </div>
+                            <input type="text" class="video_pages fl">
+                            <a href="#" class="change_page fl">跳转</a>
+                        </div>
                     </div>
                     <div class="n_main_video_btn fl">
                         <a href="#" class="video_btn sure_voice">确定</a>
@@ -336,9 +346,9 @@
                     <form action="" class="addnew_voice_form clearfix">
                         <div class="voice_form_box cout clearfix">
                             <label for="" class="voice_form_label tag_label fl">标题</label>
-                            <input type="text" class="video_text fl">
+                            <input type="text" class="voice_text fl">
                             <span class="remind_span tittle_remind hide fl">请输入标题</span>
-                            <span class="cout_words"><em>0</em>/<i>21</i></span>
+                            <span class="cout_voice_words"><em>0</em>/<i>21</i></span>
                         </div>
 
                         <div class="voice_form_box clearfix">
@@ -462,7 +472,7 @@
                                 <span class="file_up_span">上传</span>
                                 <input type="file" class="up_file" id="up_file">
                             </div>
-                            <!-- <span class="remind_span up_remind fl">请上传语音文件</span> -->
+                            <span class="remind_span up_remind hide fl">请上传语音文件</span>
                         </div>
                     </form>
                     <div class="n_main_video_btn fl">
@@ -545,11 +555,16 @@
                             <span class="video_choosen hide"><img src="../app/image/gou.png" alt=""></span>
                         </a>
                     </div>
-                    <div class="n_vidio_right_page fr part5_page">
-                        <a href="#" class="change_page fr">跳转</a>
-                        <input type="text" class="video_pages fr">
-                        <a href="#" class="next_page fr"><img src="../app/image/next.png" alt=""></a>
-                        <p class="fr"><i>1</i>/<i>3</i></p>
+                    <div class="n_change_right_page n_change_right_page2 fr clearfix">
+                        <div class="n_change_box clearfix fr">
+                            <span class="fl"><i>1</i>/<i>3</i></span>
+                            <div class="page_btn fl">
+                                <a href="#" class="next_page"><img src="../../app/image/prev.png" alt=""></a>
+                                <a href="#" class="next_page"><img src="../../app/image/next.png" alt=""></a>
+                            </div>
+                            <input type="text" class="video_pages fl">
+                            <a href="#" class="change_page fl">跳转</a>
+                        </div>
                     </div>
                     <div class="n_main_video_btn fl">
                         <a href="#" class="video_btn sure_video">确定</a>
@@ -873,7 +888,7 @@
 
                 cunt_words: function () {
                     $(document).on('keyup','.n_main_area',function(){
-                        var word_length=$(this).val().length;
+                        var word_length=$(this).html().length;
                         console.log(word_length);
                         var left_word=600-word_length;
                         if(left_word>0){
@@ -883,15 +898,7 @@
                             $('.n_main_area').val($('.n_main_area').val().substring(0,600));
                         }
                     })
-                    $(document).on('keyup','.video_tittle',function(){
-                        var title_length=$(this).val().length;
-                        if(title_length<21){
-                            $('.cout_words em').text(title_length);
-                        } else{
-                            $('.cout_words em').text(21);
-                            $('.video_tittle').val($('.video_tittle').val().substring(0,21));
-                        }
-                    })
+                    
                     $(document).on('keyup','#video_area',function(){
                         var video_area_length=$(this).val().length;
                         if(video_area_length<200){
@@ -909,6 +916,16 @@
                         } else{
                             $('.cout_words em').text(21);
                             $('.video_text').val($('.video_text').val().substring(0,21));
+                        }
+                    })
+
+                    $(document).on('keyup','.voice_text',function(){
+                        var title_length=$(this).val().length;
+                        if(title_length<21){
+                            $('.cout_voice_words em').text(title_length);
+                        } else{
+                            $('.cout_voice_words em').text(21);
+                            $('.voice_text').val($('.voice_text').val().substring(0,21));
                         }
                     })
                 },
@@ -1052,7 +1069,7 @@
                     });
 
                     //新建语音提醒
-                    $(document).on('blur','.video_text',function(){
+                    /*$(document).on('blur','.video_text',function(){
                         var voice_title=$('.video_text').val();
                         console.log(voice_title);
                         if(voice_title==""||voice_title==null){
@@ -1060,7 +1077,7 @@
                         } else {
                             $('.tittle_remind').addClass('hide');
                         }
-                    })
+                    })*/
                     $(document).on('click','.sure_new_voice',function(){
                         var checkbox_length=$("input[class='type_checkbox']:checked").size();
                         console.log(checkbox_length);
@@ -1068,6 +1085,20 @@
                             $('.type_remind').removeClass('hide');
                         } else {
                             $('.type_remind').addClass('hide');
+                        }
+
+                        var addnew_voice_title=$('.voice_text').val();
+                        if(addnew_voice_title==""||addnew_voice_title==null){
+                            $('.tittle_remind').removeClass('hide');
+                        } else {
+                            $('.tittle_remind').addClass('hide');
+                        }
+
+                        var up_voice_file=$('.up_file').val();
+                        if(up_voice_file==""||up_voice_file==null){
+                            $('.up_remind').removeClass('hide');
+                        } else {
+                            $('.up_remind').addClass('hide');
                         }
                     })
 
